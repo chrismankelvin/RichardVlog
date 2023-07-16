@@ -21,7 +21,7 @@
     /* Adjust the width as needed */
     height: auto;
     /* Maintain aspect ratio */
-    margin-top: 50px;
+    margin-top: 70px;
     /* Add margin as needed */
 }
 
@@ -381,7 +381,7 @@ transition: background-color 0.3s, color 0.3s;
 }
 
 .other-services-button:hover {
-background-color: #ffffff;
+background-color: #2b28284f;
 color: #333333;
 }
 
@@ -424,3 +424,109 @@ padding: 10px;
 cursor: pointer;
 }
 
+.about-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+  }
+
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+  }
+
+
+  .icon-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+  }
+
+  .icon-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .icon-container i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+
+  .icon-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+
+  .icon-description {
+    color: #333333;
+    line-height: 1.6;
+  }
+
+
+  .review-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+  }
+
+  .review-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .review-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .review-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .review-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .review-body {
+    color: #333333;
+  }
+
+  .review-nav {
+    text-align: center;
+  }
+
+  .review-nav button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  .review-nav button:hover {
+    background-color: #ffffff;
+    color: #333333;
+  }

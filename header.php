@@ -29,7 +29,7 @@
                         <a class="nav-link" href="./service.php">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./about.php">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sign In</a>
@@ -42,10 +42,11 @@
         </div>
     </nav>
 
-    <section class="jumbotron text-center">
-        <img class="logo" src="./inc/images/logo.png" alt="Richard Vlog Logo">
+    <section class="jumbotron text-left">
+        
         <div class="container">
-            <h1 class="display-4">Richard - Vlog</h1>
+        <img class="logo" src="./inc/images/logo.png" alt="Richard Vlog Logo">
+            <!-- <h1 class="display-4">Richard - Vlog</h1> -->
             <p class="lead">Welcome to Richard Vlog - Your destination for amazing video content.</p>
         </div>
     </section>

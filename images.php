@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/1.JPG" alt="Image 1">
+              <img src="./inc/images/accersories.jpg" alt="Image 1">
               <div class="overlay">
                 <div class="overlay-text">
                   <h3>Image 1</h3>
@@ -31,7 +31,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/dr_tim(1).jpg" alt="Image 3">
+              <img src="./inc/images/accersories.jpg" alt="Image 3">
               <div class="overlay">
                 <div class="overlay-text">
                   <h3>Image 3</h3>
@@ -42,7 +42,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/3.jpg" alt="Image 4">
+              <img src="./inc/images/accersories.jpg" alt="Image 4">
               <div class="overlay">
                 <div class="overlay-text">
                   <h3>Image 4</h3>
@@ -53,7 +53,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/people_run.jpg" alt="Image 5">
+              <img src="./inc/images/accersories.jpg" alt="Image 5">
               <div class="overlay">
                 <div class="overlay-text">
                   <h3>Image 5</h3>
@@ -64,7 +64,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/schedule.jpeg" alt="Image 6">
+              <img src="./inc/images/accersories.jpg" alt="Image 6">
               <div class="overlay">
                 <div class="overlay-text">
                   <h3>Image 6</h3>
