@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <button class="other-services-button" onclick="toggleSidebar()">Other Services</button>
+        <button class="other-services-button" onclick="toggleSidebar()">Discover</button>
         <div id="sidebar" class="sidebar">
           <div class="sidebar-tab" onclick="toggleSidebar()">Close</div>
           <ul>
@@ -37,11 +37,11 @@ require 'icons.php'
     </div>
     <div class="footer-nav">
       <nav class="nav">
-        <a class="nav-link" href="./index.php">Home</a>
+        <!-- <a class="nav-link" href="./index.php">Home</a> -->
         <a class="nav-link" href="#">Privacy Policy</a>
-        <a class="nav-link" href="#">Discover</a>
+        <!-- <a class="nav-link" href="#">Discover</a> -->
         <a class="nav-link" href="#">Terms And Conditions</a>
-        <a class="nav-link" href="#">Cookie Agreement</a>
+        <!-- <a class="nav-link" href="#">Cookie Agreement</a> -->
         <a class="nav-link" href="./contact.php">Contacts</a>
         <a class="nav-link" href="#">About Us</a>
         <a class="nav-link" href="#">Support</a>
@@ -79,15 +79,7 @@ require 'icons.php'
     sidebar.classList.toggle("open");
   }
 
-  function changePage(offset) {
-      var currentPage = <?php echo $currentPage; ?>;
-      var totalPages = <?php echo ceil(count($reviews) / $reviewsPerPage); ?>;
-      var newPage = currentPage + offset;
 
-      if (newPage >= 1 && newPage <= totalPages) {
-        window.location.href = '?page=' + newPage;
-      }
-    }
 
 </script>
 

@@ -1,6 +1,10 @@
 
 <?php
-require 'header.php'
+// $page_quote = "This is the About - Your destination for amazing video content";
+// $page_title ="About";
+// require 'header.php'
+require 'navbar.php';
+
 ?>
 
 <section class="form-section">

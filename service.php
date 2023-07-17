@@ -1,5 +1,7 @@
 <?php
-require 'header.php'
+$page_quote = "This is the Service Page - Your destination for amazing video content";
+$page_title ="Service";
+require 'header.php';
 ?>
 <section class="service-section">
         <div class="container">

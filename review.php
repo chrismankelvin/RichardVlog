@@ -11,7 +11,7 @@
       // Assuming you have a database connection established
 
       // Query to fetch review data from the database (modify this as per your database schema)
-      $query = "SELECT * FROM reviews";
+      $query = "SELECT * FROM reviews ORDER BY id DESC";
       $result = mysqli_query($connection, $query);
 
       // Fetch the reviews as associative arrays

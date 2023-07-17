@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // Data inserted successfully
       // You can perform any additional actions or redirect to a success page
       // For example:
-      header("Location: ../about.php");
+      header("Location: ../success.php");
       exit();
     } else {
       // Failed to insert data

@@ -2,7 +2,9 @@
 
 
 <?php
-require 'header.php'
+$page_quote = "Book an appointment - Your destination for amazing video content";
+$page_title ="Meeting";
+require 'header.php';
 ?>
 
 

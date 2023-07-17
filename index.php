@@ -1,5 +1,13 @@
+
+
+
 <?php
-require 'header.php'
+$page_quote = "This is the Richard Vlog - Your destination for amazing video content";
+$page_title ="RIchard - Vlog";
+require 'header.php';
+
+
+
 ?>
 
 <section class="section">
@@ -40,6 +48,8 @@ require 'header.php'
           </button>
         </div>
       </div>
+ 
+
       <div class="col-lg-6">
         <div class="text-container">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum placerat ultricies. Sed vel metus eu ex viverra mattis sed in velit. In sagittis urna ac nisl pretium aliquam. Sed fermentum augue eget tortor tempus tristique. Nullam condimentum arcu nec nibh efficitur, at placerat nulla varius.</p>
