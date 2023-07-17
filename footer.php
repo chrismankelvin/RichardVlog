@@ -78,7 +78,20 @@ require 'icons.php'
     var sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("open");
   }
+
+  function changePage(offset) {
+      var currentPage = <?php echo $currentPage; ?>;
+      var totalPages = <?php echo ceil(count($reviews) / $reviewsPerPage); ?>;
+      var newPage = currentPage + offset;
+
+      if (newPage >= 1 && newPage <= totalPages) {
+        window.location.href = '?page=' + newPage;
+      }
+    }
+
 </script>
+
+
 
 </body>
 

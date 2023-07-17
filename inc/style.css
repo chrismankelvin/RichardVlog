@@ -476,57 +476,48 @@ cursor: pointer;
     color: #333333;
     line-height: 1.6;
   }
+  
 
 
-  .review-section {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-  }
-
-  .review-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .review-title {
-    font-size: 24px;
-    font-weight: bold;
+  .review-card {
     margin-bottom: 20px;
-  }
-
-  .review-item {
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     border: 1px solid #dddddd;
     border-radius: 5px;
     padding: 20px;
-    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .review-name {
-    font-size: 18px;
+  .review-card h4 {
     font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .review-body {
     color: #333333;
   }
 
-  .review-nav {
-    text-align: center;
+  .review-card h5 {
+    color: #666666;
   }
 
-  .review-nav button {
-    background-color: #333333;
-    color: #ffffff;
+  .review-card p {
+    color: #888888;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pagination .page-item .page-link {
+    color: #333333;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin: 0 5px;
   }
 
-  .review-nav button:hover {
-    background-color: #ffffff;
-    color: #333333;
+  .pagination .page-item .page-link:focus {
+    box-shadow: none;
+  }
+
+  .pagination .page-item .page-link:hover,
+  .pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: #ffffff;
   }
