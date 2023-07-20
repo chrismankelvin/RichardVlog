@@ -24,14 +24,14 @@ require 'header.php';
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./inc/images/stationary.jpg" class="d-block w-100" alt="Image 2">
+              <img src="./inc/images/stationary1.jpg" class="d-block w-100" alt="Image 2">
               <div class="carousel-caption">
                 <h3>Study Abroad</h3>
                 <p>It just got easier</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./inc/images/graduates.jpg" class="d-block w-100" alt="Image 3">
+              <img src="./inc/images/graduate.jpg" class="d-block w-100" alt="Image 3">
               <div class="carousel-caption">
                 <h3>Have You Passed Out?</h3>
                 <p>Richard is there whenever you need help</p>

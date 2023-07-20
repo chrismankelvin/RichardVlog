@@ -12,7 +12,7 @@ require 'header.php';
     <div class="container">
         <div class="appointment-content">
             <div class="appointment-image">
-                <img src="./inc/images/schedule.jpeg" alt="Appointment Image">
+                <img src="./inc/images/write.jpg" alt="Appointment Image">
             </div>
             <div class="appointment-details">
                 <h2 class="appointment-title">Book an Appointment</h2>

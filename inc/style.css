@@ -1,7 +1,7 @@
 
 
 .jumbotron {
-    background-image:linear-gradient(#ffffff2a,#ffffff2a), url('./images/open_gate.jpg');
+    background-image:linear-gradient(#ffffff2a,#ffffff2a), url('./images/open_gate1.jpg');
     /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
     background-size: cover;
     background-position: center;
@@ -144,7 +144,7 @@ margin-top: 10px;
 
 .service-section {
 padding: 50px 0;
-background-image: url('./images/studying.jpg');
+background-image: url('./images/write.jpg');
 background-size: cover;
 background-position: center;
 color: #ffffff;
@@ -197,7 +197,7 @@ color: #333333;
 }
 .appointment-section {
 padding: 50px 0;
-background-image: url('./images/accersories.jpg');
+background-image: url('./images/contact.jpg');
 background-size: cover;
 background-position: center;
 color: #ffffff;
