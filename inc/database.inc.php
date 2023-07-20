@@ -1,4 +1,4 @@
-//<?php
+<?php
         //   $dbservername = "localhost";
         //   $username = "root";
         //   $password = "";
