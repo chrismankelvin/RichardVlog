@@ -4,6 +4,7 @@
 <?php
 $page_quote = "This is the Richard Vlog - Your destination for amazing video content";
 $page_title ="RIchard - Vlog";
+$main_title ="RIchard - Vlog";
 require 'header.php';
 
 

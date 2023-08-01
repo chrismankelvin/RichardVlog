@@ -2,6 +2,7 @@
 <?php
 $page_quote = "This is the Contact - Your destination for amazing video content";
 $page_title ="Contact Us";
+$main_title ="Contact REC";
 require 'header.php'
 ?>
 

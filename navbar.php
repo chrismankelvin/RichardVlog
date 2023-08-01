@@ -12,8 +12,15 @@
     <link rel="icon" type="image/svg+xml" href="./inc/images/logo.svg">
 
 
-    <title>Richard's-Vlog</title>
-
+    <?php if (!$main_title) { ?>
+                <title>
+                    Richard - Vlog1
+                </title>
+            <?php } else { ?>
+                <title>
+                    <?php echo $main_title; ?>
+                </title>
+            <?php } ?>
 
 </head>
 
@@ -21,7 +28,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Richard Vlog</a>
+            <a class="navbar-brand" href="./index.php">Richard Vlog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

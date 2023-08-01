@@ -12,7 +12,16 @@
 
 
 
-    <title>Richard's-Vlog</title>
+    <!-- <title>Richard's-Vlog</title> -->
+    <?php if (!$main_title) { ?>
+                <title>
+                    Richard - Vlog1
+                </title>
+            <?php } else { ?>
+                <title>
+                    <?php echo $main_title; ?>
+                </title>
+            <?php } ?>
 
 
 </head>
@@ -50,7 +59,7 @@
     <section class="jumbotron text-left">
 
         <div class="container">
-            <img class="logo" src="./inc/images/logo.png" alt="Richard Vlog Logo">
+            <img class="logo" src="./inc/images/logo1.png" alt="Richard Vlog Logo">
             <?php if (!$page_title) { ?>
                 <h1 class="display-4 page-title">
                     Richard - Vlog

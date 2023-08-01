@@ -1,6 +1,7 @@
 <?php
 $page_quote = "This is the Service Page - Your destination for amazing video content";
 $page_title ="Service";
+$main_title ="Service OF REC";
 require 'header.php';
 ?>
 <section class="service-section">

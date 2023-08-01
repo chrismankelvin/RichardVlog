@@ -1,8 +1,8 @@
 <?php
-        //   $dbservername = "localhost";
-        //   $username = "root";
-        //   $password = "";
-        //   $dbname = "richard_vlog";
+//           $dbservername = "localhost";
+//           $username = "root";
+//           $password = "";
+//           $dbname = "richard_vlog";
 
 // $connection = mysqli_connect($dbservername, $username, $password, $dbname);
 

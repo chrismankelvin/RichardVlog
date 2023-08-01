@@ -15,7 +15,7 @@
             <li><a href="#">Educational Advice</a></li>
             <li><a href="#">Accelerate Study</a></li>
             <li><a href="#">Required Document</a></li>
-            <li><a href="#">Success Calculator(SRC)</a></li>
+            <li><a href="./spc.php">Success Probability (SPC)</a></li>
             <li><a href="./contact.php">Contact Us</a></li>
           </ul>
         </div>
