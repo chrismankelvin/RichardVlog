@@ -24,9 +24,10 @@ require 'navbar.php'
                 <select class="form-select" id="edu_level" name="edu_level" required>
                     <option value="">Select</option>
                     <option value="shs">Undergraduate</option>
-                    <option value="tertiary">Diploma</option>
-                    <option value="low">Degree</option>
-                    <option value="moderate">PhD</option>
+                    <option value="tertiary1">Diploma</option>
+                    <option value="tertiary2">Degree</option>
+                    <option value="tertiary3">Masters</option>
+                    <option value="tertiary4">PhD</option>
                 </select>
             </div>
             <div class="mb-3">

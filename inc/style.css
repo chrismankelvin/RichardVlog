@@ -575,3 +575,71 @@ cursor: pointer;
       font-weight: bold;
       text-align: left;
       margin-top: 15px;}
+
+
+      .info-div {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .info-div:hover {
+        background-color: #f9f9f9;
+      }
+      .hidden-info {
+        display: none;
+      }
+      .info-div.open .hidden-info {
+        display: block;
+      }
+      .icon-container {
+        text-align: center;
+        padding: 15px;
+      }
+      .icon-title {
+        margin-top: 15px;
+      }
+      .icon-description {
+        margin-top: 5px;
+      }
+         .trust-section {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+    .trust-item {
+      font-size: 19px;
+      font-weight: 2px;
+      margin-bottom: 15px;
+    }
+
+    .trust-section {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+    .trust-item {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .terms-section {
+      margin-top: 50px;
+    }
+    .terms-section h3 {
+      cursor: pointer;
+    }
+    .hidden-info {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    .terms-section h3.open .dropdown-icon::before {
+      content: '\25B2';
+    }
+    .privacy-section {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }

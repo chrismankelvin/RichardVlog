@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Perform any necessary validation on the form data
 
   // Insert the review into the database
-  $query = "INSERT INTO reviews (name, title, body) VALUES ('$name', '$title', '$content')";
+  $query = "INSERT INTO waitreviews (name, title, body) VALUES ('$name', '$title', '$content')";
   $result = mysqli_query($connection, $query);
 
   if ($result) {

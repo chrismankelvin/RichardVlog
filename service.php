@@ -38,7 +38,10 @@ require 'header.php';
           </div>
         </div>
       </section>
+      <?php
 
+require 'trust.php'
+?>
       <?php
 require 'footer.php'
 ?>

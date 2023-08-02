@@ -1,5 +1,5 @@
 <?php
-$bag = array('shs' => 25, 'tertiary' => 12.5, 'low' => 10, 'moderate' => 20, 'high' => 25, 'ready' => 25, 'preparing' => 20, 'not ready' => 10, 'yes' => 25, 'no' => 0);
+$bag = array('shs' => 25, 'tertiary' => 12.5,'tertiary1' => 12.5,'tertiary2' => 6.25,'tertiary3' => 3.125, 'tertiary4' => 0,'low' => 10, 'moderate' => 20, 'high' => 25, 'ready' => 25, 'preparing' => 20, 'not ready' => 10, 'yes' => 25, 'no' => 0);
 
 $edu_level = $_POST['edu_level'];
 $fin_sup = $_POST['fin_sup'];
