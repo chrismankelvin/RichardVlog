@@ -1,19 +1,17 @@
 
 
 .jumbotron {
-    background-image:linear-gradient(#ffffff2a,#ffffff2a), url('./images/open_gate1.jpg');
-    /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
-    background-size: cover;
-    background-position: center;
-    color: #000000;
-    /* Set text color to white or any other color that suits your design */
-    min-height: 80vh;
-    /* display: flex; */
-    justify-content: center;
-    /* align-items: flex-start; */
-    align-items: center;
-    margin-bottom: 20px;
-
+  background-image: url('./images/open_gate.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #ffffff; /* Set text color to white or any other color that suits your design */
+  min-height: 100vh; /* Change the height to 100vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center; /* Center the text horizontally */
 }
 
 .logo {
@@ -306,11 +304,14 @@ color: #333333;
 
 .contact-section {
 padding: 50px 0;
-background-color: #f5f5f5;
+background-image: url('./images/stationary.jpg');
+background-size: cover;
+background-position: center;
+
 }
 
 .contact-container {
-background-color: #ffffff;
+background-color: #ffffff6c;
 padding: 20px;
 }
 
@@ -320,13 +321,17 @@ font-weight: bold;
 margin-bottom: 20px;
 color: #333333;
 }
-
+.contact-section form{
+  background-color: rgba(255, 255, 255, 0.212);
+}
 .contact-form input,
 .contact-form textarea {
 width: 100%;
 padding: 10px;
 border: 1px solid #dddddd;
 border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.493);
+
 margin-bottom: 20px;
 }
 
@@ -425,6 +430,8 @@ padding: 10px;
 cursor: pointer;
 }
 
+
+
 .about-section {
     padding: 50px 0;
     background-color: #f8f8f8;
@@ -447,6 +454,8 @@ cursor: pointer;
     color: #333333;
     line-height: 1.6;
   }
+
+
 
 
   .icon-section {
@@ -480,37 +489,53 @@ cursor: pointer;
   
 
 
+ 
   .review-card {
     margin-bottom: 20px;
     background-color: #f8f8f8;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .review-card:hover {
+    transform: translateY(-5px);
   }
 
   .review-card h4 {
+    font-size: 22px;
     font-weight: bold;
     color: #333333;
+    margin-bottom: 10px;
   }
 
   .review-card h5 {
+    font-size: 18px;
     color: #666666;
+    margin-bottom: 10px;
   }
 
   .review-card p {
+    font-size: 16px;
     color: #888888;
+    line-height: 1.6;
   }
 
   .pagination {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .pagination .page-item .page-link {
+    font-size: 16px;
     color: #333333;
     background-color: transparent;
     border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .pagination .page-item .page-link:focus {
@@ -521,9 +546,7 @@ cursor: pointer;
   .pagination .page-item.active .page-link {
     background-color: #007bff;
     color: #ffffff;
-  }
-
-     .section-delivered {
+  }     .section-delivered {
       background-color: #f8f8f8;
       padding: 40px;
       text-align: center;
@@ -547,6 +570,7 @@ cursor: pointer;
     }
 
     .review-post {
+      background-image: url('./inc/images/stationary.jpg');
       background-size: cover;
       background-position: center;
       padding: 100px 0;
@@ -576,13 +600,24 @@ cursor: pointer;
       text-align: left;
       margin-top: 15px;}
 
-
+      .custom-bg {
+        background-image: url('path-to-your-image.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
       .info-div {
         border: 1px solid #ddd;
         padding: 15px;
         margin-bottom: 10px;
         cursor: pointer;
         transition: all 0.3s ease;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
       .info-div:hover {
         background-color: #f9f9f9;
@@ -603,27 +638,56 @@ cursor: pointer;
       .icon-description {
         margin-top: 5px;
       }
-         .trust-section {
-      text-align: center;
-      padding: 50px 0;
-      background-color: #f9f9f9;
-    }
-    .trust-item {
-      font-size: 19px;
-      font-weight: 2px;
-      margin-bottom: 15px;
-    }
 
-    .trust-section {
-      text-align: center;
-      padding: 50px 0;
-      background-color: #f9f9f9;
-    }
-    .trust-item {
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
+
+
+
+ 
+      .trust-section {
+        text-align: center;
+        padding: 50px 0;
+        background-color: #ffffff;
+      }
+    
+      .trust-item {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+      }
+    
+      .trust-item:hover {
+        transform: translateY(-5px);
+      }
+    
+      .count {
+        display: block;
+        font-size: 40px;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+    
+      .label {
+        font-size: 18px;
+        color: #555;
+      }
+    
+      @media (max-width: 767px) {
+        .trust-item {
+          font-size: 20px;
+        }
+    
+        .count {
+          font-size: 30px;
+        }
+      }
+   
+    
+
     .terms-section {
       margin-top: 50px;
     }
@@ -642,4 +706,58 @@ cursor: pointer;
     .privacy-section {
       padding: 50px 0;
       background-color: #f9f9f9;
+    }
+
+    .container.success-calculator {
+      max-width: 600px;
+      background-image: url('./images/stationary1.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your background image */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 30px;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+      color: #ffffff; /* Set text color to white or any other color that suits your design */
+    }
+  
+    .success-calculator h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffffff; /* Set text color to white or any other color that suits your design */
+    }
+  
+    .success-calculator .form-label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff; /* Set text color to white or any other color that suits your design */
+    }
+  
+    .success-calculator .form-select {
+      font-size: 16px;
+      color: #333333;
+      background-color: #f9f9f9;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .success-calculator .btn-primary {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px 30px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+  
+    .success-calculator .btn-primary:hover {
+      background-color: #0056b3;
     }

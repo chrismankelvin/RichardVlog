@@ -1,9 +1,6 @@
 
 
 
-
-
-
 <section class="other-services-section">
   <div class="container">
     <div class="row">
@@ -25,44 +22,66 @@
 </section>
 
 <?php
-// Check if the switch_event.txt file exists and get its modification time
-$eventFile = 'switch_event.txt';
-if (file_exists($eventFile)) {
-    $lastModifiedTime = filemtime($eventFile);
 
-    // You can define a time interval (e.g., every 30 minutes) to switch between sections
-    $intervalInSeconds = 30 * 60;
+// function icons1() {
+//   include("icons.php");
+// }
 
-    // Calculate the current time
-    $currentTime = time();
+// function icons2() {
+//   include("icons2.php");
+// }
 
-    // If the time difference exceeds the interval, switch the section
-    if ($currentTime - $lastModifiedTime >= $intervalInSeconds) {
-        // Modify the switch_event.txt file's timestamp to reset the interval
-        touch($eventFile);
+// // Generate a random number between 0 and 1.
+// $random_number = rand() / getrandmax();
 
-        // Toggle between icons1.php and icons2.php based on the file's previous state
-        $previousSection = file_get_contents($eventFile);
-        if ($previousSection === 'icons1') {
-            include 'icons2.php';
-        } else {
-            include 'icons.php';
-        }
-    } else {
-        // If the time difference is within the interval, display the same section as before
-        $previousSection = file_get_contents($eventFile);
-        if ($previousSection === 'icons1') {
-            include 'icons.php';
-        } else {
-            include 'icons2.php';
-        }
-    }
+// // Check if the number is less than 0.5.
+// if ($random_number < 0.5) {
+//   icons1();
+//   unset(icons2);
+//   // Include the icons.php file.
+
+// } else {
+//   icons2();
+//   unset(icons1);
+//   // Include the icons2.php file.
+
+// }
+
+?>
+
+<?php
+// session_start();
+
+function icons1() {
+  include("icons.php");
+}
+
+function icons2() {
+  include("icons2.php");
+}
+
+// Check if the user has already selected a set of icons
+if (!isset($_SESSION['chosen_icons'])) {
+  // Generate a random number between 0 and 1.
+  $random_number = rand() / getrandmax();
+
+  // Check if the number is less than 0.5.
+  if ($random_number < 0.5) {
+    $_SESSION['chosen_icons'] = 'icons1';
+  } else {
+    $_SESSION['chosen_icons'] = 'icons2';
+  }
+}
+
+// Based on the chosen set of icons, include the respective file.
+if ($_SESSION['chosen_icons'] === 'icons1') {
+  icons1();
 } else {
-    // If the switch_event.txt file doesn't exist, create it and start with icons1.php
-    touch($eventFile);
-    include 'icons.php';
+  icons2();
 }
 ?>
+
+
 
 
 

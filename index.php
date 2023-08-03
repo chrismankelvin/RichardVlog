@@ -71,7 +71,6 @@ require 'header.php';
 require 'review.php'
 ?>
 
-
 <?php
 require 'images.php'
 ?>

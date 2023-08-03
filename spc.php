@@ -15,10 +15,9 @@ $main_title ="Success Probability Calculator";
 require 'navbar.php'
 
 ?>
-<body>
-    <div class="container mt-5">
-        <h2 class="mb-4">Success Probability Calculator</h2>
-        <form method="post" action="./inc/calculate.php">
+<div class="container mt-5 success-calculator">
+    <h2 class="mb-4">Success Probability Calculator</h2>
+    <form method="post" action="./inc/calculate.php">
             <div class="mb-3">
                 <label for="edu_level" class="form-label">Educational Level</label>
                 <select class="form-select" id="edu_level" name="edu_level" required>
@@ -57,9 +56,8 @@ require 'navbar.php'
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Calculate</button>
-        </form>
-    </div>
-</body>
+    </form>
+</div>
 <?php
 include 'footer.php';
 

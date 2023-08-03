@@ -40,6 +40,10 @@ require 'navbar.php'
   </div>
 </div>
 <?php
+// Start the session at the beginning of the file
+session_start();
+?> 
+<?php
 include 'footer.php';
 
 ?>
