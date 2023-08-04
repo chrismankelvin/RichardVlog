@@ -21,33 +21,6 @@
   </div>
 </section>
 
-<?php
-
-// function icons1() {
-//   include("icons.php");
-// }
-
-// function icons2() {
-//   include("icons2.php");
-// }
-
-// // Generate a random number between 0 and 1.
-// $random_number = rand() / getrandmax();
-
-// // Check if the number is less than 0.5.
-// if ($random_number < 0.5) {
-//   icons1();
-//   unset(icons2);
-//   // Include the icons.php file.
-
-// } else {
-//   icons2();
-//   unset(icons1);
-//   // Include the icons2.php file.
-
-// }
-
-?>
 
 <?php
 // session_start();
@@ -91,15 +64,12 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
   <div class="container">
     <div class="footer-logo">
       <img src="./inc/images/logo.png" alt="Richard Vlog Logo">
-      <!-- <h5>Richard Vlog</h5> -->
+      <h5 class="logo-text">Richard Vlog</h5>
     </div>
     <div class="footer-nav">
       <nav class="nav">
-        <!-- <a class="nav-link" href="./index.php">Home</a> -->
         <a class="nav-link" href="PandP.php">Privacy Policy</a>
-        <!-- <a class="nav-link" href="#">Discover</a> -->
         <a class="nav-link" href="./TandC.php">Terms And Conditions</a>
-        <!-- <a class="nav-link" href="#">Cookie Agreement</a> -->
         <a class="nav-link" href="./contact.php">Contacts</a>
         <a class="nav-link" href="about.php">About Us</a>
         <a class="nav-link" href="#">Support</a>
@@ -116,7 +86,6 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
     <div class="footer-text">
       <p>&copy; Chrisman's Technology 2023. All rights reserved.</p>
     </div>
-
   </div>
 </footer>
 
@@ -184,6 +153,8 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
       });
     });
 
+
+   
 </script>
 
 
