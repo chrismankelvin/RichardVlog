@@ -9,9 +9,9 @@
         <div id="sidebar" class="sidebar">
           <div class="sidebar-tab" onclick="toggleSidebar()">Close</div>
           <ul>
-            <li><a href="#">Educational Advice</a></li>
+            <li><a href="./advice.php">Educational Advice</a></li>
             <li><a href="#">Accelerate Study</a></li>
-            <li><a href="#">Required Document</a></li>
+            <li><a href="./documents.php">Required Document</a></li>
             <li><a href="./spc.php">Success Probability (SPC)</a></li>
             <li><a href="./contact.php">Contact Us</a></li>
           </ul>
@@ -64,7 +64,7 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
   <div class="container">
     <div class="footer-logo">
       <img src="./inc/images/logo.png" alt="Richard Vlog Logo">
-      <h5 class="logo-text">Richard Vlog</h5>
+      <h5 class="logo-text">REC</h5>
     </div>
     <div class="footer-nav">
       <nav class="nav">
@@ -154,6 +154,21 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
     });
 
 
+
+    // <script for the jumping cards on advice page>
+        // JavaScript for subtle card animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const adviceCards = document.querySelectorAll(".advice-card");
+
+            setInterval(() => {
+                adviceCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.animation = "floatAnimation 3s infinite alternate";
+                    }, index * 500);
+                });
+            }, 1500);
+        });
+    // </script>
    
 </script>
 
