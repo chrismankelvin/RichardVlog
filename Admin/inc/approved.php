@@ -1,9 +1,11 @@
 <?php
-function getWaitReviews()
+
+// Function to retrieve reviews from the reviews table
+function getReviews()
 {
     global $conn;
 
-    $sql = "SELECT * FROM waitreviews";
+    $sql = "SELECT * FROM reviews";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -18,17 +20,16 @@ function getWaitReviews()
 
             // Add buttons for actions
             echo "<div class='btn-group'>";
-            echo "<button class='btn btn-danger mr-2' onclick='deleteReview({$row['id']})'>Delete</button>";
-            echo "<button class='btn btn-success mr-2' onclick='approveReview({$row['id']})'>Approve</button>";
-            echo "<button class='btn btn-primary edit-btn mr-2' id='edit_btn_{$row['id']}' onclick='editReview({$row['id']})'>Edit</button>";
-            echo "<button class='btn btn-primary' id='save_btn_{$row['id']}' style='display: none;' onclick='saveReview({$row['id']})'>Save</button>";
+            echo "<button class='btn btn-danger mr-2' onclick='deleteReviewA({$row['id']})'>Delete</button>";
+            echo "<button class='btn btn-primary edit-btn mr-2' id='edit_btn_{$row['id']}' onclick='editReviewA({$row['id']})'>Edit</button>";
+            echo "<button class='btn btn-primary' id='save_btn_{$row['id']}' style='display: none;' onclick='saveReviewA({$row['id']})'>Save</button>";
             echo "</div>";
 
-            // Add more information as needed
             echo "</div>";
             echo "</div>";
         }
     } else {
-        echo "<p class='lead'>No reviews found in the waitreviews table.</p>";
+        echo "<p class='lead'>No reviews found in the reviews table.</p>";
     }
 }
+?>
