@@ -12,7 +12,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
           $password = "9f70s$8gL";
           $dbname = "kervinklinsman_database";
 
-$connection = mysqli_connect($dbservername, $username, $password, $dbname);
+$conn = mysqli_connect($dbservername, $username, $password, $dbname);
 
 
 
