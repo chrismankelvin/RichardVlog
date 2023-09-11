@@ -55,7 +55,6 @@ require 'header.php';
         <div class="text-container">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum placerat ultricies. Sed vel metus eu ex viverra mattis sed in velit. In sagittis urna ac nisl pretium aliquam. Sed fermentum augue eget tortor tempus tristique. Nullam condimentum arcu nec nibh efficitur, at placerat nulla varius.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum placerat ultricies. Sed vel metus eu ex viverra mattis sed in velit. In sagittis urna ac nisl pretium aliquam. Sed fermentum augue eget tortor tempus tristique. Nullam condimentum arcu nec nibh efficitur, at placerat nulla varius.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum placerat ultricies. Sed vel metus eu ex viverra mattis sed in velit. In sagittis urna ac nisl pretium aliquam. Sed fermentum augue eget tortor tempus tristique. Nullam condimentum arcu nec nibh efficitur, at placerat nulla varius.</p>
         
         </div>
 
