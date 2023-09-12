@@ -195,7 +195,7 @@ text-align: center;
 /* <style> */
   .service-section {
     padding: 100px 0;
-    background-image: url('./images/write.jpg');
+    background-image: url('./images/stationary.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -299,76 +299,72 @@ text-align: center;
 /* <style> */
   .appointment-section {
     padding: 100px 0;
-    background-image: url('./images/contact.jpg');
+    /* background-image: url('./images/contact.jpg'); */
     background-size: cover;
     background-position: center;
     color: #ffffff;
     text-align: center;
   }
 
-  .appointment-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
+/* Style for the Appointment section */
+.appointment-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
 
-  .appointment-details {
-    flex: 1;
-    text-align: left;
-  }
+.appointment-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
 
-  .appointment-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #ffffff;
-  }
+.appointment-description {
+  font-size: 18px;
+  color: #666;
+}
 
-  .appointment-description {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #dddddd;
-    margin-bottom: 25px;
+.appointment-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.appointment-button:hover {
+  background-color: #0056b3;
+}
+
+.appointment-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 767px) {
+  .appointment-details,
+  .appointment-image {
+      text-align: center;
+      margin-bottom: 30px;
   }
 
   .appointment-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #007bff;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+      margin-top: 30px;
   }
+}
 
-  .appointment-button:hover {
-    background-color: #0056b3;
-  }
-
-  .appointment-image {
-    flex: 1;
-    max-width: 50%;
-    text-align: center;
-  }
-
-  .appointment-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
 /* </style> */
 
 
 /* <style> */
   .service-section {
     padding: 100px 0;
-    background-image: url('./images/write.jpg');
+    background-image: url('./images/stationary.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -819,7 +815,7 @@ cursor: pointer;
       margin-top: 15px;}
 
       .custom-bg {
-        background-image: url('path-to-your-image.jpg');
+        background-image: url('./images/accersories.jpg');
         background-size: cover;
         background-position: center;
         padding: 20px;
@@ -859,51 +855,74 @@ cursor: pointer;
 
 
 
+      
 
- 
-      .trust-section {
-        text-align: center;
-        padding: 50px 0;
-        background-color: #ffffff;
-      }
-    
-      .trust-item {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-      }
-    
-      .trust-item:hover {
-        transform: translateY(-5px);
-      }
-    
-      .count {
-        display: block;
-        font-size: 40px;
-        color: #007bff;
-        margin-bottom: 10px;
-      }
-    
-      .label {
-        font-size: 18px;
-        color: #555;
-      }
-    
-      @media (max-width: 767px) {
-        .trust-item {
-          font-size: 20px;
-        }
-    
-        .count {
-          font-size: 30px;
-        }
-      }
-   
+
+
+/* Custom CSS for the trust section */
+
+
+/* Style for trust items */
+.trust-item {
+  background-color: #ffffff00; /* Item background color */
+  border-radius: 8px;
+  /* box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); */
+
+  /* margin: px; */
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.trust-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Style for icon and count */
+.icon-and-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-and-count i {
+  font-size: 36px;
+  /* color: #007bff;  */
+  margin-right: 5px; /* Add a space between icon and count */
+}
+
+/* Style for count */
+.count {
+  font-size: 20px; /* Reduce the size of the number count */
+  /* color: #007bff;  */
+  font-weight: lighter;
+}
+
+/* Style for label */
+.label {
+  font-size: 15px;
+  color: #333; /* Label text color */
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  /* Responsive styles for smaller screens */
+  .trust-item {
+    padding: 15px;
+  }
+
+  .count {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
     
 
     .terms-section {
@@ -1036,15 +1055,53 @@ cursor: pointer;
     background-image: url('./images/stationary.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
+    /* color: #fff; */
+    /* padding: 50px 0; */
+    /* text-align: center; */
 }
+/* Style for the Documents section */
+.documents-section {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+/* Style for document items */
 .document-item {
-    margin-bottom: 40px;
+  background-color: #ffffff67;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.document-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
 .document-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  color: #007bff;
 }
-/* </style> */
+
+.document-item h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.document-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 767px) {
+  .document-item {
+      text-align: left;
+  }
+}

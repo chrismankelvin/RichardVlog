@@ -1,22 +1,22 @@
  <?php
 
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "richard_vlog"; 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "richard_vlog"; 
 
-// $conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Create connection
 
 
-          $dbservername = "localhost:3306";
-          $username = "kervinklinsman_data";
-          $password = "9f70s$8gL";
-          $dbname = "kervinklinsman_database";
+//           $dbservername = "localhost:3306";
+//           $username = "kervinklinsman_data";
+//           $password = "9f70s$8gL";
+//           $dbname = "kervinklinsman_database";
 
-$conn = mysqli_connect($dbservername, $username, $password, $dbname);
+// $conn = mysqli_connect($dbservername, $username, $password, $dbname);
 
 
 

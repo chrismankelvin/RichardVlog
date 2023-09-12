@@ -40,10 +40,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Richard Vlog</a>
+
+            <a class="navbar-brand" href="#">
+        <img src="./inc/images/logo1.png" alt="Richard Vlog Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
+        
+    </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
