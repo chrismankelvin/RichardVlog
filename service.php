@@ -2,7 +2,7 @@
 $page_quote = "This is the Service Page - Your destination for amazing video content";
 $page_title ="Service";
 $main_title ="Service OF REC";
-require 'header.php';
+require 'navbar.php';
 ?>
 <!-- <section class="service-section">
         <div class="container">
@@ -42,16 +42,24 @@ require 'header.php';
   <div class="container">
     <div class="service-content">
       <div class="service-box" id="service-1">
-        <h2 class="service-title">Educational Advice</h2>
-        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem40</p>
+        <h2 class="service-title">Study Abroad</h2>
+        <p class="service-description">"Explore Beyond Borders, Excel Beyond Limits."
+REC's study abroad program opens the door to global education experiences. Whether you dream of studying in renowned institutions, immersing yourself in diverse cultures, or broadening your academic horizons, we're here to make your international education aspirations a reality. Let us guide you on a journey of learning and discovery that transcends borders.</p>
       </div>
       <div class="service-box" id="service-2">
-        <h2 class="service-title">Study Abroad</h2>
-        <p class="service-description">Donec convallis tincidunt finibus. Nulla facilisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem iste iure sunt consectetur repellat laudantium maiores possimus, quam optio voluptates dolore illo labore veritatis. Tenetur tempora reiciendis quam, perspiciatis earum consectetur nobis quas natus officia minus placeat fugiat ea sapiente.</p>
+        <h2 class="service-title">Work Abroad</h2>
+        <p class="service-description">"Your Career, Your World, Your Oyster."
+REC's work abroad opportunities are your pathway to international career growth. We assist professionals in securing positions abroad, enhancing their global work experience, and building valuable cross-cultural skills. Your dream job may be waiting in a new and exciting location. Let us help you seize the global career opportunities that await.</p>
       </div>
       <div class="service-box" id="service-3">
-        <h2 class="service-title">Educational Consultancy</h2>
-        <p class="service-description"> Nam ac dolor odio. Sed eget aliquet tortor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio excepturi quis ipsa exercitationem veritatis est ad, maxime placeat corrupti ratione iure ducimus eos tempore dolores distinctio quia dolore explicabo laudantium soluta rerum nisi asperiores libero mollitia? Blanditiis, laborum velit.</p>
+        <h2 class="service-title">Scholarship</h2>
+        <p class="service-description">"Unlock Scholarly Success with Financial Support."
+REC is your partner in uncovering scholarship opportunities. We understand the financial aspect of education and are dedicated to helping you access scholarships that can ease the burden of tuition fees. Our team identifies scholarships tailored to your qualifications and aspirations, ensuring that financial constraints don't stand in the way of your educational journey.
+
+
+
+
+</p>
       </div>
     </div>
     <!-- <div class="service-details">
@@ -71,24 +79,27 @@ require 'header.php';
     <div class="university-links">
       <h2 class="university-title">Foreign Universities</h2>
       <div class="links-container">
-        <a href="#">University 1</a>
-        <a href="#">University 2</a>
-        <a href="#">University 3</a>
-        <a href="#">University 1</a>
-        <a href="#">University 2</a>
-        <a href="#">University 3</a>
-        <a href="#">University 1</a>
-        <a href="#">University 2</a>
-        <a href="#">University 3</a>
-        <a href="#">University 1</a>
-        <a href="#">University 2</a>
-        <a href="#">University 3</a>
-        <a href="#">University 1</a>
-        <a href="#">University 2</a>
-        <a href="#">University 3</a>
-        <a href="#">University 1</a>
-        <a href="#">University 2</a>
-        <a href="#">University 3</a>
+      <a href="https://www.harvard.edu/">Harvard University</a>
+<a href="https://www.stanford.edu/">Stanford University</a>
+<a href="https://www.mit.edu/">Massachusetts Institute of Technology (MIT)</a>
+<a href="https://www.utoronto.ca/">University of Toronto</a>
+<a href="https://www.mcgill.ca/">McGill University</a>
+<a href="https://www.ubc.ca/">University of British Columbia (UBC)</a>
+<a href="https://www.yale.edu/">Yale University</a>
+<a href="https://www.princeton.edu/">Princeton University</a>
+<a href="https://www.columbia.edu/">Columbia University</a>
+<a href="https://www.ucla.edu/">University of California, Los Angeles (UCLA)</a>
+<a href="https://www.berkeley.edu/">University of California, Berkeley</a>
+<a href="https://www.stonybrook.edu/">Stony Brook University</a>
+<a href="https://www.mit.edu/">University of Texas at Austin</a>
+<a href="https://www.ubc.ca/">University of Chicago</a>
+<a href="https://www.stanford.edu/">University of Michigan</a>
+<a href="https://www.ucla.edu/">University of Washington</a>
+<a href="https://www.harvard.edu/">Cornell University</a>
+<a href="https://www.princeton.edu/">University of Illinois Urbana-Champaign</a>
+<a href="https://www.columbia.edu/">University of Pennsylvania</a>
+<a href="https://www.yale.edu/">University of California, San Diego (UCSD)</a>
+
         <!-- Add more university links here -->
       </div>
       </div>
@@ -127,8 +138,16 @@ require 'header.php';
     </div> 
   </div>
 
+
+
+  
   </div>
+  
 </section>
+<?php
+require "abt-add.php"
+
+?>
 
       <?php
 require 'footer.php'

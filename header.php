@@ -39,7 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="./index.php">
-                <img src="./inc/images/logo1.png" alt="REC Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
+                <img src="./inc/images/rec.png" alt="REC Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
     <section class="jumbotron text-left">
 
         <div class="container">
-            <img class="logo" src="./inc/images/logo1.png" alt="Richard Vlog Logo">
+            <img class="logo" src="./inc/images/rec.png" alt="Richard Vlog Logo">
             <?php if (!$page_title) { ?>
                 <h1 class="display-4 page-title">
                     Richard - Vlog

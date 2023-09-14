@@ -3,7 +3,7 @@
 $page_quote = "Book an appointment - Your destination for amazing video content";
 $page_title ="Meeting";
 $main_title = "Meet REC";
-require 'header.php';
+require 'navbar.php';
 ?>
 
 

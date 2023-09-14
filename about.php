@@ -2,7 +2,7 @@
 $page_quote = "This is the About - Your destination for amazing video content";
 $page_title ="About Us";
 $main_title ="About REC";
-require "header.php";
+require "navbar.php";
 
 ?>
 
@@ -28,10 +28,7 @@ require "header.php";
       </div>
     </div>
   </section>
-  <?php
-require "abt-add.php"
 
-?>
 <?php
 
 require 'trust.php'
