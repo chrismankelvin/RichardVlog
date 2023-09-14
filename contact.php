@@ -8,26 +8,21 @@ require 'header.php'
 
 <section class="contact-section">
   <div class="container">
-    <h3>Liente accusantium similique rationo,</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eos quia amet consectetur maxime 
-      laborum quidem eligendi, excepturi similique perferendis quasi magni commodi aliquid laudantium, est 
-      nihil beatae aperiam reprehenderit modi ipsum. Veniam nisi possimus, aspernatur accusamus numquam quisquam. 
-      Maxime.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestiae quis incidunt aspernatur. Iste, quo? 
-    
-    Quae, fugit hic id cupiditate nisi voluptate reprehenderit corporis, adipisci doloremque amet obcaecati at iure
-     eum impedit molestias deleniti tenetur porro placeat! Vero, quae facilis inventore ratione, provident ipsum
-      voluptatibus, dolore laborum excepturi voluptas molestias incidunt. Deserunt quaerat inventore id eligendi 
-      quam harum molestias. Ullam asperiores iusto inventore veritatis. Quisquam voluptatum eveniet error ratione 
-      architecto?</p>
+    <h3>Get in Touch</h3>
+    <p>We value your input and are here to assist you. Whether you have questions, suggestions, or feedback, please feel free to reach out. Choose from the following contact options:</p>
+
+<p>For your convenience, you can also use the contact form below to send us your message. We'll respond promptly.</p>
+
+
+
     <div class="row">
       <div class="col-md-8 offset-md-2 contact-container">
         <h2 class="contact-title">Contact Us</h2>
         <p class="contact-info">For any inquiries or assistance, please feel free to contact us:</p>
         <ul class="contact-info-list">
           <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
-          <li>Phone: +1 (123) 456-7890</li>
-          <li>Address: 123 Main Street, City, Country</li>
+          <li>Phone: +233 (242) 764-213</li>
+          <li>Address:  Mampong Road, Kumasi, Ghana</li>
         </ul>
         <form action="./inc/contact.inc.php" method="POST" class="contact-form">
           <input type="text" name="name" placeholder="Your Name" required>
@@ -35,7 +30,9 @@ require 'header.php'
           <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
           <button type="submit" class="contact-button">Send Message</button>
         </form>
-        <a href="#" class="btn btn-primary donate-button">Donate</a>
+        <!-- <a href="#" class="btn btn-primary donate-button">Donate</a> -->
+
+        <p>Thank you for choosing REC as your educational partner. We look forward to hearing from you!</p>
       </div>
     </div>
   </div>

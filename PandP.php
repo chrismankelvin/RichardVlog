@@ -11,8 +11,8 @@ require "navbar.php"
       <div class="row">
         <div class="col-md-12">
           <h2>Privacy Policy</h2>
-          <p>Last updated: [Date]</p>
-          <p>Welcome to [Your Educational Consultancy Name] Privacy Policy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our educational consulting services.</p>
+          <p>Last updated: 14th September, 2023</p>
+          <p>Welcome to Richard Educational Consult Privacy Policy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our educational consulting services.</p>
           <h3>Information We Collect</h3>
           <p>(a) Personal Information: We may collect personal information from you when you interact with us, such as your name, contact details, academic background, and other information necessary for providing educational consultation services.</p>
           <p>(b) Non-Personal Information: We may automatically collect non-personal information, including but not limited to your IP address, browser type, and device information when you visit our website.</p>
@@ -34,9 +34,9 @@ require "navbar.php"
           <p>We may update this Privacy Policy from time to time. The updated version will be posted on our website with the "Last updated" date.</p>
           <h3>Contact Us</h3>
           <p>If you have any questions or concerns about our Privacy Policy, please contact us at:</p>
-          <p>[Your Contact Information]</p>
-          <p>[Your Email Address]</p>
-          <p>[Your Phone Number]</p>
+          <p>Richard Educational Consult</p>
+          <p>Our Email Address</p>
+          <p>+233242764213</p>
         </div>
       </div>
     </div>
