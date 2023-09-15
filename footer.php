@@ -10,9 +10,9 @@
           <div class="sidebar-tab" onclick="toggleSidebar()">Close</div>
           <ul>
             <li><a href="./advice.php">Educational Advice</a></li>
-            <li><a href="#">Accelerate Study</a></li>
-            <li><a href="./documents.php">Required Document</a></li>
             <li><a href="./spc.php">Success Probability (SPC)</a></li>
+            <li><a href="./documents.php">Required Document</a></li>
+            <li><a href="#">Success Stories</a></li>
             <li><a href="./contact.php">Contact Us</a></li>
           </ul>
         </div>
@@ -77,14 +77,14 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
     </div>
 
     <div class="footer-social">
-      <a class="social-icon" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-      <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+      <a class="social-icon" href="https://www.youtube.com/@RichardEducationalConsult"><i class="fab fa-youtube"></i></a>
+      <a class="social-icon" href="https://web.facebook.com/profile.php?id=61550910960283"><i class="fab fa-facebook"></i></a>
       <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
       <a class="social-icon" href="mailto:info@richardvlog.com"><i class="fas fa-envelope"></i></a>
     </div>
 
     <div class="footer-text">
-      <p>&copy; Chrisman's Technology 2023. All rights reserved.</p>
+      <p>&copy; Crafty Graphix 2023. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -131,7 +131,7 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
                   clearInterval(countInterval);
                 }
                 target.textContent = current + "+";
-              }, 50); // Increase this value to make counting smoother (lower values increase speed)
+              }, 30); // Increase this value to make counting smoother (lower values increase speed)
               observer.unobserve(target);
             }
           });

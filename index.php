@@ -34,7 +34,7 @@ require 'header.php';
             <div class="carousel-item">
               <img src="./inc/images/graduate.jpg" class="d-block w-100" alt="Image 3">
               <div class="carousel-caption">
-                <h3>Have You Passed Out?</h3>
+                <h3>Graduated?</h3>
                 <p>Richard is there whenever you need help</p>
               </div>
             </div>

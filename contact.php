@@ -17,12 +17,12 @@ require 'navbar.php'
 
     <div class="row">
       <div class="col-md-8 offset-md-2 contact-container">
-        <h2 class="contact-title">Contact Us</h2>
+        <!-- <h2 class="contact-title">Contact Us</h2> -->
         <p class="contact-info">For any inquiries or assistance, please feel free to contact us:</p>
         <ul class="contact-info-list">
-          <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+          <li>Email: <a href="mailto:chrismankelvin@gmail.com">Richardeducationalconsult@gmail.com</a></li>
           <li>Phone: +233 (242) 764-213</li>
-          <li>Address:  Mampong Road, Kumasi, Ghana</li>
+          <li>Address:  1801 Spring Ave NE, Canton, OH, United States, Ohio</li>
         </ul>
         <form action="./inc/contact.inc.php" method="POST" class="contact-form">
           <input type="text" name="name" placeholder="Your Name" required>

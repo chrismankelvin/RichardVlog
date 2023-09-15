@@ -1,7 +1,7 @@
 
 
 <div class="container">
-    <h2 class="text-center mb-4">Reviews from Clients</h2>
+    <h2 class="text-center mb-4">Reviews From Clients</h2>
     
     <div id="reviewContainer" class="row">
       <!-- PHP code to fetch reviews from the database and generate the review cards -->

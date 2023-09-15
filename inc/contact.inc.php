@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   if (mail($to, $subject, $body, $headers)) {
     echo "Thank you for contacting us. We will get back to you soon.";
   } else {
-    echo "Sorry, an error occurred while sending your message.";
+    header("Location: ../success.php");
   }
 }
 ?>
