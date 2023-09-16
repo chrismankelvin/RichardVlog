@@ -18,17 +18,17 @@ require 'header.php';
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./inc/images/accersories.jpg" class="d-block w-100" alt="Image 1">
+              <img src="./inc/images/ann_1.png" class="d-block w-100" alt="Image 1">
               <div class="carousel-caption">
-                <h3>New Website</h3>
-                <p>RICHARD'S VLOG.COM</p>
+                <h3></h3>
+                <p></p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./inc/images/stationary1.jpg" class="d-block w-100" alt="Image 2">
+              <img src="./inc/images/ann_2.png" class="d-block w-100" alt="Image 2">
               <div class="carousel-caption">
-                <h3>Study Abroad</h3>
-                <p>It just got easier</p>
+                <h3>A Success Story</h3>
+                <p>Richard Interviews May</p>
               </div>
             </div>
             <div class="carousel-item">

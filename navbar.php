@@ -30,7 +30,7 @@
 
     <div class="container">
       <a class="navbar-brand" href="./index.php">
-        <img src="./inc/images/rec.png" alt="REC Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
+        <img src="./inc/images/logo12.png" alt="REC Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

@@ -9,33 +9,33 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/aa.jpg" alt="Image 1">
+              <img src="./inc/images/fly_1.png" alt="Image 1">
               <div class="overlay">
                 <div class="overlay-text">
-                  <h3>Image 1</h3>
-                  <p>Text for Image 1</p>
+                  <h3><a href="">FACEBOOK</a></h3>
+                  <p>REC is on FACEBOOK</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/bb.jpg" alt="Image 2">
+              <img src="./inc/images/fly_2.png" alt="Image 2">
               <div class="overlay">
                 <div class="overlay-text">
-                  <h3>Image 2</h3>
-                  <p>Text for Image 2</p>
+                  <h3></h3>
+                  <p></p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="grid-item">
-              <img src="./inc/images/aa.jpg" alt="Image 3">
+              <img src="./inc/images/fly_3.png" alt="Image 3">
               <div class="overlay">
                 <div class="overlay-text">
-                  <h3>Image 3</h3>
-                  <p>Text for Image 3</p>
+                  <h3><a href="">Contact Us</a></h3>
+                  <p>we are very easy to talk to</p>
                 </div>
               </div>
             </div>

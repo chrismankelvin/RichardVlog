@@ -63,7 +63,7 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
 <footer class="footer">
   <div class="container">
     <div class="footer-logo">
-      <img src="./inc/images/rec.png" alt="Richard Vlog Logo">
+      <img src="./inc/images/logo12.png" alt="Richard Vlog Logo">
       <!-- <h5 class="logo-text">REC</h5> -->
     </div>
     <div class="footer-nav">
