@@ -1,0 +1,419 @@
+/* <style  of the navbar */
+/* Add custom styles here */
+.navbar-custom {
+    background-color: #ffffff;
+    box-shadow: #d6d2d2 2px 2px 2px 2px;
+}
+
+.navbar-custom .navbar-brand {
+    color: #1f07f8;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #1f07f8;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: #110f0f;
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-custom .navbar-toggler:hover {
+    background-color: #fff;
+}
+/* </style> */
+
+/* <style> for the image carosel */
+/* Add custom styles here */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #333;
+}
+
+.banner-left {
+    width: 50%;
+    position: relative;
+}
+
+.banner-left img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-left .carousel-control-prev,
+.banner-left .carousel-control-next {
+    background-color: transparent;
+}
+
+.banner-right {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.banner-right h2 {
+    /* font-size: 24px;
+    margin-bottom: 20px; */
+    /* .grow-with-great-design { */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+    /* } */
+
+}
+
+.banner-right p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.get-design-button {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+/* </style> */
+/* <style> for the cards section  */
+/* <style> */
+
+.cards-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #007bff;
+    transform: translateY(1px);
+}
+
+.view-more-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-more {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-more .arrow {
+    font-size: 20px;
+    margin-left: 5px;
+}
+/* </style> */
+
+/* <style> */
+/* Add custom styles here */
+/* body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+} */
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2d435a93;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999; /* Ensure the button appears on top of other elements */
+}
+/* </style> */
+
+/* <style> for the package section  */
+/* Add custom styles here */
+
+
+.package-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.package-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.package-description h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  
+    animation: colorChange 10s ease-in-out infinite;
+}
+
+.package-description p {
+    font-size: 16px;
+    margin-bottom: -10px;
+    padding: 30px;
+}
+
+.package-link {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.package-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.package-image img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes colorChange {
+    0% {
+        color: #007bff; /* Initial color */
+    }
+    25% {
+        color: #ff6347; /* Color 1 */
+    }
+    50% {
+        color: #4caf50; /* Color 2 */
+    }
+    75% {
+        color: #ff9800; /* Color 3 */
+    }
+    100% {
+        color: #007bff; /* Back to initial color */
+    }
+}
+
+
+.floating-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #273b50af;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+.package-section {
+flex-direction: column;
+text-align: center;
+}
+
+.package-description {
+width: 100%;
+padding: 0;
+}
+
+.package-image {
+width: 100%;
+margin-top: 20px;
+}
+
+}
+/* </style> */
+/* <style> for the foooter */
+/* Add custom styles here */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-line {
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+/* </style> */
+/* <style> for the billboard section */
+.billboard-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(223, 227, 230);
+
+}
+
+.billboard-heading {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.browse-button {
+    font-size: 18px;
+    background-color: #007bff;
+    /* Blue background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    /* border-radius: 5px;\ */
+}
+
+.billboard-image {
+    margin-top: 20px;
+}
+
+.billboard-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.note {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.note span {
+    text-decoration: underline;
+}
+/* </style> */

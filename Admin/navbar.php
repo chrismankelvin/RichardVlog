@@ -13,7 +13,7 @@
           <a href="./home1.php">Main Reviews</a>
         </li>
         <li>
-          <a href="./home2.php">Reviews</a>
+          <a href="./home2.php">Appointments</a>
         </li>
       </ul>
       <!-- <div class="mt-5">
