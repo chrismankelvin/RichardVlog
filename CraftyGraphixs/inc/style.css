@@ -417,3 +417,266 @@ body {
     text-decoration: underline;
 }
 /* </style> */
+/* style */
+/* Custom CSS for your pricing section */
+.pricing {
+    margin-top: 30px;
+    /* background-color: #ccc; */
+    padding: 90px;
+}
+
+.pricing-div {
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* margin-bottom: 20px; */
+    border-top: none;
+    
+}
+.pricing-div:hover {
+    box-shadow: #ccc 1px 1px 1px 1px;
+    border: 30px;
+    cursor: pointer;
+    
+
+
+}
+
+.pricing-section {
+    margin-bottom: 10px;
+}
+
+.favicon {
+    width: 128px; /* Adjust the size of the favicon as needed */
+    height: 128px;
+    margin-right: 10px;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.check-mark {
+    margin-right: 5px;
+    color: green; /* Change the color of the check mark */
+}
+.list-group{
+    border: none;
+}
+.list-group li {
+    border: none;
+    margin-top: -10px;
+}
+
+
+.pricing .pricing-div .pricing-section .btn-primary {
+    display: block;
+    /* margin: 0 auto; */
+    border: none;
+    font-size: 10px;
+    border-radius: 40px;
+    background-color: orange;
+    font-weight: 700;
+    color: black;
+}
+.blue-button {
+    /* width:100px; */
+    width: auto;
+    /* height: 30px; */
+    height: auto;
+    background-color: white;
+    color: blue ;
+    font-size: 12px;
+    margin-left: 5px;
+    border: 1px solid blue;
+    /* padding: 0px 0px 0px 0px; */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .blue-button:hover {
+    background-color: #ffffff;
+  }
+  /* style */
+
+
+  /* <style> for the gallery */
+  /* Custom CSS */
+  .gallery {
+      padding: 50px 0;
+      background-color: rgba(248, 248, 248, 0.904);
+  }
+
+  .gallery h2 {
+      font-size: 36px;
+      margin: 30px;
+  }
+
+  .gallery-p {
+      font-size: 18px;
+      margin-top: 10px;
+      padding-left: 80px;
+      margin-bottom: 20px;
+  }
+  .gala{
+      background-color: rgba(248, 248, 248, 0.904);
+  }
+  .gallery-container{
+      padding: 0 80px 0 80px;
+  }
+
+  .gallery-item {
+      /* padding: 30px; */
+      margin-bottom: 30px;
+  }
+  .gallery-item p {
+          text-align: center;
+          margin-top: 10px;
+
+  }
+
+  .gallery-item img {
+      max-width: 100%;
+      height: auto;
+  }
+
+/* </style> */
+/* <style> for the service */
+/* Custom CSS */
+.service {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    /* background-image: linear-gradient(to top, rgb(212, 212, 212), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+}
+
+.service-text {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.service-text h2 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.service-image-container {
+    position: relative;
+}
+
+.service-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.by-haldi {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    animation: moveUpDown 1.5s infinite alternate;
+}
+
+.list-group {
+    border: none;
+    /* background: transpa\rent; */
+}
+
+.list-group li {
+    border: none;
+    margin-top: -10px;
+    background: transparent;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+.btn-get-started{
+    background-color: #0353ff;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.btn-get-started:hover {
+    background-color: #0056b3;
+}
+
+.how-it-works {
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+  
+}
+
+.how-it-works a {
+    color: #007bff;
+    /* text-decoration: none; */
+ 
+    /* font-weight: 700; */
+}
+
+.how-it-works a::after {
+    content: " →";
+    text-decoration: underline;
+}
+/* </style> for the operation section */
+        /* Custom CSS */
+        .operation {
+            margin-top: 20px;
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+
+        .operation-text {
+            font-size: 18px;
+        }
+
+        .operation-video {
+            text-align: center;
+        }
+
+        .operation-video video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Custom CSS */
+/* Custom CSS */
+.number-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border-radius: 50%; /* Makes it a circle */
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px; /* Vertically center the text */
+    margin-right: 10px; /* Add some spacing to the right of the circle */
+    display: inline-block;
+}
+#nc_2{
+    background-color: #ffa600; /* Blue color */
+
+}
+#nc_3{
+    background-color: #83b3e0; /* Blue color */
+
+}
+
+.number-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    vertical-align: middle; /* Align the text vertically with the circle */
+}
+
+
+    /* </style> */

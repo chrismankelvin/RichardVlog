@@ -57,7 +57,7 @@ require './navbar.php';
                 <div class="card">
                     <img src="./inc/images/1.jpg" alt="Card 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 1</h5>
+                        <h5 class="card-title">Logo Design</h5>
                         <p class="card-description">Description for Card 1</p>
                         <span class="arrow">&#8594;</span>
                     </div>
@@ -67,7 +67,7 @@ require './navbar.php';
                 <div class="card">
                     <img src="./inc/images/2.jpg" alt="Card 2">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 2</h5>
+                        <h5 class="card-title">Bussiness Card</h5>
                         <p class="card-description">Description for Card 2</p>
                         <span class="arrow">&#8594;</span>
                     </div>
@@ -77,7 +77,7 @@ require './navbar.php';
                 <div class="card">
                     <img src="./inc/images/3.jpg" alt="Card 3">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 3</h5>
+                        <h5 class="card-title">Website</h5>
                         <p class="card-description">Description for Card 3</p>
                         <span class="arrow">&#8594;</span>
                     </div>
@@ -85,7 +85,7 @@ require './navbar.php';
             </div>
         </div>
         <div class="view-more-link">
-            <a href="#" class="view-more">View More Categories <span class="arrow">&#8594;</span></a>
+            <a href="./categories.php" class="view-more">View More Categories <span class="arrow">&#8594;</span></a>
         </div>
     </div>
 </section>
