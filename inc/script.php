@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Now, you can save $target_file (the path to the uploaded profile picture) in your database
             $sql = "INSERT INTO agenda1 (name, title, content, star, profile_picture) VALUES (?, ?, ?, ?, ?)";
             
-            if ($stmt = $conn->prepare($sql)) {
+            if ($stmt = $connection->prepare($sql)) {
                 // Bind parameters to the prepared statement
                 $stmt->bind_param("sssss", $name, $title, $content, $star, $target_file);
                 
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt->close();
             } else {
                 // Error preparing the statement
-                $message = "Error preparing statement: " . $conn->error;
+                $message = "Error preparing statement: " . $connection->error;
             }
         } else {
             // Error uploading file
