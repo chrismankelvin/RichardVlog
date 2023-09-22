@@ -724,38 +724,15 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 
-.review-card {
-  margin-bottom: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
 
-.review-card:hover {
-  transform: translateY(-5px);
+/* styling of the new review */
+/* styling of the new review */
+.card {
+  border-radius: .7rem;
 }
+/* styling of the new review */
+/* styling of the new review */
 
-.review-card h4 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 10px;
-}
-
-.review-card h5 {
-  font-size: 18px;
-  color: #666666;
-  margin-bottom: 10px;
-}
-
-.review-card p {
-  font-size: 16px;
-  color: #888888;
-  line-height: 1.6;
-}
 
 .pagination {
   justify-content: center;
@@ -765,7 +742,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .pagination .page-item .page-link {
   font-size: 16px;
   color: #333333;
-  background-color: transparent;
+  /* background-color: #b2b2b2; */
   border: none;
   padding: 6px 12px;
   border-radius: 5px;
@@ -778,9 +755,9 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 .pagination .page-item .page-link:hover,
 .pagination .page-item.active .page-link {
-  background-color: #007bff;
+  background-color: #abacad;
   color: #ffffff;
-}
+} 
 
 .section-delivered {
   background-color: #f8f8f8;
@@ -805,7 +782,10 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   margin-bottom: 20px;
 }
 
-.review-post {
+
+
+
+/* .review-post {
   background-image: url('./inc/images/stationary.jpg');
   background-size: cover;
   background-position: center;
@@ -826,7 +806,62 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .review-post textarea {
   margin-bottom: 15px;
 }
+ */
+ .review-post {
+  background-image: url('./inc/images/stationary.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
 
+.review-post h2 {
+  font-size: 32px;
+}
+
+.review-post form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.review-post input,
+.review-post textarea,
+.review-post select, /* Add styling for select element */
+.review-post label { /* Add styling for labels */
+  margin-bottom: 15px;
+}
+
+/* Style the file input for profile picture upload */
+.review-post input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+.review-post button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style the select dropdown for star rating */
+.review-post select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the label for star rating */
+.review-post label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
 
 
 

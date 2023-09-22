@@ -1,7 +1,7 @@
 
 
 <div class="container">
-    <h2 class="text-center mb-4">Reviews From Clients</h2>
+    <h2 class="text-center mb-4">Reviews</h2>
     
     <div id="reviewContainer" class="row">
       <!-- PHP code to fetch reviews from the database and generate the review cards -->
@@ -31,11 +31,13 @@
 
       // Generate the review cards
       foreach ($currentReviews as $review) {
+
         echo '<div class="col-lg-4 review-card">';
         echo '<h4 class="mb-3">' . $review['name'] . '</h4>';
         echo '<h5 class="mb-3">' . $review['title'] . '</h5>';
         echo '<p>' . $review['body'] . '</p>';
         echo '</div>';
+        
       }
       ?>
     </div>
