@@ -5,8 +5,8 @@ session_start();
 // Include any necessary database connection code
 // Replace with your actual database connection details
 include'./database.inc.php';
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
 }
 
 // Process the form submission

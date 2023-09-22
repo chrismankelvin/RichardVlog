@@ -23,6 +23,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+   
   <!-- Custom JavaScript for image carousel -->
   <script>
         $(document).ready(function () {
@@ -30,6 +32,38 @@
                 interval: 5000 // Set the interval for image changes (in milliseconds)
             });
         });
+
+
+        // <script> for the buttons section
+        const leftButton = document.getElementById('left-button');
+        const rightButton = document.getElementById('right-button');
+        const subButtonsContainer = document.getElementById('sub-buttons-container');
+
+        let scrollInterval;
+
+        leftButton.addEventListener('mouseenter', () => {
+            scrollInterval = setInterval(() => {
+                subButtonsContainer.scrollLeft -= 10; // Adjust the scroll speed as needed
+            }, 25); // Adjust the interval time as needed
+        });
+
+        leftButton.addEventListener('mouseleave', () => {
+            clearInterval(scrollInterval);
+        });
+
+        rightButton.addEventListener('mouseenter', () => {
+            scrollInterval = setInterval(() => {
+                subButtonsContainer.scrollLeft += 10; // Adjust the scroll speed as needed
+            }, 25); // Adjust the interval time as needed
+        });
+
+        rightButton.addEventListener('mouseleave', () => {
+            clearInterval(scrollInterval);
+        });
+
+    // <script>
+
+
     </script>
 
 

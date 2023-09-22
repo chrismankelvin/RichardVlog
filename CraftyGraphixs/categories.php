@@ -2,6 +2,30 @@
 <?php
 require 'navbar.php';
 ?>
+    <section class="buttons">
+        <div class="left-button" id="left-button"></div> <!-- Left arrow symbol -->
+        <div class="sub-buttons-container" id="sub-buttons-container">
+            <button class="sub-button" id="st"></button>
+            <button class="sub-button">Logo & Identity</button>
+            <button class="sub-button">Get Online</button>
+            <button class="sub-button">Web & app design</button>
+            <button class="sub-button">Bussiness & advertising</button>
+            <button class="sub-button">Clothing & merchandise</button>
+            <button class="sub-button">Art & illustration</button>
+            <button class="sub-button">Packaging & label</button>
+            <button class="sub-button">Button</button>
+            <!-- Add more buttons as needed -->
+            <button class="sub-button">Book & magazine</button>
+            <button class="sub-button">Button</button>
+            <button class="sub-button">Button</button>
+            <button class="sub-button">Button</button>
+       
+            <button class="sub-button">Button</button>
+        </div>
+        <!-- Your content here -->
+        <div class="right-button" id="right-button"></div> <!-- Right arrow symbol -->
+    </section>
+
 <section class="pricing container-md">
         <div class="row">
             <div class="col-md-6 pricing-div">
