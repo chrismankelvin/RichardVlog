@@ -25,7 +25,7 @@ if ($stmt = $connection->prepare($sql)) {
         $stmt->fetch();
 
         // Determine the image format (e.g., JPEG, PNG, etc.)
-        $imageFormat = 'jpeg'; // Change this to the appropriate format
+        $imageFormat = 'png'; // Change this to the appropriate format
 
         // Set the appropriate content type header
         header("Content-Type: image/$imageFormat");
