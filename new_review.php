@@ -54,11 +54,11 @@ $base64ImageData = base64_encode($imageData);
     echo '<div class="col-md-4 mb-4 mb-md-0">';
     echo '  <div class="card">';
     echo '    <div class="card-body py-4 mt-2">';
-    // echo '      <div class="d-flex justify-content-center mb-4">';
-    // // Display the image using base64 encoding
-    // echo '        <img src="data:image/jpeg;base64,' . $base64ImageData . '"';
-    // echo '          class="rounded-circle shadow-1-strong" width="100" height="100" />';
-    // echo '      </div>';
+    echo '      <div class="d-flex justify-content-center mb-4">';
+    // Display the image using base64 encoding
+    echo '        <img src="data:image/jpeg;base64,' . $base64ImageData . '"';
+    echo '          class="rounded-circle shadow-1-strong" width="100" height="100" />';
+    echo '      </div>';
     echo '      <h5 class="font-weight-bold">' . $review['name'] . '</h5>';
     echo '      <h6 class="font-weight-bold my-3">' . $review['title'] . '</h6>';
 
