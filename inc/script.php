@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "No profile picture uploaded.";
     }
     
-    $conn->close();
+    $connection->close();
 }
 
 // Redirect back to the form page with a success or error message
