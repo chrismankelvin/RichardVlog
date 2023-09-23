@@ -2,9 +2,7 @@
 
 
 <?php
-$page_quote = "Learn from your mistakes";
-$page_title ="Tips And Tricks ";
-$main_title = "Advice";
+$main_title = "Educational Advice";
 require 'navbar.php';
 ?>
 

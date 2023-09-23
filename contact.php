@@ -1,7 +1,5 @@
   
 <?php
-$page_quote = "This is the Contact - Your destination for amazing video content";
-$page_title ="Contact Us";
 $main_title ="Contact REC";
 require 'navbar.php'
 ?>
@@ -32,8 +30,17 @@ require 'navbar.php'
         </form>
         <!-- <a href="#" class="btn btn-primary donate-button">Donate</a> -->
 
-        <p>Thank you for choosing REC as your educational partner. We look forward to hearing from you!</p>
-      </div>
+        <div class="footer-social">
+      <a class="social-icon-contact" href="https://www.youtube.com/@RichardEducationalConsult"><i class="fab fa-youtube"></i></a>
+      <a class="social-icon-contact" href="https://www.youtube.com/@RichardEducationalConsult"><i class="fab fa-telegram"></i></a>
+      <a class="social-icon-contact" href="https://www.youtube.com/@RichardEducationalConsult"><i class="fab fa-whatsapp"></i></a>
+            <a class="social-icon-contact" href="https://www.youtube.com/@RichardEducationalConsult"><i class="fab fa-google"></i></a>
+      <a class="social-icon-contact" href="https://web.facebook.com/profile.php?id=61550910960283"><i class="fab fa-facebook"></i></a>
+      <a class="social-icon-contact" href="https://www.twitter.com"><i class="fab fa-tiktok"></i></a>
+      <a class="social-icon-contact" href="mailto: richardeducationalconsult@gmail.com"><i class="fas fa-envelope"></i></a>
+
+    </div>
+        </div>
     </div>
   </div>
 </section>

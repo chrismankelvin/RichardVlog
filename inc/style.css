@@ -298,16 +298,21 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   display: inline-block;
   padding: 8px 16px;
   border: 1px solid #333333;
-  border-radius: 5px;
-  background-color: transparent;
-  color: #333333;
+  border-radius: 5px; 
+  background-color: #333333;
+  /* background-color: transparent; */
+  /* color: #333333; */
+   color: #ffffff;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  /* transition: background-color 0.3s, color 0.3s; */
 }
 
 .links-container a:hover {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #757272c5;
+  border: 1px solid #d4d3d3c7;
+  transition: background-color 0.3s, color 0.3s;
+ 
+ 
 }
 
 /* </style> */
@@ -600,6 +605,14 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 }
 
+.social-icon-contact {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
 /* </style> */
 
 
@@ -610,22 +623,24 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 
 .other-services-button {
-  padding: 10px 20px;
+  padding: 10px 40px;
   background-color: #333333;
   color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .other-services-button:hover {
   background-color: #2b28284f;
   color: #333333;
+  /* color: #f3f2f2; */
 }
 
 .sidebar {
-  background-color: #3115adb0;
+  background-color: #571010ea;
   position: fixed;
   top: 0;
   left: -250px;
@@ -653,7 +668,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .sidebar ul li a {
   color:  #ffffff;
   text-decoration: none;
-  font-weight: 20px;
+  /* font-weight: ; */
 }
 
 .sidebar-tab {
@@ -729,6 +744,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 /* styling of the new review */
 .card {
   border-radius: .7rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 /* styling of the new review */
 /* styling of the new review */
@@ -1161,9 +1177,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   background-image: url('./images/stationary.jpg');
   background-size: cover;
   background-position: center;
-  /* color: #fff; */
-  /* padding: 50px 0; */
-  /* text-align: center; */
+
 }
 
 /* Style for the Documents section */
@@ -1174,7 +1188,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 /* Style for document items */
 .document-item {
-  background-color: #ffffff67;
+  background-color: #e6e6e6dc;
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
@@ -1208,6 +1222,41 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   font-weight: bold;
   margin-bottom: 20px;
   color: #333333;
+}
+/* Style for the section image */
+.section-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Style for doc-download div */
+.doc-download {
+  background-color: #ffffff67;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-download i {
+  font-size: 40px;
+  color: #333;
+  /* margin-right: 20px; */
+}
+
+.doc-download a {
+  font-size: 18px;
+  color: #333;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.doc-download a:hover {
+  color: #555;
 }
 
 /* Additional styling for responsiveness */

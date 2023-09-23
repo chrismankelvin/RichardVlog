@@ -1,6 +1,5 @@
 <?php
-$page_quote = "This is the Service Page - Your destination for amazing video content";
-$page_title ="Service";
+
 $main_title ="Service OF REC";
 require 'navbar.php';
 ?>
@@ -79,7 +78,27 @@ REC is your partner in uncovering scholarship opportunities. We understand the f
     <div class="university-links">
       <h2 class="university-title">Foreign Universities</h2>
       <div class="links-container">
-      <a href="https://www.harvard.edu/">Harvard University</a>
+      <a href="https://www.walsh.edu/">Walsh University</a>
+<a href="https://www.wvstateu.edu/">West Virginia State University</a>
+<a href="https://www.missouristate.edu/">Missouri State University</a>
+<a href="https://www.ecsu.edu/">Elizabeth City State University</a>
+<a href="https://www.gvsu.edu/">Grand Valley State University</a>
+<a href="https://www.ohio.edu/">Ohio University</a>
+<a href="https://www.govst.edu/">Governors State University</a>
+<a href="https://www.adelphi.edu/">Adelphi University</a>
+<a href="https://www.caldwell.edu/">Caldwell University</a>
+<a href="https://www.barry.edu/">Barry University</a>
+<a href="https://www.scsu.edu/">South Carolina State University</a>
+<a href="https://www.wichita.edu/">Wichita State University</a>
+<a href="https://www.westfield.ma.edu/">Westfield State University</a>
+<a href="https://wayne.edu/">Wayne State University</a>
+<a href="https://www.desu.edu/">Delaware State University</a>
+<a href="https://www.ucla.edu/">University of Washington</a>
+<a href="https://www.harvard.edu/">Cornell University</a>
+<a href="https://www.princeton.edu/">University of Illinois Urbana-Champaign</a>
+<a href="https://www.columbia.edu/">University of Pennsylvania</a>
+<a href="https://www.yale.edu/">University of California, San Diego (UCSD)</a>
+<a href="https://www.harvard.edu/">Harvard University</a>
 <a href="https://www.stanford.edu/">Stanford University</a>
 <a href="https://www.mit.edu/">Massachusetts Institute of Technology (MIT)</a>
 <a href="https://www.utoronto.ca/">University of Toronto</a>
@@ -94,11 +113,6 @@ REC is your partner in uncovering scholarship opportunities. We understand the f
 <a href="https://www.mit.edu/">University of Texas at Austin</a>
 <a href="https://www.ubc.ca/">University of Chicago</a>
 <a href="https://www.stanford.edu/">University of Michigan</a>
-<a href="https://www.ucla.edu/">University of Washington</a>
-<a href="https://www.harvard.edu/">Cornell University</a>
-<a href="https://www.princeton.edu/">University of Illinois Urbana-Champaign</a>
-<a href="https://www.columbia.edu/">University of Pennsylvania</a>
-<a href="https://www.yale.edu/">University of California, San Diego (UCSD)</a>
 
         <!-- Add more university links here -->
       </div>

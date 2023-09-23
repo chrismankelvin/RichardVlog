@@ -1,8 +1,5 @@
-
 <?php
-$page_quote = "This is the About - Your destination for amazing video content";
-$page_title ="About";
-$main_title ="Add your Review";
+$main_title = "Add your Review";
 // require 'header.php';
 require 'navbar.php'
 
@@ -17,54 +14,54 @@ require 'navbar.php'
         </div>
       <?php } ?>
 
-    
+
       <?php if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !empty($message)) { ?>
         <form action="./inc/script.php" method="POST" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="profile_picture">Profile Picture (400x400 pixels):</label>
-    <input type="file" class="form-control-file" name="profile_picture" id="profile_picture" accept="image/*" required>
-  </div>
-  <div class="form-group">
-    <label for="name">Your Name:</label>
-    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-  </div>
-  <div class="form-group">
-    <label for="title">Review Title:</label>
-    <input type="text" class="form-control" name="title" id="title" placeholder="Review Title" required>
-  </div>
-  <div class="form-group">
-    <label for="content">Your Review:</label>
-    <textarea class="form-control" name="content" id="content" placeholder="Your Review" rows="5" required></textarea>
-  </div>
-  <div class="form-group">
-    <label for="star">Select Rating:</label>
-    <select class="form-control" name="star" id="star" required>
-      <option value="1">One</option>
-      <option value="1.5">One and a Half</option>
-      <option value="2">Two</option>
-      <option value="2.5">Two and a Half</option>
-      <option value="3">Three</option>
-      <option value="3.5">Three and a Half</option>
-      <option value="4">Four</option>
-      <option value="4.5">Four and a Half</option>
-      <option value="5">Five</option>
-    </select>
-  </div>
-  <div class="text-center">
-    <button type="submit" class="btn btn-primary">Submit Review</button>
-  </div>
-</form>
+          <div class="form-group">
+            <label for="profile_picture">Profile Picture (400x400 pixels):</label>
+            <input type="file" class="form-control-file" name="profile_picture" id="profile_picture" accept="image/*" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="title">Review Title:</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Review Title" required>
+          </div>
+          <div class="form-group">
+            <label for="content">Your Review:</label>
+            <textarea class="form-control" name="content" id="content" placeholder="Your Review" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="star">Select Rating:</label>
+            <select class="form-control" name="star" id="star" required>
+              <option value="1">One</option>
+              <option value="1.5">One and a Half</option>
+              <option value="2">Two</option>
+              <option value="2.5">Two and a Half</option>
+              <option value="3">Three</option>
+              <option value="3.5">Three and a Half</option>
+              <option value="4">Four</option>
+              <option value="4.5">Four and a Half</option>
+              <option value="5">Five</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+          </div>
+        </form>
 
       <?php } ?>
 
-   
+
     </div>
   </div>
 </div>
 <?php
 // Start the session at the beginning of the file
 session_start();
-?> 
+?>
 <?php
 include 'footer.php';
 

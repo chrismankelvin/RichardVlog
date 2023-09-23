@@ -12,7 +12,7 @@
             <li><a href="./advice.php">Educational Advice</a></li>
             <li><a href="./spc.php">Success Probability (SPC)</a></li>
             <li><a href="./documents.php">Required Document</a></li>
-            <li><a href="#">Success Stories</a></li>
+            <!-- <li><a href="#">Success Stories</a></li> -->
             <li><a href="./contact.php">Contact Us</a></li>
           </ul>
         </div>
@@ -72,15 +72,15 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
         <a class="nav-link" href="./TandC.php">Terms And Conditions</a>
         <a class="nav-link" href="./contact.php">Contacts</a>
         <a class="nav-link" href="about.php">About Us</a>
-        <a class="nav-link" href="#">Support</a>
+        <!-- <a class="nav-link" href="#">Support</a> -->
       </nav>
     </div>
 
     <div class="footer-social">
       <a class="social-icon" href="https://www.youtube.com/@RichardEducationalConsult"><i class="fab fa-youtube"></i></a>
       <a class="social-icon" href="https://web.facebook.com/profile.php?id=61550910960283"><i class="fab fa-facebook"></i></a>
-      <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-      <a class="social-icon" href="mailto:info@richardvlog.com"><i class="fas fa-envelope"></i></a>
+      <a class="social-icon" href="https://www.tiktok.com/@richard.agyei.sik"><i class="fab fa-tiktok"></i></a>
+      <a class="social-icon" href="mailto: richardeducationalconsult@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 
     <div class="footer-text">

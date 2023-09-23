@@ -29,7 +29,7 @@ require "navbar.php"
           <h3>Third-Party Links</h3>
           <p>Our website may contain links to third-party websites or services. This Privacy Policy does not apply to any third-party websites, and we are not responsible for their privacy practices. We encourage you to review the privacy policies of those websites.</p>
           <h3>Children's Privacy</h3>
-          <p>Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will promptly remove the information.</p>
+          <p>Our services are not intended for individuals under the age of 12. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will promptly remove the information.</p>
           <h3>Changes to Privacy Policy</h3>
           <p>We may update this Privacy Policy from time to time. The updated version will be posted on our website with the "Last updated" date.</p>
           <h3>Contact Us</h3>
