@@ -12,7 +12,7 @@ require 'navbar.php';
     <div class="row">
       <div class="col-md-6 offset-md-3 form-container">
         <h2>Fill The Form </h2>
-        <form action="./inc/meet-script.php" method="POST">
+        <form action="./inc/meet.inc.php" method="POST">
           <div class="form-group">
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>

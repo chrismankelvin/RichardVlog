@@ -64,7 +64,7 @@ require 'header.php';
 
 
 <?php
-require 'new_review.php'
+require 'review.php'
 ?>
 
 
