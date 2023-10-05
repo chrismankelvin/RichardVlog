@@ -1,0 +1,555 @@
+/* Navbar container styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styles */
+.logo img {
+    width: 30px; /* Adjust the width as needed */
+    /* max-width: 10PX; */
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+/* Button styles for desktop screens */
+.button a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button a:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .logo {
+        order: 1; /* Change the order for mobile */
+    }
+
+    .nav-links {
+        order: 3; /* Change the order for mobile */
+        margin-top: 10px; /* Add some space between logo and links */
+        justify-content: flex-end; /* Align links to the right */
+    }
+
+    .button {
+        display: none; /* Hide the button on mobile screens */
+        order: 2; /* Change the order for mobile */
+        margin-top: 10px; /* Add some space between logo and button */
+    }
+}
+
+
+/* <style> */
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* CSS for the banner section */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 80vh;
+    margin: 0 auto;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    /* margin-top: 30px; */
+
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    /* padding: 30px; */
+    display: none;
+}
+
+.banner-image.active {
+    display: block;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #999;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #ffffff;
+}
+
+/* Navigation arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+/* </style> */
+
+/* <style> */
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* CSS for the main-winners section */
+.main-winners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(194, 194, 194);
+}
+
+.main-winners-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-winners-text h2 {
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-winners-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-winners-links {
+    margin-top: 20px;
+
+}
+
+.main-winners-links a {
+    display: inline-block; /* Horizontal alignment */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px; /* Spacing between links */
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.main-winners-links a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+
+.main-winners-links a:hover {
+    color: #007bff;
+}
+
+.main-winners-image {
+    flex: 1;
+    text-align: center;
+    position: relative; /* Required for absolute positioning of the small image */
+}
+
+.main-winners-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: opacity 0.3s;
+     transition: opacity 10.3s; 
+}
+
+.small-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+        /* Media query for mobile screens */
+        @media (max-width: 768px) {
+    .main-winners {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-winners-text {
+        text-align: center;
+    }
+
+    .main-winners-links a {
+        margin-right: 0; /* Remove right margin for links */
+    }
+
+    .main-winners-image {
+        margin-top: 20px;
+    }
+}
+/* </style> */
+
+
+/* <style> */
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #f0f0f0; Background color for the entire page */
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* CSS for the videos section */
+.videos {
+    padding: 40px;
+    background-color: #333; /* White background for the video section */
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 28px; /* Larger font size for the section title */
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff; /* Dark text color */
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding:  0 30px;
+}
+
+.video {
+    flex: 1;
+    margin-bottom: 20px; /* Add spacing between videos */
+    max-width: calc(33.33% - 20px); /* Adjust the width for three videos per row */
+    background-color: #ffffff00; /* White background for each video container */
+    border: 1px solid #333; /* Light gray border */
+    border-radius: 8px 8px 0 0; /* Round only the top borders */
+
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.video:hover {
+    transform: translateY(-5px); /* Lift the video container on hover */
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); /* Shadow effect */
+    /* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  */
+}
+
+.video video {
+    max-width: 100%;
+    display: block;
+}
+
+.video-description {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px; /* Add padding around the description */
+    text-align: left;
+    color: #fff; /* Slightly darker text color */
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center; /* Center videos horizontally */
+    }
+
+    .video {
+        max-width: 100%; /* Full width for videos on small screens */
+    }
+}
+/* </style> */
+
+
+        /* CSS for the activities section */
+        .activities {
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .activities h2 {
+            font-size: 24px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .activities-article {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left;
+        }
+    /* </style> */
+
+    /* <style> */
+    /* Overall styling for the winner section */
+    .winner-section {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        height: fit-content; /* Adjust the height as needed */
+    }
+
+    /* Styling for the image on the left */
+    .winner-image {
+flex: 1;
+width: 100%;
+max-width: 600px; /* Adjust the maximum width as needed */
+margin-right: 20px;
+border-radius: 5px;
+display: block;
+object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+    /* Styling for the text content on the right */
+    .winner-content {
+        flex: 2;
+    }
+
+    /* Styling for the heading */
+    .winner-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .winners-name{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for the description */
+    .winner-description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    @media (max-width: 768px) {
+        .winner-section {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+            text-align: left; /* Center-align content */
+        }
+
+        .winner-image {
+            margin-right: 0; /* Remove margin on the right for the image */
+        }
+    }
+/* </style> */
+
+
+/* <style> */
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* CSS for the awards section */
+.awards {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.awards h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.awards-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+.awards-column {
+    flex: 1;
+    margin-right: 20px;
+    border-left: 0.3px solid #333;
+    padding: 20px;
+}
+
+.awards-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.awards-links {
+    list-style: none;
+    padding: 0;
+}
+
+.awards-links li {
+    margin-bottom: 10px;
+}
+
+.awards-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    font-weight: lighter;
+    display: block;
+    transition: color 0.3s;
+    text-align: center;
+    padding: 5px;
+}
+
+.awards-links a:hover {
+    color: #007bff;
+}
+
+.awards-links li:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .awards-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .awards-column {
+        border-left: none;
+        padding: 0;
+    }
+
+    .awards h2 {
+        text-align: center;
+    }
+
+    /* CSS for the awards section */
+    .awards {
+        padding: 10px;
+    }
+}
+/* </style> */
+
+/* CSS for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}

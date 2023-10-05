@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/oscar.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Winners.html">Winners</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="button">
+            <a href="./awardWinners.html?name=Best Team">Award Winners</a>
+        </div>
+    </nav>
+    <section class="winner-section">
+        <!-- Image on the left -->
+        <img class="winner-image" src="" alt="Winner Image">
+
+        <!-- Text content on the right -->
+        <div class="winner-content">
+            <!-- Heading -->
+            <h2 class="winner-heading">Winner title</h2>
+            <h4 class="winners-name">Kelvin Osei</h4>
+
+            <!-- Description -->
+            <p class="winner-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam mi ut nunc consequat, vel venenatis
+                lorem interdum.
+                Suspendisse potenti. Sed euismod aliquet elit a hendrerit. Nunc nec ligula sit amet lorem eleifend semper.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Grand TTU Awards</p>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./Winners.html">Winners</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Function to get the value of a query parameter from the URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Define the winners and their details in an object
+        const winners = {
+            "Best Team": {
+                heading: "Best Team Award",
+                name: "Team Name",
+                description: "Description for the Best Team Award.",
+                imageSrc: "./images/b.jpg"
+            },
+            "Best Team work": {
+                heading: "Best Team Work Award",
+                name: "Team Name",
+                description: "Description for the Best Team Work Award.",
+                imageSrc: "./images/c.jpg"
+            },
+            "Vigorous Team Display": {
+                heading: "Vigorous Team Display Award",
+                name: "Team Name",
+                description: "Description for the Vigorous Team Display Award.",
+                imageSrc: "./images/k.jpg"
+            },
+            // Add more winners as needed
+        };
+
+        // Get the name from the URL query parameter
+        const nameFromURL = getQueryParam("name");
+
+        // Check if the name exists in the winners object
+        if (winners.hasOwnProperty(nameFromURL)) {
+            const winner = winners[nameFromURL];
+
+            // Update the content based on the winner's details
+            document.querySelector(".winner-heading").textContent = winner.heading;
+            document.querySelector(".winners-name").textContent = winner.name;
+            document.querySelector(".winner-description").textContent = winner.description;
+            document.querySelector(".winner-image").src = winner.imageSrc;
+        } else {
+            // Handle the case when the name is not found
+            alert("Winner not found!");
+        }
+    </script>
+</body>
+
+</html>

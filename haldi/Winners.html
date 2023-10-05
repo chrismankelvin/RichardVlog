@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/oscar.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="button">
+            <a href="./awardWinners.html?name=Best Team">Award Winners</a>
+        </div>
+    </nav>
+
+
+
+    <section class="main-winners">
+        <div class="main-winners-text">
+            <h2>Key Winners Of the Grand TTU Awards</h2>
+            <p>These Noble men and women needed to be commended by the extraordinary display of talent and remarkable determination, TTU present you</p>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod lacinia mi, eu condimentum ex viverra a.</p> -->
+            <div class="main-winners-links">
+                <a href="#" onclick="changeImage('./images/a.jpg')">| Best Mens Player </a>
+                <a href="#" onclick="changeImage('./images/b.jpg')">| Best Womens Player</a>
+                <a href="#" onclick="changeImage('./images/c.jpg')">| Best Coah</a>
+            </div>
+        </div>
+        <div class="main-winners-image">
+            <img id="mainImage" src="./images/a.jpg" alt="Winners Image">
+            <img class="small-image" src="./images/oscar1.png" alt="Small Image" onclick="resetImage()">
+        </div>
+    </section>
+    
+
+
+    <section class="awards">
+        <!-- <h2>Awards</h2> -->
+        <div class="awards-columns">
+            <div class="awards-column">
+                <div class="awards-heading">TEAM</div>
+                <ul class="awards-links">
+                    <li><a href="awardWinners.html?name=Best Team">Best Team</a></li>
+                    <li><a href="awardWinners.html?name=Best Team work">Best Team Work</a></li>
+                    <li><a href="awardWinners.html?name=Vigorous Team Display">Vigorous Team Display</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="awards-column">
+                <div class="awards-heading">Players</div>
+                <ul class="awards-links">
+                    <li><a href="awardWinners.html?name=Best Male Player Award">Best Male Player Award</a></li>
+                    <li><a href="awardWinners.html?name=Best Female Player Award">Best Female Player Award</a></li>
+                    <li><a href="awardWinners.html?name=Top Male Scorer">Top Male Scorer</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="awards-column">
+                <div class="awards-heading">Coaches</div>
+                <ul class="awards-links">
+                    <li><a href="awardWinners.html?name=Best Coach Award">Best Coach Award</a></li>
+                    <li><a href="awardWinners.html?name=Best Assistant Coach Award">Best Assistant Coach Award</a></li>
+                    <li><a href="awardWinners.html?name=Dynamic Coach">Dynamic Coach</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Grand TTU Awards</p>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./Winners.html">Winners</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        
+const mainImage = document.getElementById('mainImage');
+const smallImage = document.querySelector('.small-image');
+
+// Function to change the main image
+function changeImage(imageSrc) {
+    mainImage.src = imageSrc;
+}
+
+// Function to reset the main image to the default
+function resetImage() {
+    mainImage.src = './images/a.jpg';
+}
+
+    </script>
+    
+</body>
+</html>
