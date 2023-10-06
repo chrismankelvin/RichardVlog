@@ -8,7 +8,9 @@
   align-items: center;
   margin-bottom: 20px;
   text-align: center;
-  color: #b41c1c;
+  color: #0c0b6b;
+  font-weight: bolder;
+  font-size: 10px;
   /* font-weight: 500px; */
 
 }
@@ -640,7 +642,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 
 .sidebar {
-  background-color: #571010ea;
+  background-color: #1f0f68ea;
   position: fixed;
   top: 0;
   left: -250px;
