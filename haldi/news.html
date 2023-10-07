@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/oscar.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class="button">
+            <a href="./Winners.html">Award Winners</a>
+        </div>
+    </nav>
+
+
+        <section class="news-section">
+            <div class="news">
+                <!-- Heading with "Latest News" -->
+                <div class="news-heading">
+                   <span>Latest</span> <span class="new-word">New</span>s
+                </div>
+    
+                <!-- Container for news items (will be populated dynamically with JavaScript) -->
+                <div class="news-container"></div>
+    
+                <!-- "More News" link
+                <div class="more-news">
+                    <a href="#">More News</a>
+                </div> -->
+            </div>
+        </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Grand TTU Awards</p>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./Winners.html">Winners</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        // Sample data for news items (you can replace this with your dynamic data)
+        const newsData = [
+            {
+                imageUrl: "./images/3.jpg",
+                title: "News Title 1",
+                description: "This is a brief description of the first news item. lorem30",
+            },
+            {
+                imageUrl: "./images/3.jpg",
+                title: "News Title 2",
+                description: "This is a brief description of the second news item.",
+            },
+            {
+                imageUrl: "./images/3.jpg",
+                title: "News Title 3",
+                description: "This is a brief description of the third news item.",
+            },
+            {
+                imageUrl: "./images/3.jpg",
+                title: "News Title 4",
+                description: "This is a brief description of the third news item.",
+            },
+        ];
+
+        // Function to create and populate news items
+        function createNewsItem(data) {
+            const newsContainer = document.querySelector(".news-container");
+
+            const newsItem = document.createElement("div");
+            newsItem.classList.add("news-item");
+
+            const image = document.createElement("img");
+            image.classList.add("news-image");
+            image.src = data.imageUrl;
+            image.alt = "News Image";
+
+            const newsContent = document.createElement("div");
+            newsContent.classList.add("news-content");
+
+            const title = document.createElement("h2");
+            title.classList.add("news-title");
+            const titleLink = document.createElement("a");
+            titleLink.href = "#"; // Add your link here
+            titleLink.textContent = data.title;
+            title.appendChild(titleLink);
+
+            const description = document.createElement("p");
+            description.classList.add("news-description");
+            description.textContent = data.description;
+
+            newsContent.appendChild(title);
+            newsContent.appendChild(description);
+
+            newsItem.appendChild(image);
+            newsItem.appendChild(newsContent);
+
+            newsContainer.appendChild(newsItem);
+        }
+
+        // Populate news items using the sample data
+        newsData.forEach(createNewsItem);
+    </script>
+
+
+</body>
+</html>
