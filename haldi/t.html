@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winner Section</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7; /* Light gray background */
+            margin: 0;
+        }
+
+        /* Style for the event section */
+        .event-section {
+            display: flex;
+            background-color: #ffffff; /* White background */
+            padding: 40px;
+            /* border: 1px solid #ccc; Light gray border */
+            border-radius: 5px;
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Box shadow for a card-like effect */
+            margin: 20px;
+            /* max-width: 800px; Limit the maximum width for better readability */
+            margin: 0 auto; /* Center the section horizontally */
+        }
+
+        /* Style for the left content */
+        .event-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Style for the heading */
+        .event-heading {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.2; /* Adjusted line height for better readability */
+        }
+
+        /* Style for the random text */
+        .event-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5; /* Adjusted line height for better readability */
+        }
+
+        /* Style for the "View Event" button */
+        .view-event-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007BFF; /* Blue button color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-event-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Style for the image on the right */
+        .event-image {
+            width: 50%; /* Adjust the size as needed */
+            height: auto;
+            display: block; /* Remove default image spacing */
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 768px) {
+            .event-section {
+                flex-direction: column; /* Stack elements vertically */
+                text-align: center;
+            }
+
+            .event-content {
+                padding: 20px;
+            }
+
+            .event-image {
+                width: 100%; /* Full width for the image on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
+    <section class="event-section">
+        <!-- Left content -->
+        <div class="event-content">
+            <h2 class="event-heading">THE GRAND TTU AWARDS</h2>
+            <p class="event-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper nunc vel arcu ultrices,
+                at congue odio interdum. Vivamus eu augue eget felis volutpat lacinia. Donec eleifend dui sed neque
+                faucibus, at fermentum ligula luctus.
+            </p>
+            <a href="#" class="view-event-button">View Event</a>
+        </div>
 
+        <!-- Image on the right -->
+        <img class="event-image" src="images/3.jpg" alt="Event Image">
+    </section>
 </body>
 </html>
