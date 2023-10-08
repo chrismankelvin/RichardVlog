@@ -38,4 +38,36 @@ setInterval(() => {
 {/* </script> */}
 
 
+        // JavaScript to handle video playback on thumbnail click
+        const videoThumbnails = document.querySelectorAll('.video-thumbnail');
 
+        videoThumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const videoSrc = thumbnail.getAttribute('data-video-src');
+                const videoDescription = thumbnail.nextElementSibling;
+                const videoContainer = thumbnail.parentElement;
+
+                // Create a video element
+                const videoElement = document.createElement('video');
+                videoElement.controls = true;
+
+                // Create a source element for the video
+                const sourceElement = document.createElement('source');
+                sourceElement.src = videoSrc;
+                sourceElement.type = 'video/mp4';
+
+                // Append the source element to the video element
+                videoElement.appendChild(sourceElement);
+
+                // Remove the thumbnail and description
+                videoContainer.innerHTML = '';
+
+                // Append the video element and description back to the container
+                videoContainer.appendChild(videoElement);
+                videoContainer.appendChild(videoDescription);
+
+                // Start playing the video
+                videoElement.play();
+            });
+        });
+    // </script>

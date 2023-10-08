@@ -1,15 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awards Section</title>
+    <title>Video Player</title>
+    <style>
+        /* Your CSS for styling here */
+        .video-play {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            background-color: #470563;
+        }
 
+        .video-container1 {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .main-video {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-video:hover {
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.384);
+            transition: 1s ease;
+        }
+
+        /* Play button styling */
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .play-button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .video-text {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .videos {
+            padding: 40px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .videos h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: left;
+            color: #333;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 0 30px;
+        }
+
+        .video-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .video {
+            flex-basis: calc(33.33% - 20px);
+            background-color: #ffffff00;
+            border-radius: 8px;
+        }
+
+        .video:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 6px #3333332d;
+        }
+
+        .video video {
+            max-width: 100%;
+            display: block;
+        }
+
+        .video-description {
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: left;
+            color: #333;
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: auto;
+            transition: width 0.3s ease-in-out;
+        }
+
+        /* Responsive design for mobile screens */
+        @media (max-width: 768px) {
+            .videos {
+                padding: 20px;
+            }
+
+            .video-container {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 10px;
+            }
+
+            .video-row {
+                margin-bottom: 10px;
+            }
+
+            .video {
+                flex-basis: calc(100% - 20px);
+                max-width: calc(100% - 20px);
+            }
+        }
+    </style>
 </head>
-
 <body>
-   
-</body>
+    <section class="video-play">
+        <div class="video-container1">
+            <video class="main-video" controls>
+                <source src="./images/30sec.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="play-button" id="play-button">Play Video</button>
+            <p class="video-text">Small text beneath the video.</p>
+        </div>
+    </section>
 
+    <section class="videos">
+        <h2>| Videos</h2>
+        <div class="video-container" id="video-container">
+            <!-- Videos will be dynamically generated here using JavaScript -->
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to make the play button functional
+        const playButton = document.getElementById('play-button');
+        const video = document.querySelector('.main-video');
+
+        playButton.addEventListener('click', function () {
+            video.play();
+            playButton.style.display = 'none';
+        });
+
+        // JavaScript data for videos
+        const videoData = [
+            {
+                thumbnailSrc: './images/a.jpg',
+                videoSrc: './images/30sec.mp4',
+                description: 'Mr. Jake Wilson receives the best Coach in the TTU Master League after winning the TTU cup and leading the Rocas Team to win Ghana Universities finals.'
+            },
+            {
+                thumbnailSrc: './images/3.jpg',
+                videoSrc: './images/30sec.mp4',
+                description: 'Richard Berko AKA Courtious Win the Best Goal Keeper, After saving 10 strong shoots for 4 top strikers during the GUC(Ghana Universities Cup), He said "I need a new wrisk "'
+            },
+            {
+                thumbnailSrc: './images/h.png',
+                videoSrc: './images/30sec.mp4',
+                description: 'GFA Charmain delivers on the topic "How Sport Can Revamp Our Economy", During The Grand TTU Awards'
+            },
+             {
+                thumbnailSrc: './images/a.jpg',
+                videoSrc: './images/30sec.mp4',
+                description: 'Mr. Jake Wilson receives the best Coach in the TTU Master League after winning the TTU cup and leading the Rocas Team to win Ghana Universities finals.'
+            },
+            {
+                thumbnailSrc: './images/3.jpg',
+                videoSrc: './images/30sec.mp4',
+                description: 'Richard Berko AKA Courtious Win the Best Goal Keeper, After saving 10 strong shoots for 4 top strikers during the GUC(Ghana Universities Cup), He said "I need a new wrisk "'
+            },
+            {
+                thumbnailSrc: './images/h.png',
+                videoSrc: './images/30sec.mp4',
+                description: 'GFA Charmain delivers on the topic "How Sport Can Revamp Our Economy", During The Grand TTU Awards'
+            },
+            // Add more video data as needed
+        ];
+
+        // Function to create video elements from data
+        function createVideoElements() {
+            const videoContainer = document.getElementById('video-container');
+
+            let rowDiv; // To keep track of the current row
+
+            videoData.forEach((data, index) => {
+                if (index % 3 === 0) {
+                    // Start a new row after every three videos
+                    rowDiv = document.createElement('div');
+                    rowDiv.className = 'video-row';
+                    videoContainer.appendChild(rowDiv);
+                }
+
+                const videoDiv = document.createElement('div');
+                videoDiv.className = 'video';
+
+                const thumbnailImg = document.createElement('img');
+                thumbnailImg.src = data.thumbnailSrc;
+                thumbnailImg.alt = 'Video Thumbnail';
+                thumbnailImg.classList.add('video-thumbnail');
+                thumbnailImg.dataset.videoSrc = data.videoSrc;
+
+                const descriptionDiv = document.createElement('div');
+                descriptionDiv.className = 'video-description';
+                descriptionDiv.innerHTML = `<p>${data.description}</p>`;
+
+                videoDiv.appendChild(thumbnailImg);
+                videoDiv.appendChild(descriptionDiv);
+                rowDiv.appendChild(videoDiv);
+            });
+        }
+
+        // Call the function to create video elements
+        createVideoElements();
+
+        // JavaScript to handle video playback on thumbnail click
+        const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+
+        videoThumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const videoSrc = thumbnail.getAttribute('data-video-src');
+                const videoDescription = thumbnail.nextElementSibling;
+                const videoContainer = thumbnail.parentElement;
+
+                // Create a video element
+                const videoElement = document.createElement('video');
+                videoElement.controls = true;
+
+                // Create a source element for the video
+                const sourceElement = document.createElement('source');
+                sourceElement.src = videoSrc;
+                sourceElement.type = 'video/mp4';
+
+                // Append the source element to the video element
+                videoElement.appendChild(sourceElement);
+
+                // Remove the thumbnail and description
+                videoContainer.innerHTML = '';
+
+                // Append the video element and description back to the container
+                videoContainer.appendChild(videoElement);
+                videoContainer.appendChild(videoDescription);
+
+                // Start playing the video
+                videoElement.play();
+            });
+        });
+    </script>
+</body>
 </html>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #fff;
     height: 50px;
     color: #fff;
     padding: 10px 20px;
@@ -30,7 +30,7 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -42,15 +42,15 @@
 /* Button styles for desktop screens */
 .button a {
     text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(218, 165, 32);
+    color: black;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .button a:hover {
-    background-color: #0056b3; /* Change button color on hover */
+    background-color: rgba(218, 165, 32, 0.788); /* Change button color on hover */
 }
 
 /* Media query for mobile screens */
@@ -78,7 +78,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #ffffff;
 }
 
 /* Global styles */
@@ -95,7 +95,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-    /* margin-top: 30px; */
+    margin-top: 10px;
 
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .indicator.active {
-    background-color: #ffffff;
+    background-color: #333;
 }
 
 /* Navigation arrows */
@@ -175,7 +175,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 
 .main-winners-text {
@@ -215,7 +216,7 @@ body {
 }
 
 .main-winners-links a:hover {
-    color: #007bff;
+    color: goldenrod;
 }
 
 .main-winners-image {
@@ -277,18 +278,146 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* <style> */
+/* Your CSS for styling here */
+
+
+
 /* CSS for the videos section */
 .videos {
-    padding: 40px;
-    background-color: #333; /* White background for the video section */
-    text-align: center;
+padding: 40px;
+background-color: #fff; /* White background for the video section */
+text-align: center;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .videos h2 {
-    font-size: 28px; /* Larger font size for the section title */
+font-size: 28px; /* Larger font size for the section title */
+margin-bottom: 20px;
+text-align: left;
+color: #333; /* Dark text color */
+}
+
+.video-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 20px;
+padding:  0 30px;
+}
+
+.video {
+flex: 1;
+margin-bottom: 20px; /* Add spacing between videos */
+max-width: calc(33.33% - 20px); /* Adjust the width for three videos per row */
+background-color: #ffffff00; /* White background for each video container */
+/* border: 1px solid #333; Light gray border */
+border-radius: 8px 8px 0 0; /* Round only the top borders */
+
+transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.video:hover {
+transform: translateY(-5px); /* Lift the video container on hover */
+box-shadow: 0px 4px 6px #3333332d /* Shadow effect */
+/* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  */
+}
+
+.video video {
+max-width: 100%;
+display: block;
+}
+
+.video-description {
+font-size: 16px;
+margin-top: 10px;
+padding: 10px; /* Add padding around the description */
+text-align: left;
+color: #333; /* Slightly darker text color */
+}
+.video-thumbnail {
+width: 100%; /* Set the initial width of the image */
+height: auto;
+transition: width 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+@media (max-width: 768px) {
+.video-container {
+flex-direction: column;
+align-items: center; /* Center videos horizontally */
+}
+
+.video {
+max-width: 100%; /* Full width for videos on small screens */
+}
+}
+
+/* <style> */
+/* Your CSS for styling here */
+.video-play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #470563;
+}
+
+.video-container1 {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-video {
+    width: 100%;
+    height: auto;
+}
+
+.main-video:hover {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.384);
+    transition: 1s ease;
+}
+
+/* Play button styling */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video-text {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+}
+
+.videos {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.videos h2 {
+    font-size: 28px;
     margin-bottom: 20px;
     text-align: left;
-    color: #fff; /* Dark text color */
+    color: #333;
 }
 
 .video-container {
@@ -296,24 +425,25 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    padding:  0 30px;
+    padding: 0 30px;
+}
+
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .video {
-    flex: 1;
-    margin-bottom: 20px; /* Add spacing between videos */
-    max-width: calc(33.33% - 20px); /* Adjust the width for three videos per row */
-    background-color: #ffffff00; /* White background for each video container */
-    border: 1px solid #333; /* Light gray border */
-    border-radius: 8px 8px 0 0; /* Round only the top borders */
-
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    flex-basis: calc(33.33% - 20px);
+    background-color: #ffffff00;
+    border-radius: 8px;
 }
 
 .video:hover {
-    transform: translateY(-5px); /* Lift the video container on hover */
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); /* Shadow effect */
-    /* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  */
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 6px #3333332d;
 }
 
 .video video {
@@ -324,22 +454,43 @@ body {
 .video-description {
     font-size: 16px;
     margin-top: 10px;
-    padding: 10px; /* Add padding around the description */
+    padding: 10px;
     text-align: left;
-    color: #fff; /* Slightly darker text color */
+    color: #333;
 }
 
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Responsive design for mobile screens */
 @media (max-width: 768px) {
+    .videos {
+        padding: 20px;
+    }
+
     .video-container {
         flex-direction: column;
-        align-items: center; /* Center videos horizontally */
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .video-row {
+        margin-bottom: 10px;
     }
 
     .video {
-        max-width: 100%; /* Full width for videos on small screens */
+        flex-basis: calc(100% - 20px);
+        max-width: calc(100% - 20px);
     }
 }
 /* </style> */
+/* </style> */
+
+
+
 
 
         /* CSS for the activities section */
@@ -432,7 +583,7 @@ body {
 /* CSS for the awards section */
 .awards {
     padding: 40px;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 .awards h2 {
@@ -451,7 +602,7 @@ body {
 .awards-column {
     flex: 1;
     margin-right: 20px;
-    border-left: 0.3px solid #333;
+    border-left: 0.3px solid #3333334b;
     padding: 20px;
 }
 
@@ -481,14 +632,18 @@ body {
     transition: color 0.3s;
     text-align: center;
     padding: 5px;
+
 }
 
 .awards-links a:hover {
-    color: #007bff;
+    color: goldenrod;
+    font-weight: light;
+    transition: 0.4s ease;
 }
 
 .awards-links li:hover {
-    background-color: #333;
+    background-color: #33333346;
+    transition: 0.4s ease;
 }
 
 @media (max-width: 768px) {
@@ -571,6 +726,7 @@ body {
     flex-direction: column;
     background-color: #ffffff; /* aquamarine */
     padding: 20px;
+    margin-top: 20px;
 }
 .news{
     margin: 0 90px;
@@ -590,14 +746,14 @@ body {
     display: block;
     width: 40px;
     height: 3px;
-    background-color: #7FFFD4; /* aquamarine */
+    background-color: #333; /* aquamarine */
     position: absolute;
     bottom: -5px;
     left: 0;
     transform: translateX(-50%);
 }
 .news-heading .new-word {
-    color: #FF6347; /* tomato */
+    color: #c7c7c7; /* tomato */
 }
 
 /* Style for each news item */
@@ -654,12 +810,106 @@ body {
 
     }
 
+
+    /* <style> */
+    /* Your CSS for styling here */
+    .news-main-section{
+        background-color: rgba(21, 5, 36, 0.849);
+        padding: 50px;
+        margin-top: 10px;
+
+    }
+    .news-main {
+        display: flex;
+        align-items: center;
+
+        /* justify-content: space-between; */
+    }
+
+    .news-main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .news-main-left {
+        flex: 1;
+    }
+
+    .news-main-left h2 {
+        font-size: 24px;
+        margin-top: 10px;
+
+    }
+    .news-main-left a{
+        color: #fff;
+        text-decoration: none;
+
+    }
+
+    .news-main-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left; 
+        margin-left: 50px;
+    }
+
+    .news-main-right img {
+        max-width: 200px; /* Increase the size of the right images */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .news-main-right div {
+        display: flex;
+        align-items: left;
+    }
+
+    
+    .news-main-right p {
+        font-size: 17px;
+        font-weight: lighter;
+        margin-left: 10px; /* Add margin to the left of the paragraph */
+
+      
+
+    }
+    .news-main-right a{
+        text-decoration: none;
+        color: #ffffff;
+
+
+    }
+
+
+
+    @media (max-width: 768px) {
+        .news-main-section{
+            padding: 20px;
+        }
+
+        .news-main {
+            flex-direction: column;
+            align-items: flex-start;
+            /* padding: 20px; */
+        }
+            
+    .news-main-right { 
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+
+
+
+    }
+/* </style> */
 /* </style> */
 
         /* Style for the event section */
         .event-section {
             display: flex;
-            background-color: #ffffff; /* White background */
+            background-color: #d6d4d4; /* White background */
             padding: 40px;
             /* border: 1px solid #ccc; Light gray border */
             /* border-radius: 5px; */
@@ -677,25 +927,27 @@ body {
 
         /* Style for the heading */
         .event-heading {
-            font-size: 28px;
+            font-size: 50px;
             font-weight: bold;
             margin-bottom: 10px;
             line-height: 1.2; /* Adjusted line height for better readability */
+            
         }
 
         /* Style for the random text */
         .event-text {
             font-size: 18px;
             margin-bottom: 20px;
-            line-height: 1.5; /* Adjusted line height for better readability */
+            line-height: 1.5;
+            padding: 10px; /* Adjusted line height for better readability */
         }
 
         /* Style for the "View Event" button */
         .view-event-button {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #007BFF; /* Blue button color */
-            color: #fff;
+            background-color: #007bff00; /* Blue button color */
+            color: #333;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -703,7 +955,8 @@ body {
         }
 
         .view-event-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: goldenrod; /* Darker blue on hover */
+            color: #f5f5f5;
         }
 
         /* Style for the image on the right */
@@ -729,3 +982,59 @@ body {
             }
         }
     /* </style> */
+    /* <style> */
+    /* Your CSS for styling here */
+
+    .partners-section h2 {
+        /* padding: 10px 10px 10px 40px ; */
+        padding: 30px;
+        font-weight: lighter;
+        color: #333;
+        text-align: center;
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0 ;
+
+    }
+
+    .partners-section {
+        background-color: #d1cfcf;
+
+    }
+
+
+    .partner {
+        text-align: center;
+        max-width: 80px;
+        /* Set a maximum width for the partner divs */
+        margin: 0 auto;
+        /* Center-align the partner divs horizontally */
+    }
+
+    .partner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .partner p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    /* Your CSS for styling here *
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+        .partners {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .partner {
+            margin-bottom: 30px;
+        }
+    }
+/* </style> */
