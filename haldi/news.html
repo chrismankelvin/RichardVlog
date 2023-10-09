@@ -28,20 +28,20 @@
         
         <div class="news-main-left">
             <img src="./images/a.jpg" alt="Left Image">
-            <h2><a href="">Azerbaijan's president refuses to attend EU talks with Armenia PM</a></h2>
+            <h2><a href="./newsArticles.html?id=1">Movies star Daniel Colson, appears at the Grand TTU awards</a></h2>
         </div>
         <div class="news-main-right">
             <div>
-                <img src="./images/3.jpg" alt="Right Image 1">
-                <p><a href="">Text 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugit molestiae amet. Deserunt, in!</a></p>
+                <img src="./images/b.jpg" alt="Right Image 1">
+                <p><a href="./newsArticles.html?id=2">First Woman to win a Grand Award in TTU's Sports listings </a></p>
             </div>
             <div>
-                <img src="./images/3.jpg" alt="Right Image 2">
-                <p><a href=""> Text 2</a></p>
+                <img src="./images/d.jpg" alt="Right Image 2">
+                <p><a href="./newsArticles.html?id=3"> Author of the Oscars Awards Recommends TTU for the Organization of such a wonderfull apprecidations</a></p>
             </div>
             <div>
-                <img src="./images/3.jpg" alt="Right Image 3">
-                <p><a href="">Text 3</a></p>
+                <img src="./images/j.png" alt="Right Image 3">
+                <p><a href="./newsArticles.html?id=4">TTU get wide rang of support, to partner the second section fo the Grand TTU Award for Academia</a></p>
             </div>
             
         </div>
@@ -53,16 +53,11 @@
                 <!-- Heading with "Latest News" -->
                 <div class="news-heading">
                    <span >Other</span> <span class="new-word">New</span>s
+                </div>
+                <hr>
+                <div class="news-container">
+
                 </div>      <hr>
-    
-                <!-- Container for news items (will be populated dynamically with JavaScript) -->
-                <div class="news-container"></div>      <hr>
-          
-    
-                <!-- "More News" link
-                <div class="more-news">
-                    <a href="#">More News</a>
-                </div> -->
             </div>
         </section>
 
@@ -122,7 +117,7 @@
             const title = document.createElement("h2");
             title.classList.add("news-title");
             const titleLink = document.createElement("a");
-            titleLink.href = "#"; // Add your link here
+            titleLink.href = "./newsArticles.html?id="; // Add your link here
             titleLink.textContent = data.title;
             title.appendChild(titleLink);
 

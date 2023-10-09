@@ -1038,3 +1038,93 @@ body {
         }
     }
 /* </style> */
+
+
+
+/* <style> */
+/* Style the section container */
+.news-article {
+    background-color: #ffffff;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Style the "News" button */
+.news-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: default;
+}
+
+/* Style the main heading */
+.main-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 3px 70px;
+}
+
+/* Style the headline */
+.headline {
+    font-size: 19px;
+    margin-top: 20px;
+    padding: 3px 70px;
+}
+
+/* Style the image */
+.news-image-article {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Style the "Details" heading */
+.details-heading {
+    font-size: 19px;
+    margin-top: 20px;
+    padding: 3px 70px;
+}
+
+/* Style the paragraphs */
+.paragraphs {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 3px 70px;
+}
+
+/* Style the "Go to Home Page" button */
+.home-button {
+    background-color: #007bff;
+    margin-left: 40%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* margin-top: 20px; */
+    cursor: pointer;
+}
+.home-button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Style the button hover effect */
+.home-button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+
+
+    .paragraphs,.details-heading,.headline,.main-heading {
+        padding: 3px 10px;
+    }
+
+}
