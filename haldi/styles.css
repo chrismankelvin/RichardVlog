@@ -12,7 +12,8 @@
 
 /* Logo styles */
 .logo img {
-    width: 30px; /* Adjust the width as needed */
+    width: 30px;
+    /* Adjust the width as needed */
     /* max-width: 10PX; */
 }
 
@@ -36,7 +37,8 @@
 }
 
 .nav-links a:hover {
-    color: #007bff; /* Change link color on hover */
+    color: #007bff;
+    /* Change link color on hover */
 }
 
 /* Button styles for desktop screens */
@@ -50,25 +52,31 @@
 }
 
 .button a:hover {
-    background-color: rgba(218, 165, 32, 0.788); /* Change button color on hover */
+    background-color: rgba(218, 165, 32, 0.788);
+    /* Change button color on hover */
 }
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .logo {
-        order: 1; /* Change the order for mobile */
+        order: 1;
+        /* Change the order for mobile */
     }
 
     .nav-links {
-        order: 3; /* Change the order for mobile */
-        margin-top: 10px; /* Add some space between logo and links */
-        justify-content: flex-end; /* Align links to the right */
+        order: 3;
+        /* Change the order for mobile */
+        margin-top: 10px;
+        /* Add some space between logo and links */
+        justify-content: flex-end;
+        /* Align links to the right */
     }
 
     .button {
-        display: none; /* Hide the button on mobile screens */
-        order: 2; /* Change the order for mobile */
-        margin-top: 10px; /* Add some space between logo and button */
+        display: none;
+        order: 2;
+        margin-top: 10px;
+        /* Add some space between logo and button */
     }
 }
 
@@ -91,7 +99,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 800px;
-    height: 80vh;
+    /* height: fit-content; */
     margin: 0 auto;
     overflow: hidden;
     /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
@@ -113,6 +121,7 @@ body {
 .indicators {
     text-align: center;
     margin-top: 10px;
+    position: absolute;
 }
 
 .indicator {
@@ -155,6 +164,16 @@ body {
 .next-arrow {
     right: 10px;
 }
+
+
+@media (max-width: 768px) {
+    .banner {
+        width: 100%;
+        height: fit-content;
+    }
+
+}
+
 /* </style> */
 
 /* <style> */
@@ -201,18 +220,21 @@ body {
 }
 
 .main-winners-links a {
-    display: inline-block; /* Horizontal alignment */
+    display: inline-block;
+    /* Horizontal alignment */
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
-    margin-right: 20px; /* Spacing between links */
+    margin-right: 20px;
+    /* Spacing between links */
     transition: color 0.3s;
     cursor: pointer;
 }
 
 .main-winners-links a:last-child {
-    margin-right: 0; /* Remove margin from the last link */
+    margin-right: 0;
+    /* Remove margin from the last link */
 }
 
 .main-winners-links a:hover {
@@ -222,7 +244,8 @@ body {
 .main-winners-image {
     flex: 1;
     text-align: center;
-    position: relative; /* Required for absolute positioning of the small image */
+    position: relative;
+    /* Required for absolute positioning of the small image */
 }
 
 .main-winners-image img {
@@ -231,7 +254,7 @@ body {
     border-radius: 8px;
     /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     transition: opacity 0.3s;
-     transition: opacity 10.3s; 
+    transition: opacity 10.3s;
 }
 
 .small-image {
@@ -243,8 +266,8 @@ body {
     cursor: pointer;
 }
 
-        /* Media query for mobile screens */
-        @media (max-width: 768px) {
+/* Media query for mobile screens */
+@media (max-width: 768px) {
     .main-winners {
         align-items: center;
         flex-direction: column;
@@ -255,13 +278,15 @@ body {
     }
 
     .main-winners-links a {
-        margin-right: 0; /* Remove right margin for links */
+        margin-right: 0;
+        /* Remove right margin for links */
     }
 
     .main-winners-image {
         margin-top: 20px;
     }
 }
+
 /* </style> */
 
 
@@ -285,71 +310,88 @@ body {
 
 /* CSS for the videos section */
 .videos {
-padding: 40px;
-background-color: #fff; /* White background for the video section */
-text-align: center;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    background-color: #fff;
+    /* White background for the video section */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .videos h2 {
-font-size: 28px; /* Larger font size for the section title */
-margin-bottom: 20px;
-text-align: left;
-color: #333; /* Dark text color */
+    font-size: 28px;
+    /* Larger font size for the section title */
+    margin-bottom: 20px;
+    text-align: left;
+    color: #333;
+    /* Dark text color */
 }
 
 .video-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 20px;
-padding:  0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 30px;
 }
 
 .video {
-flex: 1;
-margin-bottom: 20px; /* Add spacing between videos */
-max-width: calc(33.33% - 20px); /* Adjust the width for three videos per row */
-background-color: #ffffff00; /* White background for each video container */
-/* border: 1px solid #333; Light gray border */
-border-radius: 8px 8px 0 0; /* Round only the top borders */
+    flex: 1;
+    margin-bottom: 20px;
+    /* Add spacing between videos */
+    max-width: calc(33.33% - 20px);
+    /* Adjust the width for three videos per row */
+    background-color: #ffffff00;
+    /* White background for each video container */
+    /* border: 1px solid #333; Light gray border */
+    border-radius: 8px 8px 0 0;
+    /* Round only the top borders */
 
-transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
 }
 
 .video:hover {
-transform: translateY(-5px); /* Lift the video container on hover */
-box-shadow: 0px 4px 6px #3333332d /* Shadow effect */
-/* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  */
+    transform: translateY(-5px);
+    /* Lift the video container on hover */
+    box-shadow: 0px 4px 6px #3333332d
+        /* Shadow effect */
+        /* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  */
 }
 
 .video video {
-max-width: 100%;
-display: block;
+    max-width: 100%;
+    display: block;
 }
 
 .video-description {
-font-size: 16px;
-margin-top: 10px;
-padding: 10px; /* Add padding around the description */
-text-align: left;
-color: #333; /* Slightly darker text color */
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    /* Add padding around the description */
+    text-align: left;
+    color: #333;
+    /* Slightly darker text color */
 }
+
 .video-thumbnail {
-width: 100%; /* Set the initial width of the image */
-height: auto;
-transition: width 0.3s ease-in-out; /* Add a smooth transition effect */
+    width: 100%;
+    /* Set the initial width of the image */
+    height: auto;
+    transition: width 0.3s ease-in-out;
+    /* Add a smooth transition effect */
 }
 
 @media (max-width: 768px) {
-.video-container {
-flex-direction: column;
-align-items: center; /* Center videos horizontally */
-}
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+        /* Center videos horizontally */
+    }
 
-.video {
-max-width: 100%; /* Full width for videos on small screens */
-}
+    .video {
+        max-width: 100%;
+        /* Full width for videos on small screens */
+    }
 }
 
 /* <style> */
@@ -486,6 +528,7 @@ max-width: 100%; /* Full width for videos on small screens */
         max-width: calc(100% - 20px);
     }
 }
+
 /* </style> */
 /* </style> */
 
@@ -493,78 +536,89 @@ max-width: 100%; /* Full width for videos on small screens */
 
 
 
-        /* CSS for the activities section */
-        .activities {
-            padding: 40px;
-            background-color: #f5f5f5;
-        }
-
-        .activities h2 {
-            font-size: 24px;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .activities-article {
-            font-size: 16px;
-            line-height: 1.5;
-            text-align: left;
-        }
-    /* </style> */
-
-    /* <style> */
-    /* Overall styling for the winner section */
-    .winner-section {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        background-color: #f0f0f0;
-        height: fit-content; /* Adjust the height as needed */
-    }
-
-    /* Styling for the image on the left */
-    .winner-image {
-flex: 1;
-width: 100%;
-max-width: 600px; /* Adjust the maximum width as needed */
-margin-right: 20px;
-border-radius: 5px;
-display: block;
-object-fit: cover;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+/* CSS for the activities section */
+.activities {
+    padding: 40px;
+    background-color: #f5f5f5;
 }
-    /* Styling for the text content on the right */
-    .winner-content {
-        flex: 2;
+
+.activities h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.activities-article {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* </style> */
+
+/* <style> */
+/* Overall styling for the winner section */
+.winner-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: fit-content;
+    /* Adjust the height as needed */
+}
+
+/* Styling for the image on the left */
+.winner-image {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin-right: 20px;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow for depth */
+}
+
+/* Styling for the text content on the right */
+.winner-content {
+    flex: 2;
+}
+
+/* Styling for the heading */
+.winner-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.winners-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling for the description */
+.winner-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .winner-section {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        text-align: left;
+        /* Center-align content */
     }
 
-    /* Styling for the heading */
-    .winner-heading {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
+    .winner-image {
+        margin-right: 0;
+        /* Remove margin on the right for the image */
     }
-    .winners-name{
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
+}
 
-    /* Styling for the description */
-    .winner-description {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-    @media (max-width: 768px) {
-        .winner-section {
-            flex-direction: column; /* Stack items vertically on smaller screens */
-            text-align: left; /* Center-align content */
-        }
-
-        .winner-image {
-            margin-right: 0; /* Remove margin on the right for the image */
-        }
-    }
 /* </style> */
 
 
@@ -666,6 +720,7 @@ body {
         padding: 10px;
     }
 }
+
 /* </style> */
 
 /* CSS for the footer */
@@ -708,9 +763,13 @@ body {
 .footer-links a:hover {
     color: #007bff;
 }
+
 /* <style> */
 /* Reset default margin and padding */
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -724,11 +783,13 @@ body {
 .news-section {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff; /* aquamarine */
+    background-color: #ffffff;
+    /* aquamarine */
     padding: 20px;
     margin-top: 20px;
 }
-.news{
+
+.news {
     margin: 0 90px;
 }
 
@@ -746,14 +807,17 @@ body {
     display: block;
     width: 40px;
     height: 3px;
-    background-color: #333; /* aquamarine */
+    background-color: #333;
+    /* aquamarine */
     position: absolute;
     bottom: -5px;
     left: 0;
     transform: translateX(-50%);
 }
+
 .news-heading .new-word {
-    color: #c7c7c7; /* tomato */
+    color: #c7c7c7;
+    /* tomato */
 }
 
 /* Style for each news item */
@@ -765,9 +829,12 @@ body {
 
 /* Style for the image in each news item */
 .news-image {
-    width: 100px; /* You can adjust the size as needed */
-    height: 100px; /* You can adjust the size as needed */
-    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+    width: 100px;
+    /* You can adjust the size as needed */
+    height: 100px;
+    /* You can adjust the size as needed */
+    object-fit: cover;
+    /* Ensure the image maintains its aspect ratio */
     margin-right: 20px;
 }
 
@@ -787,114 +854,123 @@ body {
 .news-description {
     font-size: 14px;
 }
-      /* Style for the "More News" link */
-      .more-news {
-        text-align: center;
-        margin-top: 20px;
+
+/* Style for the "More News" link */
+.more-news {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-news a {
+    text-decoration: none;
+    color: #007BFF;
+    /* blue */
+    font-weight: bold;
+}
+
+.more-news a::after {
+    content: "\2192";
+    /* Right arrow character */
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .news {
+        margin: 0 0 0 0;
     }
 
-    .more-news a {
-        text-decoration: none;
-        color: #007BFF; /* blue */
-        font-weight: bold;
+}
+
+
+/* <style> */
+/* Your CSS for styling here */
+.news-main-section {
+    background-color: rgba(21, 5, 36, 0.849);
+    padding: 50px;
+    margin-top: 10px;
+
+}
+
+.news-main {
+    display: flex;
+    align-items: center;
+
+    /* justify-content: space-between; */
+}
+
+.news-main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-main-left {
+    flex: 1;
+}
+
+.news-main-left h2 {
+    font-size: 24px;
+    margin-top: 10px;
+
+}
+
+.news-main-left a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.news-main-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 50px;
+}
+
+.news-main-right img {
+    max-width: 200px;
+    /* Increase the size of the right images */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.news-main-right div {
+    display: flex;
+    align-items: left;
+}
+
+
+.news-main-right p {
+    font-size: 17px;
+    font-weight: lighter;
+    margin-left: 10px;
+    /* Add margin to the left of the paragraph */
+
+
+
+}
+
+.news-main-right a {
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .news-main-section {
+        padding: 20px;
     }
 
-    .more-news a::after {
-        content: "\2192"; /* Right arrow character */
-        margin-left: 5px;
-    }
-    @media (max-width: 768px) {
-        .news{
-            margin: 0 0 0 0;
-        }
-
-    }
-
-
-    /* <style> */
-    /* Your CSS for styling here */
-    .news-main-section{
-        background-color: rgba(21, 5, 36, 0.849);
-        padding: 50px;
-        margin-top: 10px;
-
-    }
     .news-main {
-        display: flex;
-        align-items: center;
-
-        /* justify-content: space-between; */
-    }
-
-    .news-main img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .news-main-left {
-        flex: 1;
-    }
-
-    .news-main-left h2 {
-        font-size: 24px;
-        margin-top: 10px;
-
-    }
-    .news-main-left a{
-        color: #fff;
-        text-decoration: none;
-
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: 20px; */
     }
 
     .news-main-right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: left; 
-        margin-left: 50px;
-    }
-
-    .news-main-right img {
-        max-width: 200px; /* Increase the size of the right images */
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .news-main-right div {
-        display: flex;
-        align-items: left;
-    }
-
-    
-    .news-main-right p {
-        font-size: 17px;
-        font-weight: lighter;
-        margin-left: 10px; /* Add margin to the left of the paragraph */
-
-      
-
-    }
-    .news-main-right a{
-        text-decoration: none;
-        color: #ffffff;
-
-
-    }
-
-
-
-    @media (max-width: 768px) {
-        .news-main-section{
-            padding: 20px;
-        }
-
-        .news-main {
-            flex-direction: column;
-            align-items: flex-start;
-            /* padding: 20px; */
-        }
-            
-    .news-main-right { 
         margin-left: 10px;
         margin-top: 20px;
 
@@ -902,141 +978,152 @@ body {
 
 
 
+}
+
+/* </style> */
+/* </style> */
+
+
+
+
+/* Style for the event section */
+.event-section {
+    display: flex;
+    background-color: #d6d4d4;
+    padding: 40px;
+    margin: 20px;
+    /* max-width: 800px;  */
+    margin: 0 auto;
+}
+
+/* Style for the left content */
+.event-content {
+    /* flex: 1; */
+    padding: 20px;
+}
+
+/* Style for the heading */
+.event-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    /* Adjusted line height for better readability */
+
+}
+
+/* Style for the random text */
+.event-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    /* Adjusted line height for better readability */
+}
+
+/* Style for the "View Event" button */
+.view-event-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff00;
+    /* Blue button color */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-event-button:hover {
+    background-color: goldenrod;
+    /* Darker blue on hover */
+    color: #f5f5f5;
+}
+.event-image-div{
+    max-width: 50%;
+}
+/* Style for the image on the right */
+.event-image {
+width: 100%;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 720px) {
+    .event-section {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .event-content {
+        padding: 20px;
+    }
+
+    .event-image-div {
+        max-width: 100%;
+        /* Full width for the image on smaller screens */
+    }
+}
+
+
+
+
 /* </style> */
-/* </style> */
+/* <style> */
+/* Your CSS for styling here */
 
-        /* Style for the event section */
-        .event-section {
-            display: flex;
-            background-color: #d6d4d4; /* White background */
-            padding: 40px;
-            /* border: 1px solid #ccc; Light gray border */
-            /* border-radius: 5px; */
-            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Box shadow for a card-like effect */
-            margin: 20px;
-            /* max-width: 800px; Limit the maximum width for better readability */
-            margin: 0 auto; /* Center the section horizontally */
-        }
+.partners-section h2 {
+    /* padding: 10px 10px 10px 40px ; */
+    padding: 30px;
+    font-weight: lighter;
+    color: #333;
+    text-align: center;
+}
 
-        /* Style for the left content */
-        .event-content {
-            flex: 1;
-            padding: 20px;
-        }
+.partners {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
 
-        /* Style for the heading */
-        .event-heading {
-            font-size: 50px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            line-height: 1.2; /* Adjusted line height for better readability */
-            
-        }
+}
 
-        /* Style for the random text */
-        .event-text {
-            font-size: 18px;
-            margin-bottom: 20px;
-            line-height: 1.5;
-            padding: 10px; /* Adjusted line height for better readability */
-        }
+.partners-section {
+    background-color: #d1cfcf;
 
-        /* Style for the "View Event" button */
-        .view-event-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #007bff00; /* Blue button color */
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+}
 
-        .view-event-button:hover {
-            background-color: goldenrod; /* Darker blue on hover */
-            color: #f5f5f5;
-        }
 
-        /* Style for the image on the right */
-        .event-image {
-            width: 50%; /* Adjust the size as needed */
-            height: auto;
-            display: block; /* Remove default image spacing */
-        }
+.partner {
+    text-align: center;
+    max-width: 80px;
+    /* Set a maximum width for the partner divs */
+    margin: 0 auto;
+    /* Center-align the partner divs horizontally */
+}
 
-        /* Responsive layout for smaller screens */
-        @media (max-width: 768px) {
-            .event-section {
-                flex-direction: column; /* Stack elements vertically */
-                text-align: center;
-            }
+.partner img {
+    max-width: 100%;
+    height: auto;
+}
 
-            .event-content {
-                padding: 20px;
-            }
+.partner p {
+    margin-top: 10px;
+    font-size: 15px;
+}
 
-            .event-image {
-                width: 100%; /* Full width for the image on smaller screens */
-            }
-        }
-    /* </style> */
-    /* <style> */
-    /* Your CSS for styling here */
-
-    .partners-section h2 {
-        /* padding: 10px 10px 10px 40px ; */
-        padding: 30px;
-        font-weight: lighter;
-        color: #333;
+/* Your CSS for styling here *
+    /* Media query for responsiveness */
+@media (max-width: 768px) {
+    .partners {
+        flex-direction: column;
         text-align: center;
     }
-
-    .partners {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px 0 ;
-
-    }
-
-    .partners-section {
-        background-color: #d1cfcf;
-
-    }
-
 
     .partner {
-        text-align: center;
-        max-width: 80px;
-        /* Set a maximum width for the partner divs */
-        margin: 0 auto;
-        /* Center-align the partner divs horizontally */
+        margin-bottom: 30px;
     }
+}
 
-    .partner img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .partner p {
-        margin-top: 10px;
-        font-size: 15px;
-    }
-
-    /* Your CSS for styling here *
-    /* Media query for responsiveness */
-    @media (max-width: 768px) {
-        .partners {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .partner {
-            margin-bottom: 30px;
-        }
-    }
 /* </style> */
 
 
@@ -1110,7 +1197,8 @@ body {
     /* margin-top: 20px; */
     cursor: pointer;
 }
-.home-button a{
+
+.home-button a {
     color: white;
     text-decoration: none;
 
@@ -1120,10 +1208,14 @@ body {
 .home-button:hover {
     background-color: #0056b3;
 }
+
 @media (max-width: 768px) {
 
 
-    .paragraphs,.details-heading,.headline,.main-heading {
+    .paragraphs,
+    .details-heading,
+    .headline,
+    .main-heading {
         padding: 3px 10px;
     }
 
