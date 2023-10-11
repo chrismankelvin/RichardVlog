@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
@@ -14,11 +14,12 @@
         <ul class="nav-links">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./news.html">News</a></li>
-            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./videos.html" class="nav-active">Videos</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="./about.html">About</a></li>
         </ul>
         <div class="button">
-            <a href="./Winners.html">Award Winners</a>
+            <!-- <a href="./Winners.html">Award Winners</a> -->
         </div>
     </nav>
 
@@ -31,7 +32,7 @@
                     Your browser does not support the video tag.
                 </video>
                 <button class="play-button" id="play-button">Play Video</button>
-                <p class="video-text">Any Video Clicked Will PLay Over Here</p>
+                <p class="video-text"></p>
             </div>
         </div>
     </section>
@@ -39,24 +40,18 @@
     <section class="videos">
         <h2>| Speeches and inspirational Moments</h2>
         <div class="video-container" id="video-container">
-            <!-- Videos will be dynamically generated here using JavaScript -->
+            <!-- Any Videos will be generated here by JavaScript -->
         </div>
     </section>
 
-
-
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; TTU Media</p>
+            <p>&copy; TTU Sports Awards</p><br>
+            <p> 2023 Edition </p>
             <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="./Winners.html">Winners</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </footer>
-    <!-- <script src="script.js"></script> -->
     
     <script>
         // JavaScript to make the play button functional
@@ -69,7 +64,6 @@
             playButton.style.display = 'none';
         });
 
-        // JavaScript data for videos (unchanged)
         const videoData = [
             {
                 thumbnailSrc: './images/a.jpg',
@@ -86,7 +80,7 @@
                 videoSrc: './images/30sec.mp4',
                 description: 'GFA Charmain delivers on the topic "How Sport Can Revamp Our Economy", During The Grand TTU Awards'
             },
-             {
+            {
                 thumbnailSrc: './images/a.jpg',
                 videoSrc: './images/30sec.mp4',
                 description: 'Mr. Jake Wilson receives the best Coach in the TTU Master League after winning the TTU cup and leading the Rocas Team to win Ghana Universities finals.'
@@ -101,7 +95,6 @@
                 videoSrc: './images/30sec.mp4',
                 description: 'GFA Charmain delivers on the topic "How Sport Can Revamp Our Economy", During The Grand TTU Awards'
             },];
-        // ...
 
         // Function to create video elements from data
         function createVideoElements() {
@@ -168,4 +161,5 @@
 
 
 </body>
+
 </html>

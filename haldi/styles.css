@@ -1,4 +1,11 @@
-/* Navbar container styles */
+/* Navbar styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -10,14 +17,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo styles */
 .logo img {
     width: 30px;
-    /* Adjust the width as needed */
-    /* max-width: 10PX; */
 }
 
-/* Navigation links styles */
 .nav-links {
     list-style: none;
     display: flex;
@@ -27,6 +30,7 @@
 
 .nav-links li {
     margin-right: 20px;
+
 }
 
 .nav-links a {
@@ -36,12 +40,15 @@
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #007bff;
-    /* Change link color on hover */
+.nav-links .nav-active {
+    color: goldenrod;
+    text-decoration: 2px underline;
 }
 
-/* Button styles for desktop screens */
+.nav-links a:hover {
+    color: goldenrod;
+}
+
 .button a {
     text-decoration: none;
     background-color: rgb(218, 165, 32);
@@ -53,64 +60,49 @@
 
 .button a:hover {
     background-color: rgba(218, 165, 32, 0.788);
-    /* Change button color on hover */
 }
 
-/* Media query for mobile screens */
+
+/* MOBILE SCREEN NAVBAR */
 @media (max-width: 768px) {
     .logo {
         order: 1;
-        /* Change the order for mobile */
     }
 
     .nav-links {
         order: 3;
-        /* Change the order for mobile */
         margin-top: 10px;
-        /* Add some space between logo and links */
         justify-content: flex-end;
-        /* Align links to the right */
     }
 
     .button {
         display: none;
         order: 2;
         margin-top: 10px;
-        /* Add some space between logo and button */
     }
 }
 
 
-/* <style> */
-/* Reset some default styles */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-}
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* CSS for the banner section */
+/* HERO-BANNER STYLING */
 .banner {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    /* height: fit-content; */
+    max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     margin-top: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
 
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .banner-image {
     width: 100%;
     height: auto;
-    /* padding: 30px; */
     display: none;
 }
 
@@ -120,8 +112,10 @@ body {
 
 .indicators {
     text-align: center;
-    margin-top: 10px;
     position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
 }
 
 .indicator {
@@ -129,19 +123,19 @@ body {
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: #999;
+    background-color: #ffffff2a;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .indicator.active {
-    background-color: #333;
+    background-color: rgba(218, 165, 32, 0.651);
 }
 
-/* Navigation arrows */
 .arrow {
     position: absolute;
     top: 50%;
+    font-family: "Arial", sans-serif;
     transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;
@@ -165,37 +159,23 @@ body {
     right: 10px;
 }
 
-
+/* MOBILE SCREEN FOR HERO-BANNER */
 @media (max-width: 768px) {
     .banner {
         width: 100%;
         height: fit-content;
     }
-
 }
 
-/* </style> */
 
-/* <style> */
-/* Reset some default styles */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* CSS for the main-winners section */
+/* EVENT PAGE STYLING */
 .main-winners {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
     background-color: rgb(255, 255, 255);
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .main-winners-text {
@@ -204,7 +184,7 @@ body {
 }
 
 .main-winners-text h2 {
-    font-size: 49px;
+    font-size: 35px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -216,25 +196,22 @@ body {
 
 .main-winners-links {
     margin-top: 20px;
-
 }
 
 .main-winners-links a {
     display: inline-block;
-    /* Horizontal alignment */
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
     margin-right: 20px;
-    /* Spacing between links */
     transition: color 0.3s;
     cursor: pointer;
 }
 
 .main-winners-links a:last-child {
     margin-right: 0;
-    /* Remove margin from the last link */
+
 }
 
 .main-winners-links a:hover {
@@ -245,14 +222,12 @@ body {
     flex: 1;
     text-align: center;
     position: relative;
-    /* Required for absolute positioning of the small image */
 }
 
 .main-winners-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     transition: opacity 0.3s;
     transition: opacity 10.3s;
 }
@@ -261,12 +236,12 @@ body {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 50px;
+    width: 40px;
     height: 50px;
     cursor: pointer;
 }
 
-/* Media query for mobile screens */
+/* EVENT SECTION MOBILE SCREEN */
 @media (max-width: 768px) {
     .main-winners {
         align-items: center;
@@ -279,7 +254,6 @@ body {
 
     .main-winners-links a {
         margin-right: 0;
-        /* Remove right margin for links */
     }
 
     .main-winners-image {
@@ -287,43 +261,19 @@ body {
     }
 }
 
-/* </style> */
-
-
-/* <style> */
-/* Reset some default styles */
-body {
-    margin: 0;
-    padding: 0;
-    /* background-color: #f0f0f0; Background color for the entire page */
-}
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* <style> */
-/* Your CSS for styling here */
-
-
-
-/* CSS for the videos section */
+/* VIDEO SECTION */
 .videos {
     padding: 40px;
     background-color: #fff;
-    /* White background for the video section */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .videos h2 {
     font-size: 28px;
-    /* Larger font size for the section title */
     margin-bottom: 20px;
     text-align: left;
     color: #333;
-    /* Dark text color */
 }
 
 .video-container {
@@ -337,25 +287,15 @@ body {
 .video {
     flex: 1;
     margin-bottom: 20px;
-    /* Add spacing between videos */
     max-width: calc(33.33% - 20px);
-    /* Adjust the width for three videos per row */
     background-color: #ffffff00;
-    /* White background for each video container */
-    /* border: 1px solid #333; Light gray border */
     border-radius: 8px 8px 0 0;
-    /* Round only the top borders */
-
     transition: transform 0.3s, box-shadow 0.3s;
-    /* Smooth transitions */
 }
 
 .video:hover {
     transform: translateY(-5px);
-    /* Lift the video container on hover */
     box-shadow: 0px 4px 6px #3333332d
-        /* Shadow effect */
-        /* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  */
 }
 
 .video video {
@@ -367,42 +307,36 @@ body {
     font-size: 16px;
     margin-top: 10px;
     padding: 10px;
-    /* Add padding around the description */
     text-align: left;
     color: #333;
-    /* Slightly darker text color */
 }
 
 .video-thumbnail {
     width: 100%;
-    /* Set the initial width of the image */
     height: auto;
     transition: width 0.3s ease-in-out;
-    /* Add a smooth transition effect */
 }
 
+/* MOBILE SCREEN VIDEO SECTION */
 @media (max-width: 768px) {
     .video-container {
         flex-direction: column;
         align-items: center;
-        /* Center videos horizontally */
     }
 
     .video {
         max-width: 100%;
-        /* Full width for videos on small screens */
     }
 }
 
-/* <style> */
-/* Your CSS for styling here */
+/* MAIN VIDEO SECTION  */
 .video-play {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: #470563;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 .video-container1 {
@@ -422,7 +356,6 @@ body {
     transition: 1s ease;
 }
 
-/* Play button styling */
 .play-button {
     position: absolute;
     top: 50%;
@@ -444,8 +377,10 @@ body {
 .video-text {
     margin-top: 20px;
     font-size: 16px;
+    padding: 8px;
     text-align: left;
     color: #fff;
+    font-weight: bold;
 }
 
 .videos {
@@ -507,7 +442,7 @@ body {
     transition: width 0.3s ease-in-out;
 }
 
-/* Responsive design for mobile screens */
+/* MAIN VIDEO PAGE MOBILE SCREEN */
 @media (max-width: 768px) {
     .videos {
         padding: 20px;
@@ -529,14 +464,8 @@ body {
     }
 }
 
-/* </style> */
-/* </style> */
 
-
-
-
-
-/* CSS for the activities section */
+/* THE ACTIVITES SECTION  */
 .activities {
     padding: 40px;
     background-color: #f5f5f5;
@@ -554,39 +483,30 @@ body {
     text-align: left;
 }
 
-/* </style> */
-
-/* <style> */
-/* Overall styling for the winner section */
+/* EACH AWARD WINNERS PAGE */
 .winner-section {
     display: flex;
     align-items: center;
     padding: 20px;
     background-color: #f0f0f0;
     height: fit-content;
-    /* Adjust the height as needed */
 }
 
-/* Styling for the image on the left */
 .winner-image {
     flex: 1;
     width: 100%;
     max-width: 600px;
-    /* Adjust the maximum width as needed */
     margin-right: 20px;
     border-radius: 5px;
     display: block;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Add a subtle shadow for depth */
 }
 
-/* Styling for the text content on the right */
 .winner-content {
     flex: 2;
 }
 
-/* Styling for the heading */
 .winner-heading {
     font-size: 24px;
     font-weight: bold;
@@ -599,45 +519,28 @@ body {
     margin-bottom: 10px;
 }
 
-/* Styling for the description */
 .winner-description {
     font-size: 16px;
     line-height: 1.5;
 }
 
+/* AWARD WINNER MOBILE SCREEN */
 @media (max-width: 768px) {
     .winner-section {
         flex-direction: column;
-        /* Stack items vertically on smaller screens */
         text-align: left;
-        /* Center-align content */
     }
 
     .winner-image {
         margin-right: 0;
-        /* Remove margin on the right for the image */
     }
 }
 
-/* </style> */
 
-
-/* <style> */
-/* Reset some default styles */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* CSS for the awards section */
+/*  VAROUIS AWARD SECTION */
 .awards {
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
 }
 
 .awards h2 {
@@ -700,6 +603,7 @@ body {
     transition: 0.4s ease;
 }
 
+/* MOBILE SCREEN FOR VARIOUS AWARDS */
 @media (max-width: 768px) {
     .awards-columns {
         flex-direction: column;
@@ -715,15 +619,12 @@ body {
         text-align: center;
     }
 
-    /* CSS for the awards section */
     .awards {
         padding: 10px;
     }
 }
 
-/* </style> */
-
-/* CSS for the footer */
+/* FOOTER'S STYLING */
 .footer {
     background-color: #333;
     color: #fff;
@@ -764,27 +665,12 @@ body {
     color: #007bff;
 }
 
-/* <style> */
-/* Reset default margin and padding */
-body,
-h1,
-h2,
-p {
-    margin: 0;
-    padding: 0;
-}
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Style for the news section */
+/* NEWS SECTION */
 .news-section {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    /* aquamarine */
     padding: 20px;
     margin-top: 20px;
 }
@@ -801,14 +687,12 @@ body {
     margin-bottom: 20px;
 }
 
-/* Border style beneath "New" */
 .news-heading::after {
     content: "";
     display: block;
     width: 40px;
     height: 3px;
     background-color: #333;
-    /* aquamarine */
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -817,45 +701,41 @@ body {
 
 .news-heading .new-word {
     color: #c7c7c7;
-    /* tomato */
 }
 
-/* Style for each news item */
 .news-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-/* Style for the image in each news item */
+
 .news-image {
     width: 100px;
-    /* You can adjust the size as needed */
     height: 100px;
-    /* You can adjust the size as needed */
     object-fit: cover;
-    /* Ensure the image maintains its aspect ratio */
     margin-right: 20px;
 }
 
-/* Style for the title and description in each news item */
 .news-content {
     flex: 1;
 }
 
-/* Style for the title */
-.news-title {
+.news-title a {
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
 }
 
-/* Style for the description */
+.news-title a:hover {
+    text-decoration: underline;
+}
+
 .news-description {
     font-size: 14px;
 }
 
-/* Style for the "More News" link */
 .more-news {
     text-align: center;
     margin-top: 20px;
@@ -864,38 +744,32 @@ body {
 .more-news a {
     text-decoration: none;
     color: #007BFF;
-    /* blue */
     font-weight: bold;
 }
 
 .more-news a::after {
     content: "\2192";
-    /* Right arrow character */
     margin-left: 5px;
 }
 
+/* NEWS MOBILE SCREEN */
 @media (max-width: 768px) {
     .news {
         margin: 0 0 0 0;
     }
-
 }
 
 
-/* <style> */
-/* Your CSS for styling here */
+/* MAIN NEWS PAGE */
 .news-main-section {
     background-color: rgba(21, 5, 36, 0.849);
     padding: 50px;
     margin-top: 10px;
-
 }
 
 .news-main {
     display: flex;
     align-items: center;
-
-    /* justify-content: space-between; */
 }
 
 .news-main img {
@@ -914,9 +788,13 @@ body {
 }
 
 .news-main-left a {
-    color: #fff;
-    text-decoration: none;
+    color: #e6e6e6;
+    text-decoration: underline;
 
+}
+
+.news-main-left a:hover {
+    color: goldenrod;
 }
 
 .news-main-right {
@@ -929,7 +807,6 @@ body {
 
 .news-main-right img {
     max-width: 200px;
-    /* Increase the size of the right images */
     height: auto;
     margin-bottom: 20px;
 }
@@ -939,26 +816,22 @@ body {
     align-items: left;
 }
 
-
 .news-main-right p {
     font-size: 17px;
     font-weight: lighter;
     margin-left: 10px;
-    /* Add margin to the left of the paragraph */
-
-
-
 }
 
 .news-main-right a {
-    text-decoration: none;
-    color: #ffffff;
-
-
+    text-decoration: underline;
+    color: #e6e6e6;
 }
 
+.news-main-right a:hover {
+    color: goldenrod;
+}
 
-
+/* MOBILE SCREEN MAIN NEWS */
 @media (max-width: 768px) {
     .news-main-section {
         padding: 20px;
@@ -967,66 +840,47 @@ body {
     .news-main {
         flex-direction: column;
         align-items: flex-start;
-        /* padding: 20px; */
     }
 
     .news-main-right {
         margin-left: 10px;
         margin-top: 20px;
-
     }
-
-
-
 }
 
-/* </style> */
-/* </style> */
-
-
-
-
-/* Style for the event section */
+/* EVENT SECTION */
 .event-section {
     display: flex;
     background-color: #d6d4d4;
     padding: 40px;
     margin: 20px;
-    /* max-width: 800px;  */
     margin: 0 auto;
+
 }
 
-/* Style for the left content */
 .event-content {
     flex: 1;
     padding: 20px;
 }
 
-/* Style for the heading */
 .event-heading {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
     line-height: 1.2;
-    /* Adjusted line height for better readability */
-
 }
 
-/* Style for the random text */
 .event-text {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
     padding: 10px;
-    /* Adjusted line height for better readability */
 }
 
-/* Style for the "View Event" button */
 .view-event-button {
     display: inline-block;
     padding: 12px 24px;
     background-color: #007bff00;
-    /* Blue button color */
     color: #333;
     text-decoration: none;
     border-radius: 5px;
@@ -1036,43 +890,47 @@ body {
 
 .view-event-button:hover {
     background-color: goldenrod;
-    /* Darker blue on hover */
     color: #f5f5f5;
 }
-.event-image-div{
+
+.event-image-div {
     max-width: 50%;
-}
-/* Style for the image on the right */
-.event-image {
-width: 100%;
+    margin-top: 50px;
 }
 
-/* Responsive layout for smaller screens */
-@media (max-width: 720px) {
+.event-image {
+    width: 100%;
+}
+
+/* EVENTS MOBILE SCREEN */
+@media (max-width: 768px) {
     .event-section {
         flex-direction: column;
         align-items: center;
+        padding: 5px;
+    }
+
+    .event-heading {
+        font-size: 40px;
+        padding: 0;
     }
 
     .event-content {
         padding: 20px;
     }
 
+    .event-text {
+        padding: 0 30px;
+    }
+
     .event-image-div {
         max-width: 100%;
-        /* Full width for the image on smaller screens */
+        margin-top: 0px;
     }
 }
 
-
-
-
-/* </style> */
-/* <style> */
-/* Your CSS for styling here */
-
+/* PARTENERSOF THE TTU SPORTS AWARDS */
 .partners-section h2 {
-    /* padding: 10px 10px 10px 40px ; */
     padding: 30px;
     font-weight: lighter;
     color: #333;
@@ -1084,21 +942,17 @@ width: 100%;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-
 }
 
 .partners-section {
     background-color: #d1cfcf;
-
 }
 
 
 .partner {
     text-align: center;
     max-width: 80px;
-    /* Set a maximum width for the partner divs */
     margin: 0 auto;
-    /* Center-align the partner divs horizontally */
 }
 
 .partner img {
@@ -1111,34 +965,27 @@ width: 100%;
     font-size: 15px;
 }
 
-/* Your CSS for styling here *
-    /* Media query for responsiveness */
+/* MOBILE DISPLAY OF THE PATNERS SECTION */
 @media (max-width: 768px) {
     .partners {
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
 
     .partner {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 
-/* </style> */
-
-
-
-/* <style> */
-/* Style the section container */
+/* INDIVIDAUL NEWS PAGE */
 .news-article {
     background-color: #ffffff;
     padding: 20px;
-    /* border: 1px solid #ddd; */
     border-radius: 10px;
     margin: 20px;
 }
 
-/* Style the "News" button */
 .news-button {
     background-color: red;
     color: white;
@@ -1151,7 +998,6 @@ width: 100%;
     cursor: default;
 }
 
-/* Style the main heading */
 .main-heading {
     font-size: 32px;
     font-weight: bold;
@@ -1159,42 +1005,35 @@ width: 100%;
     padding: 3px 70px;
 }
 
-/* Style the headline */
 .headline {
     font-size: 19px;
     margin-top: 20px;
     padding: 3px 70px;
 }
 
-/* Style the image */
 .news-image-article {
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-/* Style the "Details" heading */
 .details-heading {
     font-size: 19px;
     margin-top: 20px;
     padding: 3px 70px;
 }
 
-/* Style the paragraphs */
 .paragraphs {
     font-size: 18px;
     margin-top: 10px;
     padding: 3px 70px;
 }
 
-/* Style the "Go to Home Page" button */
 .home-button {
-    background-color: #007bff;
-    margin-left: 40%;
+    background-color: #333;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    /* margin-top: 20px; */
     cursor: pointer;
 }
 
@@ -1204,13 +1043,12 @@ width: 100%;
 
 }
 
-/* Style the button hover effect */
 .home-button:hover {
-    background-color: #0056b3;
+    background-color: #3333334f;
+
 }
 
 @media (max-width: 768px) {
-
 
     .paragraphs,
     .details-heading,
@@ -1220,3 +1058,99 @@ width: 100%;
     }
 
 }
+
+/* GALLERY SECTION */
+.gallery-heading {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.gallery-heading h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+    color: #333;
+
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.068);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* FOR MOBILE SCREENS */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 49%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+    }
+    

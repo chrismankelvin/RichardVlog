@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+    <style>
+        /* Style for the award-categories section */
+        .award-categories-section{
+            background-color: #f0f0f0;
+        }
+        .award-categories-section h2{
+            padding: 20px 20px 0px 20px;
+
+        }
+        .award-categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* Style for each individual div (link) */
+        .award-category {
+            text-align: center;
+            padding: 20px;
+            border:1px solid #888;
+            text-decoration: none; /* Remove underline from links */
+            color: #333; /* Set text color for links */
+            max-width: 200px; /* Set the maximum width for each div */
+        }
+        .award-category:hover{
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: 0.5s ;
+            
+            
+        }
+
+        /* Style for the heading text */
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Style for the small text at the bottom */
+        .small-text {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Style for the PNG icons */
+        .icon img {
+            max-width: 100px; /* Set the maximum width for the icons */
+            margin-bottom: 5px; /* Add some spacing between icon and text */
+            padding: 0 20px   ;
+        }
     </style>
 </head>
 <body>
-   
+    <section class="award-categories-section">
+        <h2>
+            Awards Categories
+        </h2>
+
+ 
+    <div class="award-categories">
+        <a href="page1.html" class="award-category">
+            <div class="icon">
+                <img src="./images/ball.png" alt="Football Icon">
+            </div>
+            <div class="heading">Football</div>
+            <div class="small-text">7 Awards</div>
+        </a>
+        <a href="page2.html" class="award-category">
+            <div class="icon">
+                <img src="./images/basketball.png" alt="Basketball Icon">
+            </div>
+            <div class="heading">Basketball</div>
+            <div class="small-text">5 Awards</div>
+        </a>
+        <a href="page3.html" class="award-category">
+            <div class="icon">
+                <img src="./images/athelete.png" alt="Tennis Icon">
+            </div>
+            <div class="heading">Athletes</div>
+            <div class="small-text">3 Awards</div>
+        </a>
+    </div>
+</section>
 </body>
 </html>

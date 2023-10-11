@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 
+<!-- NAVBAR -->
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="./images/oscar.png" alt="Logo">
         </div>
         <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html" class="nav-active">Home</a></li>
             <li><a href="./news.html">News</a></li>
             <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="./about.html">About</a></li>
         </ul>
         <div class="button">
-            <a href="./Winners.html">Award Winners</a>
+            <a href="./event.html">Award Winners</a>
         </div>
     </nav>
 
-
+<!-- HEROBANNER -->
     <section class="banner">
         <div class="arrow prev-arrow" onclick="prevImage()">&#10094;</div>
-        <img class="banner-image active" src="./images/d.jpg" alt="Image 1">
-        <img class="banner-image" src="./images/b.jpg" alt="Image 2">
-        <img class="banner-image" src="./images/c.jpg" alt="Image 3">
+        <img class="banner-image active" src="./images/aa.jpg   " alt="Image 1">
+        <img class="banner-image" src="./images/large.png" alt="Image 2">
+        <img class="banner-image" src="./images/aa.jpg" alt="Image 3">
         <div class="arrow next-arrow" onclick="nextImage()">&#10095;</div>
-
         <div class="indicators">
             <div class="indicator"></div>
             <div class="indicator"></div>
@@ -38,34 +38,27 @@
         </div>
     </section>
 
-
-
+<!-- EVENT SECTION -->
     <section class="event-section">
-        <!-- Left content -->
         <div class="event-content">
             <h2 class="event-heading"> Celebrating Excellence in sports</h2>
             <p class="event-text">
                 <strong>Welcome to the University's Awards</strong>
-
                 Discover the extraordinary achievement and contribution of our sports community at Takoradi Technical
                 University. The Inaugural Sports Awards are a tribute to the dedication, skill and passion that define
                 our athlete's teams and coaches.
                 We are thrilled to extend a warm welcome to the grand unveiling of the Takoradi Technical University
                 Sports Awards a momentous occasion designed to recognize and honor the remarkable achievements within
                 our vibrant sports community.
-
             </p>
-            <a href="./Winners.html" class="view-event-button">View Event</a>
+            <a href="./event.html" class="view-event-button">Event Highlight</a>
         </div>
-
         <div class="event-image-div">
             <img class="event-image" src="images/3.jpg" alt="Event Image">
         </div>
     </section>
 
-
-
-
+<!-- ARTICLE SECTION -->
     <section class="activities">
         <h2>Activities</h2>
         <article class="activities-article">
@@ -86,7 +79,7 @@
         </article>
     </section>
 
-
+<!-- VIDEOS SECTION -->
     <section class="videos">
         <h2>| Interviews</h2>
         <div class="video-container">
@@ -118,27 +111,23 @@
         </div>
     </section>
 
-    <!-- <script> -->
-
+<!-- SUB-NEW-SECTION -->
     <section class="news-section">
         <div class="news">
-            <!-- First news item -->
-            <!-- <hr> -->
             <div class="news-heading">
                 <span class="new-word">News</span>
             </div>
             <div class="news-item">
                 <img class="news-image" src="./images/b.jpg" alt="News Image 1">
                 <div class="news-content">
-                    <h2 class="news-title"> <a href="./newsArticles.html?id=2">University of Cape Coast won the 500 meters race  </a>
+                    <h2 class="news-title"> <a href="./newsArticles.html?id=2">University of Cape Coast won the 500
+                            meters race </a>
                     </h2>
                     <p class="news-description">Jennifer boakye brakes the record in the TTU Awards as she win the best
                         Woman Player, she is now...</p>
                 </div>
             </div>
-            <!-- <hr> -->
 
-            <!-- Second news item -->
             <div class="news-item">
                 <img class="news-image" src="./images/d.jpg" alt="News Image 2">
                 <div class="news-content">
@@ -148,7 +137,6 @@
                 </div>
             </div>
 
-            <!-- Third news item -->
             <div class="news-item">
                 <img class="news-image" src="./images/j.png" alt="News Image 3">
                 <div class="news-content">
@@ -163,23 +151,17 @@
         </div>
     </section>
 
-
-
-
+<!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; TTU Media</p>
+            <p>&copy; TTU Sports Awards</p><br>
+            <p> 2023 Edition </p>
             <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="./Winners.html">Winners</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </footer>
+
     <script src="script.js"></script>
-
-
 </body>
 
 </html>

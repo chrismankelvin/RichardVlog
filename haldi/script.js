@@ -1,4 +1,4 @@
-{/* <script> */}
+
 // JavaScript for the banner section
 const bannerImages = document.querySelectorAll('.banner-image');
 const indicators = document.querySelectorAll('.indicator');
@@ -34,40 +34,40 @@ showImage(currentIndex);
 // Automatic image rotation (you can add more features)
 setInterval(() => {
     nextImage();
-}, 7000); // Change image every 5 seconds
-{/* </script> */}
+}, 10000);
 
 
-        // JavaScript to handle video playback on thumbnail click
-        const videoThumbnails = document.querySelectorAll('.video-thumbnail');
 
-        videoThumbnails.forEach(thumbnail => {
-            thumbnail.addEventListener('click', () => {
-                const videoSrc = thumbnail.getAttribute('data-video-src');
-                const videoDescription = thumbnail.nextElementSibling;
-                const videoContainer = thumbnail.parentElement;
+// JavaScript to handle video playback on thumbnail click
+const videoThumbnails = document.querySelectorAll('.video-thumbnail');
 
-                // Create a video element
-                const videoElement = document.createElement('video');
-                videoElement.controls = true;
+videoThumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+        const videoSrc = thumbnail.getAttribute('data-video-src');
+        const videoDescription = thumbnail.nextElementSibling;
+        const videoContainer = thumbnail.parentElement;
 
-                // Create a source element for the video
-                const sourceElement = document.createElement('source');
-                sourceElement.src = videoSrc;
-                sourceElement.type = 'video/mp4';
+        // Create a video element
+        const videoElement = document.createElement('video');
+        videoElement.controls = true;
 
-                // Append the source element to the video element
-                videoElement.appendChild(sourceElement);
+        // Create a source element for the video
+        const sourceElement = document.createElement('source');
+        sourceElement.src = videoSrc;
+        sourceElement.type = 'video/mp4';
 
-                // Remove the thumbnail and description
-                videoContainer.innerHTML = '';
+        // Append the source element to the video element
+        videoElement.appendChild(sourceElement);
 
-                // Append the video element and description back to the container
-                videoContainer.appendChild(videoElement);
-                videoContainer.appendChild(videoDescription);
+        // Remove the thumbnail and description
+        videoContainer.innerHTML = '';
 
-                // Start playing the video
-                videoElement.play();
-            });
-        });
-    // </script>
+        // Append the video element and description back to the container
+        videoContainer.appendChild(videoElement);
+        videoContainer.appendChild(videoDescription);
+
+        // Start playing the video
+        videoElement.play();
+    });
+});
+
