@@ -34,7 +34,7 @@ showImage(currentIndex);
 // Automatic image rotation (you can add more features)
 setInterval(() => {
     nextImage();
-}, 10000);
+}, 15000);
 
 
 
