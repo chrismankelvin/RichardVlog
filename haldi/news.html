@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="./images/oscar.png" alt="Logo">
+            <img src="./images/award_logo_1.png" alt="Logo">
         </div>
         <ul class="nav-links">
             <li><a href="./index.html">Home</a></li>
@@ -19,7 +19,7 @@
             <li><a href="./about.html">About</a></li>
         </ul>
         <div class="button">
-            <!-- <a href="./Winners.html">Award Winners</a> -->
+            <a href="./event.html">Event Highlights</a>
         </div>
     </nav>
     <section class="news-main-section">
@@ -31,23 +31,21 @@
 
             <div class="news-main-left">
                 <img src="./images/award_1.jpeg" alt="News Image">
-                <h2><a href="./newsArticles.html?id=1">Takoradi Technical university qualified for the finals</a></h2>
+                <h2><a href="./newsArticles.html?id=1">Takoradi Technical university Coah wins The Coach of the Year 2023</a></h2>
             </div>
             <div class="news-main-right">
                 <div>
                     <img src="./images/award_3.jpg" alt="Right Image 1">
-                    <p><a href="./newsArticles.html?id=2">First Woman to win a Grand Award in TTU's Sports listings </a>
+                    <p><a href="./newsArticles.html?id=2">First female to win an Award in TTU's Sports listings </a>
                     </p>
                 </div>
                 <div>
                     <img src="./images/gallery_2.png" alt="Right Image 2">
-                    <p><a href="./newsArticles.html?id=3"> Author of the Oscars Awards Recommends TTU for the
-                            Organization of such a wonderfull apprecidations</a></p>
+                    <p><a href="./newsArticles.html?id=3"> The GFA Chairman congratulates the winners of the TTU Sports Awards</a></p>
                 </div>
                 <div>
                     <img src="./images/gallery_3.jpg" alt="Right Image 3">
-                    <p><a href="./newsArticles.html?id=4">TTU get wide rang of support, to partner the second section fo
-                            the Grand TTU Award for Academia</a></p>
+                    <p><a href="./newsArticles.html?id=4">Second Section of The Grand TTU Sports Awards Parternered</a></p>
                 </div>
 
             </div>
@@ -81,23 +79,27 @@
         const newsData = [
             {
                 imageUrl: "./images/news_1.jpg",
-                title: "News Title 1",
-                description: "This is a brief description of the first news item. lorem30",
+                title: "FLASHBACK: UEW beats TTU to advanced to GUSA basketball finals",
+                description: "Coah of the TTU basketball team motivates his team to train harder to get a ticket to the finals this year",
+                idUrl : "./newsArticles.html?id=7",
             },
             {
-                imageUrl: "./images/3.jpg",
-                title: "News Title 2",
-                description: "This is a brief description of the second news item.",
+                imageUrl: "./images/gallery_7.jpg",
+                title: "The GFA Chairman Makes a Speech at TTUs Sports awards",
+                description: "The GFA Chariman delivers on how sports can revamp the economy of the country",
+                idUrl : "./newsArticles.html?id=5",
             },
             {
-                imageUrl: "./images/3.jpg",
-                title: "News Title 3",
+                imageUrl: "./images/news_4.png",
+                title: "Basketball Needs Attention, says Mr. obour Manso",
+                description: "TTUs Basketball Coach calls the Government to Pay attention to Basketbal in the Country",
+                idUrl : "./newsArticles.html?id=4",
+            },
+            {
+                imageUrl: "./images/award_6.jpg",
+                title: "Winner of the Basket ball player of the Year Speaks",
                 description: "This is a brief description of the third news item.",
-            },
-            {
-                imageUrl: "./images/3.jpg",
-                title: "News Title 4",
-                description: "This is a brief description of the third news item.",
+                idUrl : "./newsArticles.html?id=8",
             },
         ];
 
@@ -119,7 +121,7 @@
             const title = document.createElement("h2");
             title.classList.add("news-title");
             const titleLink = document.createElement("a");
-            titleLink.href = "./newsArticles.html?id="; 
+            titleLink.href = data.idUrl; 
             titleLink.textContent = data.title;
             title.appendChild(titleLink);
 
