@@ -1,0 +1,29 @@
+Walsh University
+West Virginia State University 
+Missouri State University 
+Elizabeth City State University 
+Grand Valley State University 
+Ohio University 
+Governors State University 
+Adelphi University 
+Caldwell University 
+Barry University 
+South Carolina state university 
+Wichita State University 
+Westfield State University 
+Wayne State University 
+Delaware State University
+
+CREATE TABLE reviews/waitreviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL
+);
+
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+

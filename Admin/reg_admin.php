@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,8 +7,10 @@
   <title>Login Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
-
+ -->
+ <?php
+ include './inc/header.php';
+ ?>
 <body>
   <div class="container">
     <div class="row justify-content-center mt-5">
