@@ -22,39 +22,6 @@
 </section>
 
 
-<?php
-// session_start();
-
-function icons1() {
-  include("icons.php");
-}
-
-function icons2() {
-  include("icons2.php");
-}
-
-// Check if the user has already selected a set of icons
-if (!isset($_SESSION['chosen_icons'])) {
-  // Generate a random number between 0 and 1.
-  $random_number = rand() / getrandmax();
-
-  // Check if the number is less than 0.5.
-  if ($random_number < 0.5) {
-    $_SESSION['chosen_icons'] = 'icons1';
-  } else {
-    $_SESSION['chosen_icons'] = 'icons2';
-  }
-}
-
-// Based on the chosen set of icons, include the respective file.
-if ($_SESSION['chosen_icons'] === 'icons1') {
-  icons1();
-} else {
-  icons2();
-}
-?>
-
-
 
 
 
@@ -63,7 +30,7 @@ if ($_SESSION['chosen_icons'] === 'icons1') {
 <footer class="footer">
   <div class="container">
     <div class="footer-logo">
-      <img src="./inc/images/logo12.png" alt="Richard Vlog Logo">
+      <img src="./inc/images/lg_1.png" alt="REC Logo">
       <!-- <h5 class="logo-text">REC</h5> -->
     </div>
     <div class="footer-nav">

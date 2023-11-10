@@ -19,7 +19,7 @@ $profile_picture = $_POST["profile_picture"]; // Assuming it's a file path
 
 // File uploaded successfully
 // Now, you can save $profile_picture (the path to the uploaded profile picture) in your database
-$sql = "INSERT INTO reviews (name, title, content, star, profile_picture ) VALUES ('$name', '$title', '$content', '$star', '$profile_picture')";
+$sql = "INSERT INTO waitreviews (name, title, content, star, profile_picture ) VALUES ('$name', '$title', '$content', '$star', '$profile_picture')";
 
 if ($connection->query($sql) === TRUE) {
     // Insert successful

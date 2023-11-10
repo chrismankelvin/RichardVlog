@@ -1,7 +1,8 @@
   
 <?php
 $main_title ="Contact REC";
-require 'navbar.php'
+include 'header.php';
+include 'navbar.php';
 ?>
 
 <section class="contact-section">
@@ -45,6 +46,9 @@ require 'navbar.php'
   </div>
 </section>
 
+
+
 <?php
-require 'footer.php'
+include "images.php";
+include 'footer.php'
 ?>

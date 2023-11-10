@@ -3,7 +3,8 @@
 
 $main_title ="Success Probability Calculator";
 // require 'header.php';
-require 'navbar.php'
+include 'header.php';
+include 'navbar.php';
 
 ?>
   <div class="background-image">

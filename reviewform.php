@@ -1,7 +1,8 @@
 <?php
 $main_title = "Add your Review";
 // require 'header.php';
-require 'navbar.php'
+include 'header.php';
+include 'navbar.php';
 
 ?>
 <div class="container-fluid review-post" style="background-image: url('./inc/images/stationary.jpg');">

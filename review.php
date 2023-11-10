@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-10 col-xl-8 text-center">
-                <h3 class="fw-bold mb-4">Reviews</h3>
+                <h3 class="fw-light mb-4">Reviews</h3>
                 <!-- <p class="mb-4 pb-2 mb-md-5 pb-md-0">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
                 numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
@@ -86,19 +86,45 @@
 
 
         </div>
-        <div class="text-center mt-4">
+        <!-- <div class="text-center mt-4">
             <nav aria-label="Review Pagination">
                 <ul class="pagination">
-                    <li class="page-item <?php echo $currentPage <= 1 ? 'disabled' : ''; ?>">
-                        <a class="page-link" href="?page=<?php echo $currentPage - 1; ?>">Previous</a>
+                    <li class="page-item -->
+                     <?php
+                    //   echo $currentPage <= 1 ? 'disabled' : ''; 
+                      ?>
+                      <!-- "> 
+                        <!-- <a class="page-link" href="?page= -->
+                        <?php 
+                        // echo $currentPage - 1; 
+                        ?>
+                        <!-- ">Previous</a> 
                     </li>
-                    <?php for ($i = 1; $i <= ceil(count($reviews) / $reviewsPerPage); $i++) { ?>
-                        <li class="page-item <?php echo $currentPage == $i ? 'active' : ''; ?>">
-                            <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                    <?php 
+                    // for ($i = 1; $i <= ceil(count($reviews) / $reviewsPerPage); $i++) { 
+                        ?>
+                        <!-- <li class="page-item  -->
+                        <?php
+                        //  echo $currentPage == $i ? 'active' : ''; 
+                        ?>
+                        <!-- "> -->
+                            <!-- <a class="page-link" href="?page=<?php 
+                            //  echo $i; ?>"><?php 
+                            // echo $i;
+                              ?>
+                              </a>
                         </li>
-                    <?php } ?>
-                    <li class="page-item <?php echo $startIndex + $reviewsPerPage >= count($reviews) ? 'disabled' : ''; ?>">
-                        <a class="page-link" href="?page=<?php echo $currentPage + 1; ?>">Next</a>
+                    <?php
+                //  }
+                  ?>
+                    <!-- <li class="page-item <?php 
+                    //  echo $startIndex + $reviewsPerPage >= count($reviews) ? 'disabled' : ''; 
+                     ?>">
+                        <!-- <a class="page-link" href="?page= -->
+                        <?php
+                        //  echo $currentPage + 1; 
+                        //  ?>
+                        <!-- ">Next</a> -->
                     </li>
                 </ul>
             </nav>

@@ -1,12 +1,7 @@
 
-  <!-- Link to Bootstrap and Font Awesome JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
-  <script src="./comp/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./comp/fontawesome-free-6.4.2-web/js/all.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> -->
-  <!-- Custom script to handle sidebar toggle -->
-  <script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
     const sidebar = document.getElementById('sidebar');
     const sidebarCollapse = document.getElementById('sidebarCollapse');
     const closeSidebarBtn = document.getElementById('closeSidebar');
@@ -21,8 +16,14 @@
     });
 
 
+
+
+
+
+    
+
     function deleteReview(reviewId) {
-    if (confirm('Are you sure you want to delete this review?')) {
+    if (confirm('Are you sure you want to delete this reviewed?')) {
       // Make an AJAX request to delete_review.php
       $.ajax({
         url: './inc/delete_review.php',
@@ -40,22 +41,26 @@
   }
 
   function approveReview(reviewId) {
-    if (confirm('Are you sure you want to approve this review?')) {
-      // Make an AJAX request to approve_review.php
-      $.ajax({
-        url: './inc/approve_review.php',
-        type: 'POST',
-        data: { review_id: reviewId },
-        success: function(response) {
-          alert(response); // Show the response message (e.g., "Review approved and moved to the approved reviews table.")
-          location.reload(); // Reload the page to update the review lists
-        },
-        error: function(error) {
-          alert('An error occurred while approving the review.');
-        }
-      });
-    }
+  if (confirm('Are you sure you want to approve this review?')) {
+    // Make an AJAX request to approve_review.php
+    $.ajax({
+      url: './inc/approve_review.php',
+      type: 'POST',
+      data: { review_id: reviewId },
+      success: function(response) {
+        // Display the response message from the server
+        alert(response);
+        
+        // Reload the page to update the review lists
+        location.reload();
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        // Handle any errors that occur during the AJAX request
+        alert('An error occurred while approving the review.');
+      }
+    });
   }
+}
 
   
 
@@ -79,7 +84,6 @@
 
 
 
-
   function editReview(reviewId) {
   // Disable other edit buttons to avoid conflicts
   $('.edit-btn').prop('disabled', true);
@@ -87,18 +91,17 @@
   // Get the review content elements
   const nameElement = $(`#name_${reviewId}`);
   const titleElement = $(`#title_${reviewId}`);
-  // const contentElement = $(`#b${reviewId}`);
-  const bodyElement = $(`#body_${reviewId}`);
+  const contentElement = $(`#content_${reviewId}`);
 
   // Save the original content for reverting if needed
   const originalName = nameElement.text();
   const originalTitle = titleElement.text();
-  const originalBody = bodyElement.text();
+  const originalContent = contentElement.text();
 
   // Convert the elements to input fields for editing
   nameElement.html(`<input type="text" id="edit_name_${reviewId}" value="${originalName}">`);
   titleElement.html(`<input type="text" id="edit_title_${reviewId}" value="${originalTitle}">`);
-  bodyElement.html(`<textarea id="edit_body_${reviewId}">${originalBody}</textarea>`);
+  contentElement.html(`<textarea id="edit_content_${reviewId}">${originalContent}</textarea>`);
 
   // Show the Save button and hide the Edit button
   $(`#edit_btn_${reviewId}`).hide();
@@ -110,7 +113,7 @@ function saveReview(reviewId) {
   // Get the edited review content
   const editedName = $(`#edit_name_${reviewId}`).val();
   const editedTitle = $(`#edit_title_${reviewId}`).val();
-  const editedBody = $(`#edit_body_${reviewId}`).val();
+  const editedContent = $(`#edit_content_${reviewId}`).val();
 
   // Make an AJAX request to update_review.php
   $.ajax({
@@ -120,7 +123,7 @@ function saveReview(reviewId) {
       review_id: reviewId,
       name: editedName,
       title: editedTitle,
-      body: editedBody 
+      content: editedContent 
     },
     success: function(response) {
       alert(response); // Show the response message (e.g., "Review updated successfully.")
@@ -141,7 +144,7 @@ function editReviewA(reviewId) {
   const nameElement = $(`#name_${reviewId}`);
   const titleElement = $(`#title_${reviewId}`);
   // const contentElement = $(`#b${reviewId}`);
-  const bodyElement = $(`#body_${reviewId}`);
+  const bodyElement = $(`#content_${reviewId}`);
 
   // Save the original content for reverting if needed
   const originalName = nameElement.text();
@@ -151,7 +154,7 @@ function editReviewA(reviewId) {
   // Convert the elements to input fields for editing
   nameElement.html(`<input type="text" id="edit_name_${reviewId}" value="${originalName}">`);
   titleElement.html(`<input type="text" id="edit_title_${reviewId}" value="${originalTitle}">`);
-  bodyElement.html(`<textarea id="edit_body_${reviewId}">${originalBody}</textarea>`);
+  bodyElement.html(`<textarea id="edit_content_${reviewId}">${originalBody}</textarea>`);
 
   // Show the Save button and hide the Edit button
   $(`#edit_btn_${reviewId}`).hide();
@@ -163,7 +166,7 @@ function saveReviewA(reviewId) {
   // Get the edited review content
   const editedName = $(`#edit_name_${reviewId}`).val();
   const editedTitle = $(`#edit_title_${reviewId}`).val();
-  const editedBody = $(`#edit_body_${reviewId}`).val();
+  const editedBody = $(`#edit_content_${reviewId}`).val();
 
   // Make an AJAX request to update_review.php
   $.ajax({
@@ -173,7 +176,7 @@ function saveReviewA(reviewId) {
       review_id: reviewId,
       name: editedName,
       title: editedTitle,
-      body: editedBody 
+      content: editedBody 
     },
     success: function(response) {
       alert(response); // Show the response message (e.g., "Review updated successfully.")
@@ -185,8 +188,8 @@ function saveReviewA(reviewId) {
   });
 }
 
-    
-  </script>
-</body>
 
+
+</script>
+</body>
 </html>

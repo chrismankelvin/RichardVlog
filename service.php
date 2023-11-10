@@ -1,7 +1,8 @@
 <?php
 
 $main_title ="Service OF REC";
-require 'navbar.php';
+include 'header.php';
+include 'navbar.php';
 ?>
 <!-- <section class="service-section">
         <div class="container">

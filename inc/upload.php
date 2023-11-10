@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
     $fileActualExt = strtolower(end($fileExt));
 
     $allowed = array('jpg', 'jpeg', 'png', 'pdf');
-    $check = "SELECT id FROM reviews WHERE name = '$name' ";
+    $check = "SELECT id FROM waitreviews WHERE name = '$name' ";
     $result = mysqli_query($connection, $check);
 
     if (mysqli_num_rows($result) > 0) {
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
                         $sql = "UPDATE profileimg SET STATUS = 0 WHERE userid= $userid";
                         mysqli_query($connection, $sql);
 
-                        $sql = "UPDATE reviews SET profile_picture = '$fileNameNew' WHERE id= $userid";
+                        $sql = "UPDATE waitreviews SET profile_picture = '$fileNameNew' WHERE id= $userid";
                         mysqli_query($connection, $sql);
 
                         header("Location: ./index.php?error=youhavebeencreated");

@@ -2,8 +2,8 @@
 
 <?php
 $main_title = 'Privacy Policy';
-require "navbar.php"
-
+include 'header.php';
+include 'navbar.php';
 ?>
 
 <section class="privacy-section">

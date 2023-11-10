@@ -2,8 +2,8 @@
 <?php
 // $page_quote = "This is the About - Your destination for amazing video content";
 $main_title ="BooK Apointment With REC";
-// require 'header.php'
-require 'navbar.php';
+include 'header.php';
+include 'navbar.php';
 
 ?>
 

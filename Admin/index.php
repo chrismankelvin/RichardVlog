@@ -1,25 +1,22 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
- 
-</head> -->
 <?php
-include'./inc/header.php';
+include './header.php';
+// Check if the user is logged in, if not, redirect to the login page
+session_start();
+
+// if ($_SESSION['logged_in'] !== true) {
+//   header("Location: dashboard.php");
+//   exit();
+// }
+
 ?>
 
-<body>
+
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-4">
         
-        <form class="border p-4 rounded login-form" method="POST" action="./inc/log_in.php">
+        <form class="border p-4 rounded login-form" method="POST" action="log_in.php">
         <div class="text-center mb-4">
           <i class="fas fa-user-shield fa-4x"></i> <!-- Font Awesome admin icon -->
         </div>
@@ -37,6 +34,7 @@ include'./inc/header.php';
       </div>
     </div>
   </div>
-</body>
 
-</html>
+  <?php
+include './footer.php';
+?>

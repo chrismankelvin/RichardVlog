@@ -2,6 +2,7 @@
 <?php
 
 $main_title = 'Terms of Service';
+include 'header.php';
 include 'navbar.php';
 ?>
 
@@ -36,14 +37,14 @@ include 'navbar.php';
       <p>Our Email Address</p>
       <p>+233242764213</p>
 
-      <h3>Licenses <span class="dropdown-icon">&#9660;</span></h3>
+      <!-- <h3>Licenses <span class="dropdown-icon">&#9660;</span></h3>
       <div class="hidden-info">
         <p>Hidden information about licenses.</p>
       </div>
       <h3>Certificates <span class="dropdown-icon">&#9660;</span></h3>
       <div class="hidden-info">
         <p>Hidden information about certificates.</p>
-      </div>
+      </div> -->
     </div>
   </section>
 

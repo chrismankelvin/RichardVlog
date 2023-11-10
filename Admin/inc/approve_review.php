@@ -17,13 +17,14 @@ if (isset($_POST['review_id'])) {
         $row = $result->fetch_assoc();
         $name = $row['name'];
         $title = $row['title'];
-        $content = $row['body'];
+        $content = $row['content'];
+        $star = $row['star'];
+        $profile_picture= $row['profile_picture'];
 
-
-        // Insert the review into the approvereview table
-        $sql_approve = "INSERT INTO reviews (name ,title, body) VALUES (?, ?, ?)";
+// Insert the review into the approvereview table
+        $sql_approve = "INSERT INTO reviews (name ,title, content,star, profile_picture) VALUES (?, ?, ?, ?, ?)";
         $stmt_approve = $conn->prepare($sql_approve);
-        $stmt_approve->bind_param("sss", $name, $title, $content); // "ss" indicates two string parameters
+        $stmt_approve->bind_param("sssss", $name, $title, $content, $star, $profile_picture); // "ss" indicates two string parameters
         if ($stmt_approve->execute()) {
             // Delete the review from the mainreview table after approval
             $sql_delete = "DELETE FROM waitreviews WHERE id = ?";
@@ -32,13 +33,13 @@ if (isset($_POST['review_id'])) {
             if ($stmt_delete->execute()) {
                 echo "Review approved and moved to the approved reviews table.";
             } else {
-                echo "Error deleting review from mainreview table: " . $conn->error;
+                echo "Error deleting review from review table: " . $conn->error;
             }
         } else {
             echo "Error approving review: " . $conn->error;
         }
     } else {
-        echo "Review not found in mainreview table.";
+        echo "Review not found in review table.";
     }
 } else {
     echo "Invalid request.";

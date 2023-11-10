@@ -3,7 +3,8 @@
 
 <?php
 $main_title = "Educational Advice";
-require 'navbar.php';
+include 'header.php';
+include 'navbar.php';
 ?>
 
 

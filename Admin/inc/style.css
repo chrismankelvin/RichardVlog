@@ -1,149 +1,152 @@
 /* <style> */
 
 /* Custom CSS for professional styling */
-.review {
-border: 1px solid #dcdcdc;
-border-radius: 8px;
-margin-bottom: 20px;
-padding: 20px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-background-color: #ffffff;
-}
-
+/* .review {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+} */
+/* 
 .card-title {
-font-size: 24px;
-margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .card-text {
-font-size: 16px;
-margin-bottom: 5px;
-}
+    font-size: 16px;
+    margin-bottom: 5px;
+} */
 
-.btn-group {
-margin-top: 10px;
+/* .btn-group {
+    margin-top: 10px;
 }
 
 .btn {
-padding: 5px 15px;
-}
+    padding: 5px 15px;
+} */
 
 .btn-danger {
-background-color: #ff5252;
-border-color: #ff5252;
+    background-color: #ff5252;
+    border-color: #ff5252;
 }
 
 .btn-danger:hover {
-background-color: #ff0000;
-border-color: #ff0000;
+    background-color: #ff0000;
+    border-color: #ff0000;
 }
 
 .btn-success {
-background-color: #4caf50;
-border-color: #4caf50;
+    background-color: #4caf50;
+    border-color: #4caf50;
 }
 
 .btn-success:hover {
-background-color: #45a049;
-border-color: #45a049;
+    background-color: #45a049;
+    border-color: #45a049;
 }
 
 .btn-primary {
-background-color: #2196F3;
-border-color: #2196F3;
+    background-color: #2196F3;
+    border-color: #2196F3;
 }
 
 .btn-primary:hover {
-background-color: #1976D2;
-border-color: #1976D2;
+    background-color: #1976D2;
+    border-color: #1976D2;
 }
 
-.bod{
-  background-color: #F0F3F5;
+/* Custom CSS for the sticky bar and additional styling */
+.sticky-bar {
+    /* position: fixed; */
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    /* Change this to the desired text color */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
-    /* Custom CSS for the sticky bar and additional styling */
-    .sticky-bar {
-        /* position: fixed; */
-        /* top: 0; */
-        left: 0;
-        width: 100%;
-        background-color: #007bff; 
-        color: #ffffff; /* Change this to the desired text color */
-        padding: 10px 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
 
-    .sticky-bar-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 15px;
-    }
+.sticky-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
 
-    .user-info {
-        font-weight: bold;
-    }
+.user-info {
+    font-weight: bold;
+}
 
-    .logout-link {
-        color: #ffffff; /* Change this to the desired text color */
-        text-decoration: none;
-    }
+.logout-link {
+    color: #ffffff;
+    /* Change this to the desired text color */
+    text-decoration: none;
+}
 
-    .logout-link:hover {
-        text-decoration: underline;
-    }
-    #sidebar {
-min-width: 250px;
-max-width: 250px;
-background-color: #343a40;
-color: #fff;
-transition: all 0.3s;
-position: fixed;
-top: 0;
-right: -250px; /* Change 'left' to 'right' */
-height: 100%;
-overflow-y: auto;
-z-index: 999;
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* Change 'left' to 'right' */
+    height: 100%;
+    overflow-y: auto;
+    z-index: 999;
 }
 
 #sidebar.active {
-right: 0; /* Change 'left' to 'right' */
+    right: 0;
+    /* Change 'left' to 'right' */
 }
 
 #sidebar .p-4 {
-padding-top: 20px;
+    padding-top: 20px;
 }
 
 #content {
-margin-right: 0px; /* Change 'margin-left' to 'margin-right' */
-padding: 20px;
+    margin-right: 0px;
+    /* Change 'margin-left' to 'margin-right' */
+    padding: 20px;
 }
 
 #sidebarCollapse {
-background-color: #343a40;
-border: none;
-color: #fff;
-cursor: pointer;
+    background-color: #343a40;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 #sidebarCollapse:hover {
-background-color: #444;
+    background-color: #444;
 }
 
 #sidebar ul li {
-padding: 10px;
+    padding: 10px;
 }
 
 #sidebar ul li a {
-color: #fff;
-display: block;
-text-decoration: none;
-transition: all 0.3s;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 #sidebar ul li a:hover {
-color: #ddd;
+    color: #ddd;
 }
 
 
@@ -189,4 +192,54 @@ body {
     display: block;
     margin-top: 20px;
 }
+
+/* </style> */
+/* <style> */
+    .review {
+        display: flex;
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    .review img {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+
+    .card-body {
+        flex: 1;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .star-rating {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .btn-group {
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+    }
 /* </style> */

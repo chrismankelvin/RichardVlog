@@ -1,5 +1,6 @@
 <?php
 $main_title ="About REC";
+require "header.php";
 require "navbar.php";
 
 ?>
@@ -27,13 +28,14 @@ require "navbar.php";
         </div>
       </div>
     </div>
-  </section>
 
-<?php
-
+    <?php
 require 'trust.php'
 ?>
-<?php
-require "footer.php"
+  </section>
 
+
+<?php
+include "images.php";
+require "footer.php"
 ?>

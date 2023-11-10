@@ -6,7 +6,7 @@ if (isset($_POST['review_id'])) {
     $reviewId = $_POST['review_id'];
 
     // Use a prepared statement to avoid SQL injection
-    $sql = "DELETE FROM waitreviews WHERE id = ?";
+    $sql = "DELETE FROM reviews WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $reviewId); // "i" indicates the parameter type is integer
     if ($stmt->execute()) {

@@ -1,7 +1,9 @@
 
 <?php 
 $main_title ="Success";
-require 'navbar.php'
+include 'header.php';
+include 'navbar.php';
+
 ?>
 
   <div class="container">
