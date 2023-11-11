@@ -3,6 +3,7 @@
   background-image: url('./images/banner.jpg');
   background-size: cover;
   background-position: inherit;
+  background-repeat: no-repeat;
   font-family: "Sofia", sans-serif;
   padding: 100px 0;
   display: flex;
