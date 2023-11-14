@@ -1,4 +1,4 @@
-<section style="color: #000; background-color: #f5f5f5;">
+<section style="color: #000; background-color: #EEF5F9;">
     <div class="container py-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-10 col-xl-8 text-center">

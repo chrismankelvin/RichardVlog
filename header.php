@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./comp/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./comp/fontawesome-free-6.4.2-web/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="./inc/style.css">
 
     <!-- <link rel="stylesheet" href="./comp/bootstrap-5.3.2-dist/css/bootstrap.min.css">

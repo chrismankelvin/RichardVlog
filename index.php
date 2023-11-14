@@ -29,23 +29,23 @@ require 'header.php';
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./inc/images/ann_1.jpg" class="d-block w-100" alt="Image 1">
-              <div class="carousel-caption">
-                <h3 style=" color:#540B34" class="lead">Annoucements</h3>
+              <div class="carousel-caption cap">
+                <h3 style=" color:#fff; padding:5px; width:auto; background-color: #33333381; border-radius:20px;" class="lead">Annoucements</h3>
                 <p></p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./inc/images/ann_3.png" class="d-block w-100" alt="Image 2">
-              <div class="carousel-caption">
-                <h4 class="lead">Richard Meets Tim</h4>
+              <img src="./inc/images/ann_2.png" class="d-block w-100" alt="Image 2">
+              <div class="carousel-caption cap">
+              <h3 style=" color:#fff; padding:5px; width:auto; background-color: #33333381; border-radius:20px;" class="lead">Oppotunities To Work Abroad </h3>
                 <p></p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./inc/images/graduate.jpg" class="d-block w-100" alt="Image 3">
-              <div class="carousel-caption">
-                <h3 class="lead">Graduated?</h3>
-                <p class="lead">Richard is there whenever you need help</p>
+              <img src="./inc/images/ann_3.png" class="d-block w-100" alt="Image 3">
+              <div class="carousel-caption cap">
+              <h3 style=" color:#fff; padding:5px; width:auto; background-color: #33333381; border-radius:20px;" class="lead">Infinite Oppotunities To Study Abroad</h3> 
+                <!-- <p class="lead"></p> -->
               </div>
             </div>
           </div>
