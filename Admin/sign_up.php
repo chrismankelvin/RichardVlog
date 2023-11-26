@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Prepare the SQL statement to insert the admin data into the table
     $sql = "INSERT INTO admin (username, password) VALUES (?, ?)";
-    $stmt = $conn->prepare($sql);
+    $stmt = $connection->prepare($sql);
     $stmt->bind_param("ss", $username, $hashedPassword);
 
     // Execute the SQL statement
