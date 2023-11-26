@@ -1,6 +1,6 @@
 
  <?php
- include './inc/header.php';
+ include './header.php';
  ?>
 
   <div class="container">
@@ -22,7 +22,7 @@
     </div>
   </div>
   <?php
- include './inc/footer.php';
+ include './footer.php';
  ?>
 
 

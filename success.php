@@ -5,8 +5,70 @@ include 'header.php';
 include 'navbar.php';
 
 ?>
+<style>
+.section {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 40px;
+  }
 
-  <div class="container">
+  .section h3 {
+    margin-bottom: 20px;
+  }
+
+  .section img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .delivered-icon {
+    font-size: 100px;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  .trust-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  .trust-item {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+
+  /* <style> */
+  .btn-group {
+      margin-top: 20px;
+  }
+
+  .btn-success {
+      background-color:  #28a745;
+      border-color: #28a745;
+  }
+
+  .btn-info {
+      background-color: #17a2b8;
+      border-color: #17a2b8;
+  }
+
+  .btn-warning {
+      background-color: #ffc107;
+      border-color: #ffc107;
+  }
+
+  .btn-danger {
+      background-color: #dc3545;
+      border-color: #dc3545;
+  }
+</style>
+
+  <div class="container" >
     <div class="section">
       <img src="./inc/images/mail.png" alt="Request Image">
       <h3>Request Sent</h3>
