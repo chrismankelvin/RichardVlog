@@ -1,5 +1,6 @@
 <?php
 $main_title = "Add your Review";
+session_start();
 // require 'header.php';
 include 'header.php';
 include 'navbar.php';
