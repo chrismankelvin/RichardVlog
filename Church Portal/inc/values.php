@@ -8,31 +8,31 @@ $total_reviews = 0;
 $total_meets = 0;
 $notifications = 0;
 
-foreach ($tables as $index => $table) {
+// foreach ($tables as $index => $table) {
     // Query to count rows in a table
-    $sql = "SELECT COUNT(*) as count FROM $table";
+    // $sql = "SELECT COUNT(*) as count FROM $table";
     
     // Prepare the query
-    $stmt = $conn->prepare($sql);
+    // $stmt = $conn->prepare($sql);
     
     // Execute the query
-    $stmt->execute();
+    // $stmt->execute();
     
     // Bind result variables
-    $stmt->bind_result($count);
+    // $stmt->bind_result($count);
     
     // Fetch result
-    $stmt->fetch();
+    // $stmt->fetch();
     
     // Assign count to respective variable
-    if ($index === 0) {
-        $total_reviews = $count;
-    } elseif ($index === 1) {
-        $total_meets = $count;
-    } 
-    elseif ($index === 2) {
-        $notifications = $count;
-    }    
+    // if ($index === 0) {
+        // $total_reviews = $count;
+    // } elseif ($index === 1) {
+        // $total_meets = $count;
+    // } 
+    // elseif ($index === 2) {
+        // $notifications = $count;
+    // }    
     // elseif ($index === 2) {
     //     $countTable3 = $count;
     // }   
@@ -44,8 +44,8 @@ foreach ($tables as $index => $table) {
     // }
     
     // Close statement
-    $stmt->close();
-}
+    // $stmt->close();
+// }
 
 // Output the counts
 // echo "Count from table1: " . $countTable1 . "<br>";

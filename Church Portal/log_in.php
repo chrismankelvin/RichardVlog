@@ -3,7 +3,7 @@
 session_start();
 
 // Include the database connection file
-require_once './inc/db_connection.php';
+require './inc/db_connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get the form data

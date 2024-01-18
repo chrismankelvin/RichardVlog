@@ -64,10 +64,13 @@ $result = $stmt->get_result();
 
 // Display data in the specified HTML format
 while ($row = $result->fetch_assoc()) {
+    $imagePath = htmlspecialchars($row['profile_picture_path']);
+
     echo '<div class="col-6 col-md-4 col-xl-3 col-xxl-2">';
     echo '<!-- <span class="badge bg-success ">NEW</span> -->';
     echo '<div class="card">';
-    echo '<img src="' . htmlspecialchars($row['profile_picture_path'], ENT_QUOTES, 'UTF-8') . '" class="card-img-top" alt="...">';
+    // echo '<img src="' . $imagePath . '" class="card-img-top" alt="...">';
+    echo '<img src="./comp/images/users/user-1.jpg" class="card-img-top" alt="...">';
     echo '<div class="card-body">';
     echo '<div class="dropdown">';
     // ... (dropdown content)
