@@ -8,8 +8,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     $member_id = $_GET['id'];
 
     // Fetch data from the database based on the provided ID
-    $sql = "SELECT * FROM General_Members WHERE member_id = ?";
+    $sql = "SELECT * FROM general_members WHERE member_id = ?";
     $stmt = $conn->prepare($sql);
+    
     $stmt->bind_param("i", $member_id);
     $stmt->execute();
     $result = $stmt->get_result();
