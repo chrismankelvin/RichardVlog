@@ -17,6 +17,8 @@ require "db_connection.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
+    $officer_status = $_POST["officer_status"];
+    $position =$_POST["executive_position"];
     $surname = $_POST["setting-input-2"];
     $other_names = $_POST["setting-input-3"];
     $date_of_birth = $_POST["setting-input-4"];
@@ -58,7 +60,9 @@ if (move_uploaded_file($_FILES["setting-input-12"]["tmp_name"], $target_file)) {
     // move_uploaded_file($_FILES["setting-input-12"]["tmp_name"], $target_file);
 
     // SQL with prepared statements to insert data into the database
-    $sql = "INSERT INTO General_Members (
+    $sql = "INSERT INTO executives (
+        officer_status,
+        position,
         surname,
         other_names,
         date_of_birth,
@@ -72,14 +76,14 @@ if (move_uploaded_file($_FILES["setting-input-12"]["tmp_name"], $target_file)) {
         marital_status,
         group_name,
         profile_picture_path
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     // Create a prepared statement
     $stmt = $conn->prepare($sql);
 
     // Bind parameters to the prepared statement
     // $stmt->bind_param("sssssssssssss", $surname, $other_names, $date_of_birth, $place_of_birth, $gender, $nationality, $residence, $occupation, $telephone_no1, $telephone_no2, $marital_status, $group_name, $target_file);
-    $stmt->bind_param("ssssssssssss", $surname, $other_names, $date_of_birth, $place_of_birth, $gender, $nationality, $residence, $occupation, $telephone_no1, $telephone_no2, $group_name, $marital_status, $profile_picture_path);
+    $stmt->bind_param("sssssssssssssss",$officer_status, $position, $surname, $other_names, $date_of_birth, $place_of_birth, $gender, $nationality, $residence, $occupation, $telephone_no1, $telephone_no2, $group_name, $marital_status, $profile_picture_path);
 
     // Execute the prepared statement
     if ($stmt->execute()) {

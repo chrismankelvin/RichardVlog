@@ -124,7 +124,7 @@
 																					echo 'active';
 																				} else {
 																					echo '';
-																				} ?>" href="meets.php">All </a></li>
+																				} ?>" href="all_members.php">All </a></li>
 							<li class="submenu-item"><a class="submenu-link  <?php
 																				if ($currentpage == 'adults') {
 																					echo 'active';

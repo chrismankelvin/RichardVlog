@@ -13,20 +13,26 @@
                 </div><!--//col-->
                 <div class="search-mobile-trigger d-sm-none col">
                     <i class="search-mobile-trigger-icon fas fa-search"></i>
+                    <div class="app-search-box col">
+
+<form class="app-search-form">
+    <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+    <button type="submit" class="btn search-btn btn-primary" value="Search"><i class="fas fa-search"></i></button>
+</form>
+
+</div>
                 </div>
-                <div class="app-search-box col">
-
-                    <form class="app-search-form">
-                        <input type="text" placeholder="Search..." name="search" class="form-control search-input">
-                        <button type="submit" class="btn search-btn btn-primary" value="Search"><i class="fas fa-search"></i></button>
-                    </form>
-
-                </div><!--//app-search-box-->
+               
+                <!--//app-search-box-->
 
 
 
 
                 <div class="app-utilities col-auto">
+
+
+
+
                     <div class="app-utility-item app-notifications-dropdown dropdown">
                         <a class="dropdown-toggle no-toggle-arrow" id="notifications-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" title="Notifications">
                             <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->

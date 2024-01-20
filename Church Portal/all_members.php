@@ -27,7 +27,7 @@ include './inc/header.php';
 		<div class="container-xl">
 			<div class="row g-3 mb-4 align-items-center justify-content-between">
 				<div class="col-auto">
-					<h1 class="app-page-title mb-0">The Executives Of Nazareth Assembly</h1>
+					<h1 class="app-page-title mb-0">All Members</h1>
 				</div>
 				<div class="col-auto">
 					<div class="page-utilities">
@@ -57,7 +57,7 @@ include './inc/header.php';
 
 <?php
 			// Fetch data from the General_Members table using a prepared statement
-$sql = "SELECT * FROM executives";
+$sql = "SELECT * FROM general_members ";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -107,19 +107,8 @@ while ($row = $result->fetch_assoc()) {
     echo '<div class="fw-bold">Name</div>';
     echo htmlspecialchars($row['surname'] . ' ' . $row['other_names'], ENT_QUOTES, 'UTF-8');
     echo '</div>';
-     if ($row['officer_status']=="None"){
-        echo '<span class="badge bg-primary rounded-pill">Elder</span> ';
-        echo '</li>';
-
-
-     }else{
-        echo '<span class="badge bg-primary rounded-pill">';
-        echo  htmlspecialchars($row['officer_status'], ENT_QUOTES, 'UTF-8');
-        echo '</span> ';
-        echo '</li>';
-
-     };
-   
+    echo '<!--<span class="badge bg-primary rounded-pill">14</span> -->';
+    echo '</li>';
 
     echo '<li class="list-group-item d-flex justify-content-between align-items-start">';
     echo '<div class="ms-2 me-auto">';

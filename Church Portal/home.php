@@ -26,7 +26,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
 	?>
 
-
 </header>
 
 <div class="app-wrapper">
@@ -34,25 +33,25 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 	<div class="app-content pt-3 p-md-3 p-lg-4">
 		<div class="container-xl">
 
-			<h1 class="app-page-title">Overview</h1>
+			<h1 class="app-page-title"> Secretaraite Dashboard</h1>
 
 			<div class="app-card alert alert-dismissible shadow-sm mb-4 border-left-decoration" role="alert">
 				<div class="inner">
 					<div class="app-card-body p-3 p-lg-4">
-						<h3 class="mb-3">Welcome, Administrator <?php echo ' ' . $_SESSION['username'] .'';?> </h3>
+						<h3 class="mb-3">Welcome, Mr. <?php echo ' ' . $_SESSION['username'] .'';?> </h3>
 						<div class="row gx-5 gy-3">
 							<div class="col-12 col-lg-9">
 
-								<div>Rec pannel is where you  is a free Bootstrap 5 admin dashboard template. The design is simple, clean and modular so it's a great base for building any modern web app.</div>
+								<div>This Portal The Nazareth Secretaraite's Portal for Membership Management, You are signed in as an Administration therefore you have previledge to manage all the membership of Nazareth Asembly .</div>
 							</div><!--//col-->
 							<div class="col-12 col-lg-3">
-								<a class="btn app-btn-primary" href="#">
+								<button data-bs-dismiss="alert" style="background-color:transparent; border:none;" aria-label="Close"><a class="btn app-btn-primary" href="#">
 									<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-arrow-down me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
 										<path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z" />
 										<path fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 10.293V6.5A.5.5 0 0 1 8 6z" />
 									</svg> -->
-									Get Started</a>
+									Get Started</a></button>
 							</div><!--//col-->
 						</div><!--//row-->
 						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -70,7 +69,8 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 							<div class="stats-meta text-success">
 								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-								</svg> 20%
+								</svg> 
+								<!-- 20% -->
 							</div>
 						</div><!--//app-card-body-->
 						<a class="app-card-link-mask" href="#"></a>
@@ -81,11 +81,15 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 					<div class="app-card app-card-stat shadow-sm h-100">
 						<div class="app-card-body p-3 p-lg-4">
 							<h4 class="stats-type mb-1">Adults</h4>
-							<div class="stats-figure">2,250</div>
+							<div class="stats-figure">
+								2,250
+
+							</div>
 							<div class="stats-meta text-success">
 								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-								</svg> 5%
+								</svg>
+								 <!-- 5% -->
 							</div>
 						</div><!--//app-card-body-->
 						<a class="app-card-link-mask" href="#"></a>
@@ -97,7 +101,9 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 							<h4 class="stats-type mb-1">Teenagers</h4>
 							<div class="stats-figure"><?php echo ' '. $total_reviews .''; ?></div>
 							<div class="stats-meta">
-								Open</div>
+								
+								<!-- Open -->
+							</div>
 						</div><!--//app-card-body-->
 						<a class="app-card-link-mask" href="#"></a>
 					</div><!--//app-card-->
@@ -107,7 +113,9 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 						<div class="app-card-body p-3 p-lg-4">
 							<h4 class="stats-type mb-1">Children</h4>
 							<div class="stats-figure">2</div>
-							<div class="stats-meta">New</div>
+							<div class="stats-meta">
+								<!-- New -->
+							</div>
 						</div><!--//app-card-body-->
 						<a class="app-card-link-mask" href="#"></a>
 					</div><!--//app-card-->
@@ -141,7 +149,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 						</div><!--//app-card-header-->
 						<div class="app-card-body px-4">
 
-							<div class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet eros vel diam semper mollis.</div>
+							<div class="intro">Add new members to the church register, New converts, transfered and newly born children should be registered here </div>
 						</div><!--//app-card-body-->
 						<div class="app-card-footer p-4 mt-auto">
 							<a class="btn app-btn-secondary" href="registermember.php"> Add</a>
@@ -154,9 +162,37 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
 				
 
+		<div class="col-12 col-lg-4">
+					<div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
+						<div class="app-card-header p-3 border-bottom-0">
+							<div class="row align-items-center gx-3">
+								<div class="col-auto">
+									<div class="app-icon-holder">
+										<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-receipt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z" />
+											<path fill-rule="evenodd" d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z" />
+										</svg> -->
+										<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+  <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+</svg>
+									</div><!--//icon-holder-->
 
-			
+								</div><!--//col-->
+								<div class="col-auto">
+									<h4 class="app-card-title">Register an Executive</h4>
+								</div><!--//col-->
+							</div><!--//row-->
+						</div><!--//app-card-header-->
+						<div class="app-card-body px-4">
 
+							<div class="intro">Transfered and Newly Ordained officers should be registered here</div>
+						</div><!--//app-card-body-->
+						<div class="app-card-footer p-4 mt-auto">
+							<a class="btn app-btn-secondary" href="registerexecutive.php"> Add</a>
+						</div><!--//app-card-footer-->
+					</div><!--//app-card-->
+				</div><!--//col-->
 
 
 				<div class="col-12 col-lg-4">
@@ -176,20 +212,22 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
 								</div><!--//col-->
 								<div class="col-auto">
-									<h4 class="app-card-title">Transfer</h4>
+									<h4 class="app-card-title">Transfer a Member</h4>
 								</div><!--//col-->
 							</div><!--//row-->
 						</div><!--//app-card-header-->
 						<div class="app-card-body px-4">
 
-							<div class="intro">Pellentesque varius, elit vel volutpat sollicitudin, lacus quam efficitur augue</div>
+							<div class="intro">Send both Execitives and members to a new local church. Members who left should all be tranfered here</div>
 						</div><!--//app-card-body-->
 
 						<div class="app-card-footer p-4 mt-auto">
-							<a class="btn app-btn-secondary" href="#">Create New</a>
+							<a class="btn app-btn-secondary" href="#">Transfer</a>
 						</div><!--//app-card-footer-->
 					</div><!--//app-card-->
 				</div><!--//col-->
+
+
 				<div class="col-12 col-lg-4">
 					<div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
 						<div class="app-card-header p-3 border-bottom-0">
@@ -210,24 +248,20 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
 								</div><!--//col-->
 								<div class="col-auto">
-									<h4 class="app-card-title">Back UP</h4>
+									<h4 class="app-card-title">Back Up</h4>
 								</div><!--//col-->
 							</div><!--//row-->
 						</div><!--//app-card-header-->
 						<div class="app-card-body px-4">
 
-							<div class="intro">Sed maximus, libero ac pharetra elementum, turpis nisi molestie neque, et tincidunt velit turpis non enim.</div>
+							<div class="intro">Upload the current church database to cloud, This requires Authorizaton </div>
 						</div><!--//app-card-body-->
 						<div class="app-card-footer p-4 mt-auto">
-							<a class="btn app-btn-secondary" href="#">Create New</a>
+							<a class="btn app-btn-secondary" href="#">Upload</a>
 						</div><!--//app-card-footer-->
 					</div><!--//app-card-->
 				</div><!--//col-->
-			</div><!--//row-->
 
-
-
-			<div class="row g-4 mb-4">
 				<div class="col-12 col-lg-4">
 					<div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
 						<div class="app-card-header p-3 border-bottom-0">
@@ -252,48 +286,23 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 						</div><!--//app-card-header-->
 						<div class="app-card-body px-4">
 
-							<div class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet eros vel diam semper mollis.</div>
+							<div class="intro">Save Monthly reports and yearly report of any department to the church data.</div>
 						</div><!--//app-card-body-->
 						<div class="app-card-footer p-4 mt-auto">
 							<a class="btn app-btn-secondary" href="#">Create New</a>
-						</div><!--//app-card-footer-->
+							</div><!--//app-card-footer-->
 					</div><!--//app-card-->
 				</div><!--//col-->
 
 
-				<div class="col-12 col-lg-4">
-					<div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-						<div class="app-card-header p-3 border-bottom-0">
-							<div class="row align-items-center gx-3">
-								<div class="col-auto">
-									<div class="app-icon-holder">
-										<!-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-receipt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z" />
-											<path fill-rule="evenodd" d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z" />
-										</svg> -->
-										<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
-  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-  <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
-</svg>
-									</div><!--//icon-holder-->
+				<div class="row g-4 mb-4">
 
-								</div><!--//col-->
-								<div class="col-auto">
-									<h4 class="app-card-title">Register an Executive</h4>
-								</div><!--//col-->
-							</div><!--//row-->
-						</div><!--//app-card-header-->
-						<div class="app-card-body px-4">
-
-							<div class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet eros vel diam semper mollis.</div>
-						</div><!--//app-card-body-->
-						<div class="app-card-footer p-4 mt-auto">
-							<a class="btn app-btn-secondary" href="registermember.php"> Add</a>
-						</div><!--//app-card-footer-->
-					</div><!--//app-card-->
-				</div><!--//col-->
+		
 
 
+
+			</div><!--//row-->
+			
 		</div><!--//container-fluid-->
 	</div><!--//app-content-->
 
