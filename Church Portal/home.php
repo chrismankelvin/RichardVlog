@@ -289,7 +289,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 							<div class="intro">Save Monthly reports and yearly report of any department to the church data.</div>
 						</div><!--//app-card-body-->
 						<div class="app-card-footer p-4 mt-auto">
-							<a class="btn app-btn-secondary" href="#">Create New</a>
+							<a class="btn app-btn-secondary" href="uploadreport.php">Create New</a>
 							</div><!--//app-card-footer-->
 					</div><!--//app-card-->
 				</div><!--//col-->
